@@ -2,24 +2,14 @@
 
 ## O que são Variáveis?
 
-Em Java, usamos o termo **variável** para nos referirmos a diferentes formas de armazenar dados.  
-Quando declaradas dentro de uma classe, mas fora de métodos, construtores ou blocos, essas variáveis são chamadas de **campos (fields)**.  
-Já variáveis locais e parâmetros não são considerados campos, embora também sejam variáveis.
+Em Java, usamos o termo **variável** para nos referirmos a diferentes formas de armazenar dados.Quando declaradas dentro de uma classe, mas fora de métodos, construtores ou blocos, essas variáveis são chamadas de **campos (fields)**.Já variáveis locais e parâmetros não são considerados campos, embora também sejam variáveis.
 
 ### Tipos de variáveis em Java
 
-- **Variáveis de Instância (campos não estáticos):**  
-  Cada objeto possui sua própria cópia.  
-
-- **Variáveis de Classe (campos estáticos):**  
-  Declaradas com o modificador `static`; existe exatamente uma cópia compartilhada por toda a classe, independentemente de quantas instâncias existam.  
-
-- **Variáveis Locais:**  
-  Armazenam estados temporários dentro de um método, construtor ou bloco.  
-
-- **Parâmetros:**  
-  Variáveis que fornecem informações adicionais a um método ou construtor, declaradas entre os parênteses da assinatura.  
-
+- **Variáveis de Instância (campos não estáticos):** cada objeto possui sua própria cópia.  
+- **Variáveis de Classe (campos estáticos):** declaradas com o modificador `static`; existe exatamente uma cópia compartilhada por toda a classe, independentemente de quantas instâncias existam.  
+- **Variáveis Locais:** armazenam estados temporários dentro de um método, construtor ou bloco.  
+- **Parâmetros:** variáveis que fornecem informações adicionais a um método ou construtor, declaradas entre os parênteses da assinatura.  
 
 ## Regras e Convenções de Nomenclatura
 
