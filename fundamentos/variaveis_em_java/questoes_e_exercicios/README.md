@@ -22,7 +22,7 @@
 - Uma variável declarada dentro dos parênteses de abertura e fechamento de um método é chamada de `parâmetro`.  
 - Oito tipos primitivos de dados suportados pela linguagem de programação Java são: `byte`, `short`, `int`, `long`, `float`, `double`, `boolean` e `char`.
 - Cadeias de caracteres são representadas pela classe `java.lang.String`.  
-- Um array é um objeto contêiner que mantém um número fixo de valores de um único tipo.  
+- Um `array` é um objeto contêiner que mantém um número fixo de valores de um único tipo.  
 
 </details>
 
