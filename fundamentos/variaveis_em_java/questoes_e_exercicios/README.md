@@ -31,7 +31,7 @@ Os tutoriais Java foram escritos para o JDK 8. Os exemplos e práticas descritos
 <details>
 <summary> Verifique suas respostas🔻</summary>
 
-## Respostas para Perguntas
+## Respostas
 
 O termo "variável de instância" é outro nome para campo não estático.  
 O termo "variável de classe" é outro nome para campo estático.  
