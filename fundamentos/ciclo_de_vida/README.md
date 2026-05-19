@@ -71,5 +71,5 @@ java HelloWorld
 O resultado exibido no console será:
 
 <p align="center">
-  <img src="000-Midia_e_Anexos/2026-05-19-16-29-53.png" alt="" width="480">
+  <img src="000-Midia_e_Anexos/2026-05-19-16-29-53.png" alt="" width="640">
 </p>
