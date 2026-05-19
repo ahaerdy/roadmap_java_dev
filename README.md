@@ -32,7 +32,7 @@ flowchart TD
 
 ---
 
-### 1. 🧱 Fundamentos
+### 1. Fundamentos
 
 - [x] [Programação Orientada a Objetos em Java](fundamentos/objetos_classes_interfaces_pacores_herancas) Fundamentos da Programação Orientada a Objetos (POO) em Java: objetos, classes, herança, interfaces e pacotes.
 - [x] [Variáveis em Java](fundamentos/variaveis_em_java) Sintaxe para criar e inicializar variáveis de tipo primitivo.
@@ -52,7 +52,7 @@ flowchart TD
 
 ---
 
-### 2. 🧩 Orientação a Objetos (`/02-oop`)
+### 2. Orientação a Objetos
 
 **Conceitos Base**
 - [ ] Classes e Objetos
@@ -86,7 +86,7 @@ flowchart TD
 
 ---
 
-### 3. ⚙️ Tópicos Avançados & Concorrência (`/03-avancado`)
+### 3. Tópicos Avançados & Concorrência
 
 **Utilitários**
 - [ ] Criptografia
@@ -116,7 +116,7 @@ flowchart TD
 
 ---
 
-### 4. 🔁 Programação Funcional (`/04-funcional`)
+### 4. Programação Funcional
 
 - [ ] Funções de Alta Ordem
 - [ ] Interfaces Funcionais
@@ -125,7 +125,7 @@ flowchart TD
 
 ---
 
-### 5. 🔨 Ferramentas de Build (`/05-build-tools`)
+### 5. Ferramentas de Build
 
 - [ ] Maven
 - [ ] Gradle
@@ -133,7 +133,7 @@ flowchart TD
 
 ---
 
-### 6. 🌐 Frameworks Web (`/06-frameworks-web`)
+### 6. Frameworks Web
 
 - [ ] Spring Boot ⭐ *(recomendado pelo roadmap)*
 - [ ] Quarkus
@@ -142,7 +142,7 @@ flowchart TD
 
 ---
 
-### 7. 🗄️ Acesso a Banco de Dados (`/07-banco-de-dados`)
+### 7. Acesso a Banco de Dados
 
 - [ ] JDBC
 - [ ] Hibernate
@@ -151,7 +151,7 @@ flowchart TD
 
 ---
 
-### 8. 📄 Documentação & Logging (`/08-documentacao-logging`)
+### 8. Documentação & Logging
 
 **Documentação**
 - [ ] Javadoc
@@ -164,7 +164,7 @@ flowchart TD
 
 ---
 
-### 9. 🧪 Testes (`/09-testes`)
+### 9. Testes
 
 **Frameworks**
 - [ ] JUnit
@@ -230,7 +230,7 @@ sintaxe-basica/
 
 ---
 
-## 🔗 Referências
+## Referências
 
 | Recurso | Link |
 |---|---|
@@ -240,7 +240,7 @@ sintaxe-basica/
 
 ---
 
-## 📊 Status Geral
+## Status Geral
 
 | Etapa | Tópicos | Concluídos | Progresso |
 |---|---|---|---|
@@ -255,8 +255,3 @@ sintaxe-basica/
 | 9. Testes | 9 | 0 | `░░░░░░░░░░` 0% |
 | **Total** | **79** | **0** | `░░░░░░░░░░` **0%** |
 
----
-
-<p align="center">
-  Trilha iniciada em 2025 · Documentado em português · Baseado em <a href="https://roadmap.sh/java">roadmap.sh/java</a>
-</p>
