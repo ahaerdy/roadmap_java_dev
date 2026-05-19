@@ -5,88 +5,100 @@
 
 ---
 
+**Aqui está a tradução completa e adaptada para português, seguindo o mesmo roteiro e formato da página original, pronta para ser usada em um repositório GitHub em Markdown.**
+
+---
+
+```markdown
+# Criando Variáveis e Nomeando-as
+
 ## Variáveis
 
-Um objeto armazena seu estado em **campos** (*fields*). Na linguagem Java, os termos "campo" e "variável" são ambos utilizados — o que é uma fonte comum de confusão entre novos desenvolvedores, já que ambos frequentemente parecem se referir à mesma coisa.
+Como você aprendeu na seção anterior, um objeto armazena seu estado em campos:
 
-O Java define os seguintes tipos de variáveis:
+```java
+int cadence = 0;
+int speed = 0;
+int gear = 1;
+```
+
+A discussão sobre *O que é um Objeto?* apresentou os campos, mas você provavelmente ainda tem algumas dúvidas, como:
+
+- Quais são as regras e convenções para nomear um campo?
+- Além de `int`, quais outros tipos de dados existem?
+- Os campos precisam ser inicializados quando são declarados?
+- Os campos recebem um valor padrão se não forem explicitamente inicializados?
+
+Vamos explorar essas questões nesta seção. Antes disso, é importante entender algumas distinções técnicas.
+
+Na linguagem de programação Java, os termos **campo** e **variável** são usados, o que pode gerar confusão entre novos desenvolvedores, já que muitas vezes parecem se referir à mesma coisa. A linguagem Java define os seguintes tipos de variáveis:
 
 ### Variáveis de Instância (Campos Não-Estáticos)
 
-Objetos armazenam seus estados individuais em campos declarados **sem** a palavra-chave `static`. São chamadas de variáveis de instância porque seus valores são únicos para cada instância de uma classe — a `velocidadeAtual` de uma bicicleta é independente da `velocidadeAtual` de outra.
+Tecnicamente, os objetos armazenam seus estados individuais em **campos não-estáticos**, ou seja, campos declarados sem a palavra-chave `static`. Esses campos também são chamados de variáveis de instância porque seus valores são únicos para cada instância de uma classe. Por exemplo, a `currentSpeed` de uma bicicleta é independente da `currentSpeed` de outra.
 
 ### Variáveis de Classe (Campos Estáticos)
 
-Qualquer campo declarado com o modificador `static`. Isso informa ao compilador que existe exatamente **uma única cópia** dessa variável, independentemente de quantas vezes a classe foi instanciada.
+Uma variável de classe é qualquer campo declarado com o modificador `static`. Isso indica ao compilador que existe exatamente uma cópia dessa variável, independentemente de quantas vezes a classe seja instanciada. 
+
+Por exemplo:
 
 ```java
-static int numMarchas = 6;
+static int numGears = 6;
 ```
 
-A palavra-chave `final` pode ser adicionada para indicar que o valor nunca mudará.
+Esse campo define o número de marchas de um tipo específico de bicicleta. Se adicionarmos `final`, indicamos que esse valor nunca mudará:
+
+```java
+static final int NUM_GEARS = 6;
+```
 
 ### Variáveis Locais
 
-Assim como um objeto armazena seu estado em campos, um método frequentemente armazena seu estado temporário em variáveis locais. A sintaxe de declaração é similar à de um campo:
+Assim como um objeto armazena seu estado em campos, um método frequentemente armazena seu estado temporário em variáveis locais. A sintaxe é semelhante à de um campo:
 
 ```java
-int contador = 0;
+int count = 0;
 ```
 
-Não há palavra-chave especial que designe uma variável como local — isso é determinado exclusivamente pela **localização** em que ela é declarada: entre as chaves de abertura e fechamento de um método. Portanto, variáveis locais são visíveis apenas dentro do método em que foram declaradas.
+Não existe palavra-chave especial para designar uma variável como local; isso é determinado pelo local onde ela é declarada — dentro das chaves de um método. Portanto, variáveis locais só são visíveis dentro do método em que foram declaradas.
 
 ### Parâmetros
 
-Já vistos anteriormente, por exemplo na assinatura do método principal:
+Você já viu exemplos de parâmetros, tanto na classe `Bicycle` quanto no método `main` da aplicação *Hello World!*:
 
 ```java
 public static void main(String[] args)
 ```
 
-Aqui, `args` é o parâmetro do método. O ponto importante é que parâmetros são sempre classificados como **variáveis**, não como campos. Isso vale também para construtores e tratadores de exceção.
-
-> 💡 **Resumindo a terminologia:**
-> - **Campos** → variáveis de instância e estáticas (excluindo locais e parâmetros)
-> - **Variáveis** → termo geral que engloba todos os tipos acima
-> - **Membros** → campos, métodos e tipos aninhados de uma classe, coletivamente
+Aqui, `args` é o parâmetro do método. É importante lembrar que parâmetros são sempre classificados como **variáveis**, não como campos. Isso também se aplica a construtores e manipuladores de exceções.
 
 ---
 
 ## Nomeando Variáveis
 
-As regras e convenções para nomear variáveis em Java podem ser resumidas da seguinte forma:
+Toda linguagem de programação possui regras e convenções para nomes de variáveis, e Java não é diferente. As principais regras e convenções são:
 
-- **Nomes de variáveis são sensíveis a maiúsculas e minúsculas.** O nome pode ser qualquer identificador legal — uma sequência de comprimento ilimitado de letras e dígitos Unicode, começando com uma letra, o cifrão `$` ou o caractere de sublinhado `_`.
+- **Sensibilidade a maiúsculas/minúsculas**: `speed` e `Speed` são nomes diferentes.
+- **Identificadores válidos**: podem conter letras Unicode, dígitos, `$` ou `_`, mas devem começar com uma letra, `$` ou `_`.
+- **Convenções**:
+  - Sempre comece nomes de variáveis com uma letra (não use `$` ou `_`).
+  - Evite usar `$` e `_` no início — embora permitido, é desencorajado.
+  - Não use espaços.
+  - Prefira palavras completas em vez de abreviações enigmáticas. Exemplo: `cadence`, `speed`, `gear` são melhores que `c`, `s`, `g`.
+  - Não utilize palavras reservadas da linguagem.
+  - Para nomes de uma palavra, use letras minúsculas: `gear`.
+  - Para nomes compostos, capitalize a primeira letra de cada palavra subsequente: `gearRatio`, `currentGear`.
+  - Para constantes (`static final`), use todas as letras maiúsculas e separe palavras com `_`: `NUM_GEARS`.
 
-- **Por convenção, sempre comece o nome com uma letra**, nunca com `$` ou `_`. O cifrão, por convenção, nunca é usado. O sublinhado no início, embora tecnicamente legal, é uma prática desestimulada.
+---
 
-- **Espaços em branco não são permitidos.**
-
-- **Caracteres subsequentes** podem ser letras, dígitos, cifrões ou sublinhados. Prefira palavras completas a abreviações crípticas — nomes como `cadencia`, `velocidade` e `marcha` são muito mais intuitivos do que `c`, `v` e `m`. O nome escolhido não pode ser uma palavra-chave ou palavra reservada do Java.
-
-- **Convenção de capitalização:**
-
-| Situação | Convenção | Exemplo |
-|---|---|---|
-| Nome com uma única palavra | Tudo em minúsculas | `marcha` |
-| Nome com múltiplas palavras | *camelCase* | `relacaoDeMarcha`, `marchaAtual` |
-| Constante (`static final`) | Tudo maiúsculo com `_` | `NUM_MARCHAS` |
-
-```java
-// Variável de instância
-int velocidadeAtual;
-
-// Variável estática
-static int numMarchas = 6;
-
-// Constante
-static final int NUM_MARCHAS = 6;
-
-// Variável local
-int contador = 0;
+📌 **Última atualização: 23 de setembro de 2021**
 ```
 
 ---
+
+Quer que eu também traduza e adapte as próximas páginas da seção **Java Language Basics** (variáveis, expressões, controle_de_fluxo) para manter a documentação completa em português?
 
 ## Navegação
 
