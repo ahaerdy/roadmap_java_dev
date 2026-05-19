@@ -14,11 +14,9 @@ Existem três etapas principais no ciclo de vida de um programa Java. São elas:
 
 ## Edição do programa
 
-Primeiro, você começa digitando o programa em um editor de texto (ex: notepad, notepad++, wordpad, textedit etc). Após concluir a edição do programa, precisamos salvar o arquivo. Ao salvar o arquivo, você deve lembrar que ele precisa ser salvo com a extensão **.java**.
+Primeiro, você começa digitando o programa em um editor de texto (ex: notepad, notepad++, wordpad, textedit etc). Após concluir a edição, precisamos salvar o arquivo. Ao salvar o arquivo, você deve lembrar que ele precisa ser salvo com a extensão **.java**.
 
-**Exemplo:**  
-
-Suponha que eu tenha escrito um programa Java que contém uma única classe chamada `Sample` (mais sobre classes em posts futuros). É uma boa convenção salvar o arquivo com o nome da classe. Portanto, conforme o exemplo, o arquivo será salvo como **Sample.java**.
+**Exemplo:** suponha que eu tenha escrito um programa Java que contém uma única classe chamada `Sample` (mais sobre classes em posts futuros). É uma boa convenção salvar o arquivo com o nome da classe. Portanto, conforme o exemplo, o arquivo será salvo como **Sample.java**.
 
 ## Compilação do código-fonte
 
