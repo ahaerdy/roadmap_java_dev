@@ -1,7 +1,5 @@
 # Variáveis em Java
 
-Este documento resume os conceitos fundamentais sobre variáveis na linguagem de programação Java, conforme abordado na documentação oficial [Variables - The Java Tutorials](https://docs.oracle.com/javase/tutorial/java/nutsandbolts/variables.html).
-
 ## O que são Variáveis?
 
 Em Java, embora utilizemos o termo "variável", objetos armazenam seu estado em **campos** (*fields*). A linguagem utiliza os dois termos de forma relacionada:
