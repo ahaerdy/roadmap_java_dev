@@ -15,8 +15,6 @@
 <details>
 <summary> Verifique suas respostas🔻</summary>
 
-## Respostas
-
 O termo "variável de instância" é outro nome para campo não estático.  
 O termo "variável de classe" é outro nome para campo estático.  
 Uma variável local armazena estado temporário; ela é declarada dentro de um método.  
