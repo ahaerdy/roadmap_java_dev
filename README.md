@@ -1,15 +1,15 @@
 # ☕ roadmap_java_dev
 
-> Trilha de estudos pessoal para me tornar um desenvolvedor Java, seguindo rigorosamente o [roadmap.sh/java](https://roadmap.sh/java) e documentando todo o percurso em português.
+> Trilha de estudos pessoal para formar desenvolvedores Java, seguindo rigorosamente o [roadmap.sh/java](https://roadmap.sh/java), documentando todo o percurso em português.
 
 ---
 
 ## 📌 Sobre este repositório
 
-Este repositório é um **diário de aprendizado estruturado**. A ideia é simples: seguir o mapa do site [roadmap.sh](https://roadmap.sh/java) como guia canônico de ordem e conteúdo, mas produzir minha própria documentação — anotações, exemplos de código, exercícios e resumos — inteiramente em português.
+Este repositório é um **diário de aprendizado estruturado**. A ideia é seguir o mapa do site [roadmap.sh](https://roadmap.sh/java) como guia canônico de ordem e conteúdo, mas produzir minha própria documentação — anotações, exemplos de código, exercícios e resumos — inteiramente em português.
 
 **Por que documentar em português?**  
-Consolidar conhecimento exige explicar com as próprias palavras. Escrever em português me obriga a realmente entender o conceito antes de registrá-lo, e torna o material acessível a outros falantes da língua.
+Consolidar conhecimento exige explicar com as próprias palavras. Escrever em português obriga a entender o conceito antes de registrá-lo, e torna o material acessível a outros falantes da língua.
 
 **O que você encontra aqui:**
 - Anotações teóricas de cada tópico do roadmap
