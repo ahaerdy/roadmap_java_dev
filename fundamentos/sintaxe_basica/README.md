@@ -1,60 +1,60 @@
-# Sintaxe Básica
-
-Compreender o básico é a chave para uma base sólida. Nesta seção, estude as terminologias fundamentais, convenções de nomenclatura, palavras reservadas, expressões, instruções, estruturas de dados, OOP, pacotes, etc.
-
-- Para imprimir saída no console → `System.out.println();`
-- Para receber entrada do usuário → as classes `Scanner` ou `BufferedReader` podem ser utilizadas
+Aqui está um arquivo `README.md` estruturado sobre Variáveis em Java, baseado na documentação oficial da Oracle.
 
 ---
 
-## 📚 Recursos
+# Variáveis em Java
 
-### Gratuitos
+Este documento resume os conceitos fundamentais sobre variáveis na linguagem de programação Java, conforme abordado na documentação oficial [Variables - The Java Tutorials](https://docs.oracle.com/javase/tutorial/java/nutsandbolts/variables.html).
 
-| Tipo | Recurso |
-|---|---|
-| `Oficial` | [Java Language Basics — Oracle](https://docs.oracle.com/javase/tutorial/java/nutsandbolts/index.html) |
-| `Vídeo` | [Java - Basic Syntax — YouTube](https://www.youtube.com/watch?v=eIrMbAQSU34) |
-| `Vídeo` | [Java Tutorial for Beginners — YouTube](https://www.youtube.com/watch?v=grEKMHGYyns) |
+## O que são Variáveis?
 
-### Premium
+Em Java, embora utilizemos o termo "variável", objetos armazenam seu estado em **campos** (*fields*). A linguagem utiliza os dois termos de forma relacionada:
 
-| Tipo | Recurso |
-|---|---|
-| `Curso` | [DataCamp - Java Fundamentals](https://www.datacamp.com/courses/introduction-to-java) |
+* **Variáveis de Instância (campos não-estáticos):** Únicas para cada instância de uma classe.
+* **Variáveis de Classe (campos estáticos):** Declaradas com o modificador `static`; existe exatamente uma cópia para toda a classe, independentemente de quantas instâncias existam.
+* **Variáveis Locais:** Armazenam estados temporários dentro de um método.
+* **Parâmetros:** Variáveis que fornecem informações adicionais a um método ou construtor.
+
+## Regras e Convenções de Nomenclatura
+
+A escolha de nomes para variáveis deve seguir estas diretrizes:
+
+* **Case-sensitive:** Nomes de variáveis diferenciam maiúsculas de minúsculas.
+* **Caracteres Permitidos:** Podem ser sequências de letras e dígitos Unicode, começando com uma letra, cifrão (`$`) ou sublinhado (`_`).
+* **Convenções:**
+* Sempre inicie nomes com uma **letra**.
+* Evite o uso de `$` e `_` no início de nomes.
+* Não utilize palavras-chave (*keywords*) ou palavras reservadas da linguagem.
+* Use palavras completas em vez de abreviações crípticas para tornar o código autoexplicativo (ex: `speed` é melhor que `s`).
+* **Camel Case:** Se o nome consistir em uma única palavra, use minúsculas. Se houver mais de uma, capitalize a primeira letra de cada palavra subsequente (ex: `currentGear`).
+* **Constantes:** Se a variável for uma constante (ex: `static final`), capitalize todas as letras e separe as palavras com sublinhado (`NUM_GEARS`).
+
+
+
+## Tipos de Dados Primitivos
+
+Java suporta oito tipos de dados primitivos:
+
+1. `byte`
+2. `short`
+3. `int`
+4. `long`
+5. `float`
+6. `double`
+7. `boolean`
+8. `char`
+
+> **Nota:** Cadeias de caracteres (*strings*) são representadas pela classe `java.lang.String`.
+
+## Valores Padrão
+
+O compilador Java atribui valores padrão para campos de tipos primitivos. No entanto, **variáveis locais nunca recebem um valor padrão automático**; elas devem ser inicializadas antes do uso para evitar erros de compilação.
+
+## Outros Conceitos
+
+* **Literais:** É a representação no código fonte de um valor fixo.
+* **Arrays:** Objetos contêineres que mantêm um número fixo de valores de um único tipo. O tamanho do array é definido no momento de sua criação e permanece fixo.
 
 ---
 
-## 🗂️ Fundamentos
-
-Esta parte cobre os fundamentos da linguagem, incluindo: variáveis, operadores, expressões, instruções, blocos e comandos de controle de fluxo.
-
-1. [Programação Orientada a Objetos em Java](./objetos_classes_interfaces_pacores_herancas/README.md)
-   Fundamentos da Programação Orientada a Objetos (POO) em Java: objetos, classes, herança, interfaces e pacotes. 
-
-2. [Sintaxe Básicao](./sintaxe_basica/README.md)
-   Sintaxe para criar e inicializar variáveis de tipo primitivo.
-
-3. [Criando Arrays](./03-arrays/README.md)
-   Criando contêineres de tamanho fixo de objetos com arrays.
-
-4. [Usando o Identificador de Tipo `var`](./04-var/README.md)
-   Definindo variáveis com `var`.
-
-5. [Usando Operadores](./05-operadores/README.md)
-   Computando valores com operadores.
-
-6. [Resumo dos Operadores](./06-resumo-operadores/README.md)
-   Recapitulando os operadores do Java.
-
-7. [Expressões, Instruções e Blocos](./07-expressoes-instrucoes-blocos/README.md)
-   Entendendo expressões, instruções e blocos, e como agrupar instruções em blocos.
-
-8. [Comandos de Controle de Fluxo](./08-controle-de-fluxo/README.md)
-   Descreve os comandos de tomada de decisão, laços de repetição e comandos de desvio suportados pelo Java.
-
-9. [Desvio com `switch` — Comando](./09-switch-statement/README.md)
-   Como usar o comando `switch` para controlar o fluxo do programa.
-
-10. [Desvio com `switch` — Expressão](./10-switch-expression/README.md)
-    Estendendo o `switch` para que possa ser usado tanto como comando quanto como expressão.
+*Fonte: [The Java™ Tutorials - Variables*](https://docs.oracle.com/javase/tutorial/java/nutsandbolts/variables.html)
