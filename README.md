@@ -1,2 +1,282 @@
-# roadmap_java_dev
-Trilha de estudos pessoal para desenvolvedor Java, documentada em português.
+# ☕ roadmap_java_dev
+
+> Trilha de estudos pessoal para me tornar um desenvolvedor Java, seguindo rigorosamente o [roadmap.sh/java](https://roadmap.sh/java) e documentando todo o percurso em português.
+
+---
+
+## 📌 Sobre este repositório
+
+Este repositório é um **diário de aprendizado estruturado**. A ideia é simples: seguir o mapa do site [roadmap.sh](https://roadmap.sh/java) como guia canônico de ordem e conteúdo, mas produzir minha própria documentação — anotações, exemplos de código, exercícios e resumos — inteiramente em português.
+
+**Por que documentar em português?**  
+Consolidar conhecimento exige explicar com as próprias palavras. Escrever em português me obriga a realmente entender o conceito antes de registrá-lo, e torna o material acessível a outros falantes da língua.
+
+**O que você encontra aqui:**
+- Anotações teóricas de cada tópico do roadmap
+- Exemplos de código comentados
+- Exercícios resolvidos
+- Links para recursos externos relevantes
+- Progresso rastreado via checkboxes (veja abaixo)
+
+---
+
+## 🗺️ Visão Geral da Trilha
+
+O roadmap é dividido em **9 grandes etapas**, percorridas de forma sequencial:
+
+```mermaid
+flowchart TD
+    A[☕ Java Developer] --> B[1. Fundamentos]
+    B --> C[2. Orientação a Objetos]
+    C --> D[3. Tópicos Avançados & Concorrência]
+    D --> E[4. Programação Funcional]
+    E --> F[5. Ferramentas de Build]
+    F --> G[6. Frameworks Web]
+    G --> H[7. Acesso a Banco de Dados]
+    H --> I[8. Documentação & Logging]
+    I --> J[9. Testes]
+
+    style A fill:#f5c518,color:#000,font-weight:bold
+    style B fill:#fff9c4,color:#000
+    style C fill:#fff9c4,color:#000
+    style D fill:#fff9c4,color:#000
+    style E fill:#fff9c4,color:#000
+    style F fill:#fff9c4,color:#000
+    style G fill:#fff9c4,color:#000
+    style H fill:#fff9c4,color:#000
+    style I fill:#fff9c4,color:#000
+    style J fill:#fff9c4,color:#000
+```
+
+---
+
+## ✅ Progresso Detalhado
+
+> Marque os itens conforme concluir. Cada tópico terá sua pasta/arquivo correspondente neste repositório.
+
+---
+
+### 1. 🧱 Fundamentos (`/01-fundamentos`)
+
+- [ ] Sintaxe Básica
+- [ ] Ciclo de Vida de um Programa Java
+- [ ] Tipos de Dados
+- [ ] Variáveis e Escopos
+- [ ] Casting de Tipos
+- [ ] Strings e Métodos
+- [ ] Operações Matemáticas
+- [ ] Arrays
+- [ ] Condicionais
+- [ ] Laços de Repetição
+- [ ] Introdução à OOP
+
+---
+
+### 2. 🧩 Orientação a Objetos (`/02-oop`)
+
+**Conceitos Base**
+- [ ] Classes e Objetos
+- [ ] Atributos e Métodos
+- [ ] Modificadores de Acesso
+- [ ] Palavra-chave `static`
+- [ ] Palavra-chave `final`
+- [ ] Classes Aninhadas
+- [ ] Pacotes (`packages`)
+
+**Aprofundando em OOP**
+- [ ] Ciclo de Vida de Objetos
+- [ ] Herança
+- [ ] Abstração
+- [ ] Encapsulamento
+- [ ] Interfaces
+- [ ] Enums
+- [ ] Records
+- [ ] Method Chaining
+- [ ] Sobrecarga e Sobrescrita de Métodos
+- [ ] Bloco Inicializador
+- [ ] Binding Estático vs Dinâmico
+- [ ] Passagem por Valor / Passagem por Referência
+
+**Recursos Modernos**
+- [ ] Tratamento de Exceções
+- [ ] Expressões Lambda
+- [ ] Anotações (`Annotations`)
+- [ ] Módulos
+- [ ] Optionals
+
+---
+
+### 3. ⚙️ Tópicos Avançados & Concorrência (`/03-avancado`)
+
+**Utilitários**
+- [ ] Criptografia
+- [ ] Data e Hora (`java.time`)
+- [ ] Redes (`Networking`)
+- [ ] Expressões Regulares
+
+**Concorrência**
+- [ ] Palavra-chave `volatile`
+- [ ] Java Memory Model
+- [ ] Threads
+- [ ] Threads Virtuais (Project Loom)
+
+**Coleções**
+- [ ] Arrays vs ArrayList
+- [ ] Set
+- [ ] Map
+- [ ] Queue e Deque
+- [ ] Stack
+- [ ] Iterator
+- [ ] Coleções Genéricas
+
+**Outros**
+- [ ] Injeção de Dependência
+- [ ] Operações de I/O
+- [ ] Operações com Arquivos
+
+---
+
+### 4. 🔁 Programação Funcional (`/04-funcional`)
+
+- [ ] Funções de Alta Ordem
+- [ ] Interfaces Funcionais
+- [ ] Composição Funcional
+- [ ] Stream API
+
+---
+
+### 5. 🔨 Ferramentas de Build (`/05-build-tools`)
+
+- [ ] Maven
+- [ ] Gradle
+- [ ] Bazel
+
+---
+
+### 6. 🌐 Frameworks Web (`/06-frameworks-web`)
+
+- [ ] Spring Boot ⭐ *(recomendado pelo roadmap)*
+- [ ] Quarkus
+- [ ] Javalin
+- [ ] Play Framework
+
+---
+
+### 7. 🗄️ Acesso a Banco de Dados (`/07-banco-de-dados`)
+
+- [ ] JDBC
+- [ ] Hibernate
+- [ ] Spring Data JPA
+- [ ] Ebean
+
+---
+
+### 8. 📄 Documentação & Logging (`/08-documentacao-logging`)
+
+**Documentação**
+- [ ] Javadoc
+
+**Frameworks de Logging**
+- [ ] Logback
+- [ ] Log4j
+- [ ] SLF4J
+- [ ] TinyLog
+
+---
+
+### 9. 🧪 Testes (`/09-testes`)
+
+**Frameworks**
+- [ ] JUnit
+- [ ] TestNG
+- [ ] REST Assured
+- [ ] Cucumber-JVM (BDD)
+- [ ] JMeter
+
+**Conceitos**
+- [ ] Testes Unitários
+- [ ] Testes de Integração
+- [ ] Testes de Comportamento (Behavior Testing)
+- [ ] Mocking com Mockito
+
+---
+
+## 📁 Estrutura do Repositório
+
+```
+roadmap_java_dev/
+│
+├── README.md                   ← você está aqui
+│
+├── 01-fundamentos/
+│   ├── README.md               ← resumo da etapa
+│   ├── sintaxe-basica/
+│   ├── tipos-de-dados/
+│   └── ...
+│
+├── 02-oop/
+│   └── ...
+│
+├── 03-avancado/
+│   └── ...
+│
+├── 04-funcional/
+│   └── ...
+│
+├── 05-build-tools/
+│   └── ...
+│
+├── 06-frameworks-web/
+│   └── ...
+│
+├── 07-banco-de-dados/
+│   └── ...
+│
+├── 08-documentacao-logging/
+│   └── ...
+│
+└── 09-testes/
+    └── ...
+```
+
+Cada subpasta de tópico segue o padrão:
+
+```
+sintaxe-basica/
+├── README.md       ← teoria, explicações, anotações pessoais
+├── exemplos/       ← arquivos .java com código comentado
+└── exercicios/     ← desafios resolvidos
+```
+
+---
+
+## 🔗 Referências
+
+| Recurso | Link |
+|---|---|
+| Roadmap original | [roadmap.sh/java](https://roadmap.sh/java) |
+| Documentação oficial Java | [docs.oracle.com/java](https://docs.oracle.com/en/java/) |
+| OpenJDK | [openjdk.org](https://openjdk.org/) |
+
+---
+
+## 📊 Status Geral
+
+| Etapa | Tópicos | Concluídos | Progresso |
+|---|---|---|---|
+| 1. Fundamentos | 11 | 0 | `░░░░░░░░░░` 0% |
+| 2. Orientação a Objetos | 22 | 0 | `░░░░░░░░░░` 0% |
+| 3. Avançado & Concorrência | 17 | 0 | `░░░░░░░░░░` 0% |
+| 4. Programação Funcional | 4 | 0 | `░░░░░░░░░░` 0% |
+| 5. Ferramentas de Build | 3 | 0 | `░░░░░░░░░░` 0% |
+| 6. Frameworks Web | 4 | 0 | `░░░░░░░░░░` 0% |
+| 7. Banco de Dados | 4 | 0 | `░░░░░░░░░░` 0% |
+| 8. Documentação & Logging | 5 | 0 | `░░░░░░░░░░` 0% |
+| 9. Testes | 9 | 0 | `░░░░░░░░░░` 0% |
+| **Total** | **79** | **0** | `░░░░░░░░░░` **0%** |
+
+---
+
+<p align="center">
+  Trilha iniciada em 2025 · Documentado em português · Baseado em <a href="https://roadmap.sh/java">roadmap.sh/java</a>
+</p>
