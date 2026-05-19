@@ -58,6 +58,7 @@ flowchart TD
     - [x] [Tipos de Dados Primitivos em Java](fundamentos/variaveis_em_java/tipos_de_dados_primitivos_em_java)
     - [x] [Arrays](ffundamentos/variaveis_em_java/arrays)
     - [x] [Resumo de Variáveis](fundamentos/variaveis_em_java/resumo_de_variaveis)
+    - [x] [Perguntas e Exercícios](fundamentos/variaveis_em_java/questoes_e_exercicios)
 - [ ] Ciclo de Vida de um Programa Java
 - [ ] Tipos de Dados
 - [ ] Variáveis e Escopos
