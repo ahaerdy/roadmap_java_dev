@@ -1,6 +1,6 @@
-# Perguntas e Exercícios: Variáveis  
+# Questões e Exercícios: Variáveis  
 
-#3 Perguntas
+## Questões
 
 - O termo "variável de instância" é outro nome para ___.
 - O termo "variável de classe" é outro nome para ___.
