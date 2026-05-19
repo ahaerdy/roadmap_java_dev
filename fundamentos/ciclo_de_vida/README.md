@@ -1,6 +1,6 @@
 # Ciclo de vida de um programa Java
 
-O ciclo de vida de um programa Java nos mostra o que acontece desde o momento em que digitamos o código-fonte em um editor de texto até o ponto em que esse código é convertido em código de máquina (0’s e 1’s).
+O ciclo de vida de um programa Java nos mostra o que acontece desde o momento em que digitamos o código-fonte em um editor de texto até o ponto em que esse código é convertido em código de máquina.
 
 <p align="center">
   <img src="000-Midia_e_Anexos/2026-05-19-16-13-49.png" alt="" width="840">
@@ -26,7 +26,7 @@ O arquivo gerado após a compilação é um arquivo **.class**. Conforme o exemp
 
 ## 3. Execução do bytecode
 
-O último passo é a execução.O bytecode gerado pelo compilador será executado pela **Java Virtual Machine (JVM)**. A entrada da JVM é o bytecode e a saída é o **código de máquina (0’s e 1’s)**, que será executado pela CPU da máquina local.
+O último passo é a execução.O bytecode gerado pelo compilador será executado pela **Java Virtual Machine (JVM)**. A entrada da JVM é o bytecode e a saída é o **código de máquina**, que será executado pela CPU da máquina local.
 
 ---
 
