@@ -2,7 +2,11 @@
 
 Um *array* é um objeto recipiente que contém um número fixo de valores de um único tipo. O comprimento de um array é estabelecido quando o array é criado. Após a criação, o seu comprimento é fixo. Você já viu um exemplo de arrays antes, no método `main` da aplicação "Hello World!". Esta seção discute arrays em maior detalhe.
 
-An array of 10 elements.
+<p align="center">
+  <img src="000-Midia_e_Anexos/2026-05-19-14-05-42.png" alt="" width="480">
+</p>
+
+<center>An array of 10 elements.</center>
 
 Cada item em um array é chamado de *elemento*, e cada elemento é acessado pelo seu *índice numérico*. Como mostrado na ilustração anterior, a numeração começa em 0. O 9º elemento, por exemplo, seria portanto acessado no índice 8.
 
