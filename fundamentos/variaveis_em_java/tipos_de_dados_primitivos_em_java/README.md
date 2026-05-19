@@ -42,7 +42,7 @@ Variáveis locais são ligeiramente diferentes; o compilador nunca atribui um va
 
 ## Literais
 
-Você deve ter notado que a palavra-chave `new` não é usada ao inicializar uma variável de um tipo primitivo. Tipos primitivos são tipos de dados especiais integrados à linguagem; eles não são objetos criados a partir de uma classe. Um literal é a representação em código-fonte de um valor fixo; literais são representados diretamente em seu código sem a necessidade de computação. Como mostrado abaixo, é possível atribuir um literal a uma variável de um tipo primitivo:
+Você deve ter notado que a palavra-chave `new` não é usada ao inicializar uma variável de um tipo primitivo. Tipos primitivos são tipos de dados especiais integrados à linguagem; eles não são objetos criados a partir de uma classe. Um literal é a representação em código-fonte de um valor fixo; literais são representados diretamente em seu código. Como mostrado abaixo, é possível atribuir um literal a uma variável de um tipo primitivo:
 
 ```java
 boolean result = true;
