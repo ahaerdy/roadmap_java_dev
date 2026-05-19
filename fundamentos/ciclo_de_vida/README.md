@@ -20,7 +20,7 @@ Primeiro, você começa digitando o programa em um editor de texto (ex: notepad,
 
 ## Compilação do código-fonte
 
-O segundo passo é a compilação. O nome do compilador Java é **javac**. A entrada para o compilador é o código-fonte Java, que está disponível em **Sample.java**. A saída do compilador é um código independente de máquina ou independente de plataforma, conhecido como **bytecode**.  
+O segundo passo é a compilação. O nome do compilador Java é **javac**. A entrada para o compilador é o código-fonte Java, que está disponível em **Sample.java**. A saída do compilador é um código independente de máquina (ou independente de plataforma) conhecido como **bytecode**.  
 
 O arquivo gerado após a compilação é um arquivo **.class**. Conforme o exemplo, o arquivo de bytecode será **Sample.class**.
 
