@@ -30,7 +30,6 @@ O último passo é a execução.O bytecode gerado pelo compilador será executad
 
 ---
 
-
 # Exemplo completo: Hello World em Java
 
 ## 1. Código-fonte (Edição do programa)
@@ -64,9 +63,7 @@ Agora, execute o programa usando a **Java Virtual Machine (JVM)** com o comando:
 java HelloWorld
 ```
 
----
-
-## 4. Saída do programa
+## 4. Saída
 
 O resultado exibido no console será:
 
