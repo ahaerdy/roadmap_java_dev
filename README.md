@@ -1,4 +1,4 @@
-# ☕ Roadmap Java Dev
+# ☕ Roadmap Java
 
 Trilha de estudos pessoal para desenvolvedores Java, seguindo rigorosamente o roadmap.sh/java, documentado em português.
 
@@ -51,9 +51,10 @@ flowchart TD
 
 ---
 
-### 1. 🧱 Fundamentos (`/01-fundamentos`)
+### 1. 🧱 Fundamentos
 
-- [ ] Sintaxe Básica
+- [x] Programação Orientada a Objetos em Java
+- [x] Sintaxe Básica
 - [ ] Ciclo de Vida de um Programa Java
 - [ ] Tipos de Dados
 - [ ] Variáveis e Escopos

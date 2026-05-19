@@ -25,14 +25,14 @@ Compreender o básico é a chave para uma base sólida. Nesta seção, estude as
 
 ---
 
-## 🗂️ Java Language Basics
+## 🗂️ Fundamentos
 
 Esta parte cobre os fundamentos da linguagem, incluindo: variáveis, operadores, expressões, instruções, blocos e comandos de controle de fluxo.
 
-1. [Criando Variáveis e Nomeando-as](./01-criando-variaveis/README.md)
-   Regras para nomear variáveis.
+1. [Programação Orientada a Objetos em Java](./objetos_classes_interfaces_pacores_herancas/README.md)
+   Fundamentos da Programação Orientada a Objetos (POO) em Java: objetos, classes, herança, interfaces e pacotes. 
 
-2. [Criando Variáveis de Tipo Primitivo](./02-tipos-primitivos/README.md)
+2. [Sintaxe Básicao](./sintaxe_basica/README.md)
    Sintaxe para criar e inicializar variáveis de tipo primitivo.
 
 3. [Criando Arrays](./03-arrays/README.md)
