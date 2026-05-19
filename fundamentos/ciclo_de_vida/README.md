@@ -70,6 +70,8 @@ java HelloWorld
 
 O resultado exibido no console será:
 
-```
+<p align="center">
+  <img src="000-Midia_e_Anexos/```
 Hello World!
-```
+```.png" alt="" width="480">
+</p>
