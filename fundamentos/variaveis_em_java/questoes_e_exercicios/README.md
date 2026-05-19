@@ -17,6 +17,7 @@
 </br>
 
 - O termo "variável de instância" é outro nome para `campo não estático`.  
+    - Detalhamento: uma “variável de classe” em Java é uma variável declarada com o modificador static dentro da classe, mas fora dos métodos. Ela pertence à classe em si e não a uma instância específica, sendo compartilhada por todos os objetos criados a partir dessa classe.
 - O termo "variável de classe" é outro nome para `campo estático`.  
 - Uma variável local armazena estado temporário; ela é declarada dentro de um `método`.  
 - Uma variável declarada dentro dos parênteses de abertura e fechamento de um método é chamada de `parâmetro`.  
