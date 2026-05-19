@@ -12,14 +12,6 @@
 
 ---
 
-## Exercícios
-
-1. Crie um pequeno programa que defina alguns campos. Tente criar alguns nomes de campos ilegais e veja que tipo de erro o compilador produz. Use as regras e convenções de nomenclatura como guia.
-
-2. No programa que você criou no Exercício 1, tente deixar os campos não inicializados e imprima seus valores. Tente o mesmo com uma variável local e veja que tipo de erros de compilador você consegue produzir. Familiarizar-se com erros comuns de compilador tornará mais fácil reconhecer bugs em seu código.
-
----
-
 <details>
 <summary> Verifique suas respostas🔻</summary>
 
@@ -44,5 +36,15 @@ Cadeias de caracteres são representadas pela classe `java.lang.String`.
 Um array é um objeto contêiner que mantém um número fixo de valores de um único tipo.  
 
 </details>
+
+---
+
+## Exercícios
+
+1. Crie um pequeno programa que defina alguns campos. Tente criar alguns nomes de campos ilegais e veja que tipo de erro o compilador produz. Use as regras e convenções de nomenclatura como guia.
+
+2. No programa que você criou no Exercício 1, tente deixar os campos não inicializados e imprima seus valores. Tente o mesmo com uma variável local e veja que tipo de erros de compilador você consegue produzir. Familiarizar-se com erros comuns de compilador tornará mais fácil reconhecer bugs em seu código.
+
+---
 
 
