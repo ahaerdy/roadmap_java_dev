@@ -19,39 +19,39 @@
 - O termo "variável de instância" é outro nome para `campo não estático`.  
     - Detalhamento: uma “variável de classe” em Java é uma variável declarada com o modificador static dentro da classe, mas fora dos métodos. Ela pertence à classe em si e não a uma instância específica, sendo compartilhada por todos os objetos criados a partir dessa classe.
     - Exemplo prático:
-    ```java
-    public class ContaBancaria {
-        // Variável de classe (compartilhada por todas as contas)
-        private static int totalContas = 0;
+        ```java
+        public class ContaBancaria {
+            // Variável de classe (compartilhada por todas as contas)
+            private static int totalContas = 0;
 
-        // Variável de instância (cada objeto tem a sua)
-        private String titular;
+            // Variável de instância (cada objeto tem a sua)
+            private String titular;
 
-        public ContaBancaria(String titular) {
-            this.titular = titular;
-            totalContas++; // incrementa sempre que uma nova conta é criada
+            public ContaBancaria(String titular) {
+                this.titular = titular;
+                totalContas++; // incrementa sempre que uma nova conta é criada
+            }
+
+            public String getTitular() {
+                return titular;
+            }
+
+            // Método de classe (acessa variável estática)
+            public static int getTotalContas() {
+                return totalContas;
+            }
         }
 
-        public String getTitular() {
-            return titular;
-        }
+        public class Main {
+            public static void main(String[] args) {
+                ContaBancaria c1 = new ContaBancaria("Maria");
+                ContaBancaria c2 = new ContaBancaria("João");
 
-        // Método de classe (acessa variável estática)
-        public static int getTotalContas() {
-            return totalContas;
+                System.out.println("Total de contas criadas: " + ContaBancaria.getTotalContas());
+                // Saída: Total de contas criadas: 2
+            }
         }
-    }
-
-    public class Main {
-        public static void main(String[] args) {
-            ContaBancaria c1 = new ContaBancaria("Maria");
-            ContaBancaria c2 = new ContaBancaria("João");
-
-            System.out.println("Total de contas criadas: " + ContaBancaria.getTotalContas());
-            // Saída: Total de contas criadas: 2
-        }
-    }
-    ```
+        ```
     
 - O termo "variável de classe" é outro nome para `campo estático`.  
 - Uma variável local armazena estado temporário; ela é declarada dentro de um `método`.  
