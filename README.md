@@ -1,17 +1,27 @@
 # ☕ Roadmap Java
 
-Trilha de estudos pessoal para desenvolvedores Java, seguindo rigorosamente o roadmap.sh/java, documentado em português.
+Trilha de estudos para formação em Java, documentada em português.
 
-📌 Sobre este repositório
+---
 
-Este repositório é um diário de aprendizado estruturado. A ideia é simples: seguir o mapa do site roadmap.sh como guia canônico de ordem e conteúdo, mas produzir minha própria documentação — anotações, exemplos de código, exercícios e resumos — inteiramente em português.
+## 📌 Sobre este repositório
+
+Este repositório nasceu a partir do [roadmap.sh/java](https://roadmap.sh/java), usado como
+ponto de partida para organizar a sequência de estudo. Com o tempo, a trilha foi se moldando
+ao próprio ritmo e às necessidades reais que surgem no aprendizado — alguns tópicos foram
+aprofundados além do mapa original, outros reordenados, e novos foram incorporados conforme
+a prática indicou.
+
+O resultado é uma trilha viva, em construção contínua, que reflete não um roteiro fixo,
+mas o percurso real de quem está aprendendo.
 
 **O que você encontra aqui:**
-- Anotações teóricas de cada tópico do roadmap
-- Exemplos de código comentados
+
+- Anotações teóricas de cada tópico, escritas com as próprias palavras
+- Exemplos de código comentados em português
 - Exercícios resolvidos
 - Links para recursos externos relevantes
-- Progresso rastreado via checkboxes (veja abaixo)
+- Progresso rastreado via checkboxes
 
 ---
 
