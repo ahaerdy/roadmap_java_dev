@@ -71,7 +71,7 @@
 
 ---
 
-## 📌 Recordando (Variáveis, quanto à associação)
+## 📌 Recordando
 
 Nem todas as variáveis em Java são chamadas de “campo”. O termo “campo” é usado especificamente para variáveis declaradas dentro de uma classe, mas fora de métodos, construtores ou blocos. Já variáveis locais e parâmetros não são considerados campos.
 
