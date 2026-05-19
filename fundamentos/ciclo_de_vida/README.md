@@ -30,9 +30,9 @@ O último passo é a execução.O bytecode gerado pelo compilador será executad
 
 ---
 
-# Exemplo completo: Hello World em Java
+## Exemplo completo: `Hello World!` em Java
 
-## 1. Código-fonte (Edição do programa)
+### Código-fonte (Edição do programa)
 
 Crie um arquivo chamado **HelloWorld.java** com o seguinte conteúdo:
 
@@ -44,7 +44,7 @@ public class HelloWorld {
 }
 ```
 
-## 2. Compilação do código-fonte
+## Compilação do código-fonte
 
 Abra o terminal ou prompt de comando e navegue até o diretório onde o arquivo **HelloWorld.java** foi salvo.  
 Execute o compilador Java (**javac**) com o comando:
@@ -55,7 +55,7 @@ javac HelloWorld.java
 
 Após a compilação bem-sucedida, será gerado o arquivo **HelloWorld.class**, que contém o bytecode.
 
-## 3. Execução do bytecode
+## Execução do bytecode
 
 Agora, execute o programa usando a **Java Virtual Machine (JVM)** com o comando:
 
@@ -63,7 +63,7 @@ Agora, execute o programa usando a **Java Virtual Machine (JVM)** com o comando:
 java HelloWorld
 ```
 
-## 4. Saída
+## Saída 
 
 O resultado exibido no console será:
 
