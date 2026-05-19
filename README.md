@@ -53,15 +53,15 @@ flowchart TD
 
 ### 1. 🧱 Fundamentos
 
-- [x] Programação Orientada a Objetos em Java
-- [x] Sintaxe Básica
+- [x] [Programação Orientada a Objetos em Java](fundamentos/objetos_classes_interfaces_pacores_herancas)
+- [x] [Sintaxe Básica](fundamentos/sintaxe_basica)
 - [ ] Ciclo de Vida de um Programa Java
 - [ ] Tipos de Dados
 - [ ] Variáveis e Escopos
 - [ ] Casting de Tipos
 - [ ] Strings e Métodos
 - [ ] Operações Matemáticas
-- [ ] Arrays
+- [ ] Arrays 
 - [ ] Condicionais
 - [ ] Laços de Repetição
 - [ ] Introdução à OOP
