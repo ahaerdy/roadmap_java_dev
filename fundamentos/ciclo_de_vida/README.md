@@ -3,7 +3,7 @@
 O ciclo de vida de um programa Java nos mostra o que acontece desde o momento em que digitamos o código-fonte em um editor de texto até o ponto em que esse código é convertido em código de máquina (0’s e 1’s).
 
 <p align="center">
-  <img src="000-Midia_e_Anexos/2026-05-19-16-13-49.png" alt="" width="1024">
+  <img src="000-Midia_e_Anexos/2026-05-19-16-13-49.png" alt="" width="840">
 </p>
 
 Existem três etapas principais no ciclo de vida de um programa Java. São elas:
