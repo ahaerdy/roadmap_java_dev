@@ -52,7 +52,6 @@
             }
         }
         ```
-    
 - O termo "variável de classe" é outro nome para `campo estático`.  
 - Uma variável local armazena estado temporário; ela é declarada dentro de um `método`.  
 - Uma variável declarada dentro dos parênteses de abertura e fechamento de um método é chamada de `parâmetro`.  
