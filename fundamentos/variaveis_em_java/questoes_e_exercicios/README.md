@@ -31,8 +31,8 @@
 - boolean  
 - char  
 
-Cadeias de caracteres são representadas pela classe `java.lang.String`.  
-Um array é um objeto contêiner que mantém um número fixo de valores de um único tipo.  
+- Cadeias de caracteres são representadas pela classe `java.lang.String`.  
+- Um array é um objeto contêiner que mantém um número fixo de valores de um único tipo.  
 
 </details>
 
