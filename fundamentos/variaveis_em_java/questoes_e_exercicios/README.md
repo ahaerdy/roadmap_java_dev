@@ -15,10 +15,10 @@
 <details>
 <summary> Verifique suas respostas🔻</summary>
 </br>
-O termo "variável de instância" é outro nome para campo não estático.  
-O termo "variável de classe" é outro nome para campo estático.  
-Uma variável local armazena estado temporário; ela é declarada dentro de um método.  
-Uma variável declarada dentro dos parênteses de abertura e fechamento de um método é chamada de parâmetro.  
+- O termo "variável de instância" é outro nome para campo não estático.  
+- O termo "variável de classe" é outro nome para campo estático.  
+- Uma variável local armazena estado temporário; ela é declarada dentro de um método.  
+- Uma variável declarada dentro dos parênteses de abertura e fechamento de um método é chamada de parâmetro.  
 
 **Quais são os oito tipos primitivos de dados suportados pela linguagem de programação Java?**  
 - byte  
