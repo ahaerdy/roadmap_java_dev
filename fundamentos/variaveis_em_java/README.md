@@ -6,8 +6,8 @@ Em Java, usamos o termo **variável** para nos referirmos a diferentes formas de
 
 ### Tipos de variáveis em Java
 
-- **Variáveis de Instância (campos não estáticos):** cada objeto possui sua própria cópia.  
-- **Variáveis de Classe (campos estáticos):** declaradas com o modificador `static`; existe exatamente uma cópia compartilhada por toda a classe, independentemente de quantas instâncias existam.  
+- **Variáveis de Instância (CAMPOS não estáticos):** cada objeto possui sua própria cópia.  
+- **Variáveis de Classe (CAMPOS estáticos):** declaradas com o modificador `static`; existe exatamente uma cópia compartilhada por toda a classe, independentemente de quantas instâncias existam.  
 - **Variáveis Locais:** armazenam estados temporários dentro de um método, construtor ou bloco.  
 - **Parâmetros:** variáveis que fornecem informações adicionais a um método ou construtor, declaradas entre os parênteses da assinatura.  
 
