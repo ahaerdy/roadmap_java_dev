@@ -48,7 +48,3 @@ O compilador Java atribui valores padrão para campos de tipos primitivos. No en
 
 * **Literais:** É a representação no código fonte de um valor fixo.
 * **Arrays:** Objetos contêineres que mantêm um número fixo de valores de um único tipo. O tamanho do array é definido no momento de sua criação e permanece fixo.
-
----
-
-*Fonte: [The Java™ Tutorials - Variables*](https://docs.oracle.com/javase/tutorial/java/nutsandbolts/variables.html)
