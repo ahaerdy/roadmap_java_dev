@@ -15,17 +15,15 @@ Em Java, embora utilizemos o termo "variável", objetos armazenam seu estado em 
 
 A escolha de nomes para variáveis deve seguir estas diretrizes:
 
-* **Case-sensitive:** Nomes de variáveis diferenciam maiúsculas de minúsculas.
-* **Caracteres Permitidos:** Podem ser sequências de letras e dígitos Unicode, começando com uma letra, cifrão (`$`) ou sublinhado (`_`).
-* **Convenções:**
-* Sempre inicie nomes com uma **letra**.
-* Evite o uso de `$` e `_` no início de nomes.
-* Não utilize palavras-chave (*keywords*) ou palavras reservadas da linguagem.
-* Use palavras completas em vez de abreviações crípticas para tornar o código autoexplicativo (ex: `speed` é melhor que `s`).
-* **Camel Case:** Se o nome consistir em uma única palavra, use minúsculas. Se houver mais de uma, capitalize a primeira letra de cada palavra subsequente (ex: `currentGear`).
-* **Constantes:** Se a variável for uma constante (ex: `static final`), capitalize todas as letras e separe as palavras com sublinhado (`NUM_GEARS`).
-
-
+- **Case-sensitive:** Nomes de variáveis diferenciam maiúsculas de minúsculas.
+- **Caracteres Permitidos:** Podem ser sequências de letras e dígitos Unicode, começando com uma letra, cifrão (`$`) ou sublinhado (`_`).
+- **Convenções:**
+   - Sempre inicie nomes com uma **letra**.
+   - Evite o uso de `$` e `_` no início de nomes.
+   - Não utilize palavras-chave (*keywords*) ou palavras reservadas da linguagem.
+   - Use palavras completas em vez de abreviações crípticas para tornar o código autoexplicativo (ex: `speed` é melhor que `s`).
+   - **Camel Case:** Se o nome consistir em uma única palavra, use minúsculas. Se houver mais de uma, capitalize a primeira letra de cada palavra subsequente (ex: `currentGear`).
+   - **Constantes:** Se a variável for uma constante (ex: `static final`), capitalize todas as letras e separe as palavras com sublinhado (`NUM_GEARS`).
 
 ## Tipos de Dados Primitivos
 
