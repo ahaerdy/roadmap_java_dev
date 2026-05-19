@@ -71,4 +71,48 @@
 
 ---
 
+# Recordando
+
+Nem todas as variáveis em Java são chamadas de “campo”. O termo “campo” é usado especificamente para variáveis declaradas dentro de uma classe, mas fora de métodos, construtores ou blocos. Já variáveis locais e parâmetros não são considerados campos.
+
+## 📌 Tipos de variáveis em Java
+
+### Campos (fields)
+- Declarados dentro da classe, mas fora de métodos.  
+- Podem ser **de instância** (cada objeto tem sua cópia) ou **de classe** (quando declarados com `static`, compartilhados por todos os objetos).  
+
+**Exemplo:**
+```java
+public class Pessoa {
+    String nome;           // campo de instância
+    static int contador;   // campo de classe
+}
+```
+
+### Variáveis locais
+- Declaradas dentro de métodos, construtores ou blocos.  
+- Só existem durante a execução do método.  
+
+**Exemplo:**
+```java
+public void calcularIdade() {
+    int anoNascimento = 2000; // variável local
+}
+```
+
+### Parâmetros
+- Variáveis declaradas entre os parênteses de um método ou construtor.  
+- Recebem valores quando o método é chamado.  
+
+**Exemplo:**
+```java
+public void setNome(String novoNome) { // parâmetro
+    this.nome = novoNome;
+}
+```
+
+## 🔎 Diferença importante
+- **Campos** = variáveis associadas à classe ou ao objeto.  
+- **Variáveis locais** = usadas apenas dentro de métodos.  
+- **Parâmetros** = valores passados para métodos ou construtores.  
 
