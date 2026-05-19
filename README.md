@@ -56,8 +56,8 @@ flowchart TD
 - [x] [Programação Orientada a Objetos em Java](fundamentos/objetos_classes_interfaces_pacores_herancas) Fundamentos da Programação Orientada a Objetos (POO) em Java: objetos, classes, herança, interfaces e pacotes.
 - [x] [Variáveis em Java](fundamentos/variaveis_em_java) Sintaxe para criar e inicializar variáveis de tipo primitivo.
     - [x] [Tipos de Dados Primitivos em Java](fundamentos/variaveis_em_java/tipos_de_dados_primitivos_em_java)
-    - [ ] [Arrays](fundamentos/arrays)
-    - [ ] [Resumo de Variáveis](fundamentos/variaveis_em_java/resumo_de_variaveis)
+    - [x] [Arrays](ffundamentos/variaveis_em_java/arrays)
+    - [x] [Resumo de Variáveis](fundamentos/variaveis_em_java/resumo_de_variaveis)
 - [ ] Ciclo de Vida de um Programa Java
 - [ ] Tipos de Dados
 - [ ] Variáveis e Escopos
