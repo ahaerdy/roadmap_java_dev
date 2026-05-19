@@ -122,7 +122,7 @@ class ACMEBicycle implements Bicycle {
 }
 ```
 
-As interfaces em Java são úteis porque permitem definir um contrato claro de métodos que diferentes classes podem implementar, mesmo que não estejam relacionadas por herança. Isso promove flexibilidade e desacoplamento, já que uma interface descreve apenas o que deve ser feito, sem impor como será feito. Assim, diferentes classes podem compartilhar a mesma interface e oferecer implementações distintas, facilitando a substituição de componentes, a integração de sistemas e a criação de código mais modular e reutilizável.
+As interfaces em Java são úteis porque permitem definir um contrato claro de métodos que diferentes classes podem implementar, mesmo que não estejam relacionadas por herança. Isso promove flexibilidade e desacoplamento, já que **uma interface descreve apenas o que deve ser feito, sem impor como será feito**. Assim, diferentes classes podem compartilhar a mesma interface e oferecer implementações distintas, facilitando a substituição de componentes, a integração de sistemas e a criação de código mais modular e reutilizável.
 
 ---
 
