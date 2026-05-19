@@ -6,10 +6,6 @@ Trilha de estudos pessoal para desenvolvedores Java, seguindo rigorosamente o ro
 
 Este repositório é um diário de aprendizado estruturado. A ideia é simples: seguir o mapa do site roadmap.sh como guia canônico de ordem e conteúdo, mas produzir minha própria documentação — anotações, exemplos de código, exercícios e resumos — inteiramente em português.
 
-Por que documentar em português?
-
-Consolidar conhecimento exige explicar com as próprias palavras. Escrever em português obriga a realmente entender o conceito antes de registrá-lo, e torna o material acessível a outros falantes da língua.
-
 **O que você encontra aqui:**
 - Anotações teóricas de cada tópico do roadmap
 - Exemplos de código comentados
