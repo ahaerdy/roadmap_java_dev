@@ -28,3 +28,48 @@ O arquivo gerado após a compilação é um arquivo **.class**. Conforme o exemp
 
 O último passo é a execução.O bytecode gerado pelo compilador será executado pela **Java Virtual Machine (JVM)**. A entrada da JVM é o bytecode e a saída é o **código de máquina (0’s e 1’s)**, que será executado pela CPU da máquina local.
 
+---
+
+
+# Exemplo completo: Hello World em Java
+
+## 1. Código-fonte (Edição do programa)
+
+Crie um arquivo chamado **HelloWorld.java** com o seguinte conteúdo:
+
+```java
+public class HelloWorld {
+    public static void main(String[] args) {
+        System.out.println("Hello World!");
+    }
+}
+```
+
+## 2. Compilação do código-fonte
+
+Abra o terminal ou prompt de comando e navegue até o diretório onde o arquivo **HelloWorld.java** foi salvo.  
+Execute o compilador Java (**javac**) com o comando:
+
+```bash
+javac HelloWorld.java
+```
+
+Após a compilação bem-sucedida, será gerado o arquivo **HelloWorld.class**, que contém o bytecode.
+
+## 3. Execução do bytecode
+
+Agora, execute o programa usando a **Java Virtual Machine (JVM)** com o comando:
+
+```bash
+java HelloWorld
+```
+
+---
+
+## 4. Saída do programa
+
+O resultado exibido no console será:
+
+```
+Hello World!
+```
