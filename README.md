@@ -1,6 +1,8 @@
-# ☕ roadmap_java_dev
+# ☕ Roadmap Java Dev
 
 Trilha de estudos pessoal para desenvolvedores Java, seguindo rigorosamente o roadmap.sh/java, documentado em português.
+
+📌 Sobre este repositório
 
 Este repositório é um diário de aprendizado estruturado. A ideia é simples: seguir o mapa do site roadmap.sh como guia canônico de ordem e conteúdo, mas produzir minha própria documentação — anotações, exemplos de código, exercícios e resumos — inteiramente em português.
 
