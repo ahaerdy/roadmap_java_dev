@@ -1,7 +1,3 @@
-Aqui está um arquivo `README.md` estruturado sobre Variáveis em Java, baseado na documentação oficial da Oracle.
-
----
-
 # Variáveis em Java
 
 Este documento resume os conceitos fundamentais sobre variáveis na linguagem de programação Java, conforme abordado na documentação oficial [Variables - The Java Tutorials](https://docs.oracle.com/javase/tutorial/java/nutsandbolts/variables.html).
