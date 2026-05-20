@@ -1,5 +1,4 @@
-```markdown
-# Expressões, Declarações e Blocos (The Java™ Tutorials - Oracle)
+# Expressões, Declarações e Blocos
 
 ## Expressões
 Uma expressão é uma construção composta de variáveis, operadores e invocações de métodos, que são construídas de acordo com a sintaxe da linguagem, e que resulta em um único valor. Você já viu exemplos de expressões, ilustrados em negrito abaixo:
