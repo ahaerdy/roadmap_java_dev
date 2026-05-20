@@ -90,9 +90,9 @@ class PrePostDemo {
 ---
 
 <details>
-<summary>🔴 Verifique suas respostas (**clique aqui**)</summary>
+<summary>👉 Verifique suas respostas (🖱️ <u>clique aqui</u>)</summary>
 
-### Respostas para Perguntas
+### Respostas
 
 Considere o seguinte trecho de código:
 
