@@ -84,7 +84,7 @@ Use o operador `?:` em vez de uma instrução if-then-else se isso tornar seu c�
 
 ---
 
-## Operador de Comparação de Tipo `instanceof`
+## 📌 Operador de Comparação de Tipo `instanceof`
 O operador `instanceof` compara um objeto com um tipo especificado. Você pode usá-lo para testar se um objeto é uma instância de uma classe, de uma subclasse ou de uma classe que implementa uma determinada interface.
 
 O programa a seguir, **InstanceofDemo**, define uma classe pai (**Parent**), uma interface simples (**MyInterface**) e uma classe filha (**Child**) que herda da classe pai e implementa a interface:
