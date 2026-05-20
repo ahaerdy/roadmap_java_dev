@@ -1,4 +1,3 @@
-```markdown
 # Operadores Bitwise e de Deslocamento de Bits (The Java™ Tutorials - Oracle)
 ## Operadores Bitwise e de Deslocamento de Bits
 
