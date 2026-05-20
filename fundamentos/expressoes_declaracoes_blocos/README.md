@@ -80,9 +80,8 @@ Finalmente, as declarações de controle de fluxo regulam a ordem em que as decl
 
 ---
 
-## Tip: Diferença entre `Declaração` e `Expressão` 
+## 💡 Diferença entre `Declaração` e `Expressão` 
 
-```
 A diferença essencial entre **expressão** e **declaração** em Java está no papel que cada uma desempenha dentro do código:
 
 - **Expressão**:  
@@ -96,7 +95,6 @@ A diferença essencial entre **expressão** e **declaração** em Java está no 
   - Uma declaração pode conter uma ou mais expressões, mas vai além delas, pois define uma ação completa que o programa executa.
 
 👉 Em resumo: a **expressão** calcula ou retorna um valor, enquanto a **declaração** representa uma instrução completa que o programa executa.  
-```
 
 ---
 
