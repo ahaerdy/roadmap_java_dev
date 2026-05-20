@@ -96,7 +96,7 @@ A diferença essencial entre **expressão** e **declaração** em Java está no 
 
 👉 Quando você escreve `cadence = 0`; **COM PONTO E VÍRGULA**, ela deixa de ser apenas uma expressão e passa a ser uma declaração de expressão — ou seja, uma instrução completa que o programa executa.
 
-👉 Em resumo: a **expressão** calcula ou retorna um valor, enquanto a **declaração** representa uma instrução completa que o programa executa.
+📍 Em resumo: a **expressão** calcula ou retorna um valor, enquanto a **declaração** representa uma instrução completa que o programa executa.
 
 ---
 
