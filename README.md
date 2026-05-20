@@ -250,7 +250,7 @@ sintaxe-basica/
 
 | Etapa | Tópicos | Concluídos | Progresso |
 |---|---|---|---|
-| 1. Fundamentos | 11 | 0 | `░░░░░░░░░░` 0% |
+| 1. Fundamentos | 33 | 13 | `█████░░░░░` 45% |
 | 2. Orientação a Objetos | 22 | 0 | `░░░░░░░░░░` 0% |
 | 3. Avançado & Concorrência | 17 | 0 | `░░░░░░░░░░` 0% |
 | 4. Programação Funcional | 4 | 0 | `░░░░░░░░░░` 0% |
