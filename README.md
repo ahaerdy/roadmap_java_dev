@@ -44,6 +44,7 @@ flowchart TD
     - [x] [Operadores de Igualdade, Relacionais e Condicionais](fundamentos/operadores/op_igualdade_condicionaiis_relacionais)
     - [x] [Operadores Bitwise e de Deslocamento de Bits](fundamentos/operadores/op_bitwise_deslocamento)
     - [x] [📘 Questões e Exercícios](fundamentos/operadores/questoes_e_exercicios)
+- [x] [Expressões, Declarações e Blocos](fundamentos/expressoes_declaracoes_blocos)
 - [x] [Ciclo de Vida de um Programa Java](fundamentos/ciclo_de_vida)
 - [ ] Tipos de Dados
 - [ ] Variáveis e Escopos
