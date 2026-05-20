@@ -1,5 +1,4 @@
-# Operadores Bitwise e de Deslocamento de Bits (The Java™ Tutorials - Oracle)
-## Operadores Bitwise e de Deslocamento de Bits
+# Operadores Bitwise e de Deslocamento de Bits
 
 A linguagem de programação Java também fornece operadores que realizam operações bitwise e de deslocamento de bits em tipos integrais. Os operadores discutidos nesta seção são menos usados. Portanto, sua cobertura é breve; a intenção é apenas tornar você ciente de que esses operadores existem.
 
