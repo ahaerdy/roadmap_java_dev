@@ -187,16 +187,6 @@ flowchart TD
 
 ---
 
-## Referências
-
-| Recurso | Link |
-|---|---|
-| Roadmap original | [roadmap.sh/java](https://roadmap.sh/java) |
-| Documentação oficial Java | [docs.oracle.com/java](https://docs.oracle.com/en/java/) |
-| OpenJDK | [openjdk.org](https://openjdk.org/) |
-
----
-
 ## Status Geral
 
 | Etapa | Tópicos | Concluídos | Progresso |
@@ -211,4 +201,14 @@ flowchart TD
 | 8. Documentação & Logging | 5 | 0 | `░░░░░░░░░░` 0% |
 | 9. Testes | 9 | 0 | `░░░░░░░░░░` 0% |
 | **Total** | **79** | **0** | `░░░░░░░░░░` **0%** |
+
+---
+
+## Referências
+
+| Recurso | Link |
+|---|---|
+| Roadmap original | [roadmap.sh/java](https://roadmap.sh/java) |
+| Documentação oficial Java | [docs.oracle.com/java](https://docs.oracle.com/en/java/) |
+| OpenJDK | [openjdk.org](https://openjdk.org/) |
 
