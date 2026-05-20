@@ -92,7 +92,7 @@ class PrePostDemo {
 <details>
 <summary>Verifique suas respostas (🖱️ <b><ins>clique aqui</ins></b>)</summary>
 
-### Respostas
+### Respostas às Perguntas
 
 Considere o seguinte trecho de código:
 
@@ -143,7 +143,7 @@ result = someCondition ? value1 : value2;
 
 ---
 
-### Exercícios
+### Solução dos Exercícios
 
 Altere o seguinte programa para usar atribuições compostas:
 

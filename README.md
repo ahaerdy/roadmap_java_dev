@@ -38,12 +38,12 @@ flowchart TD
 - [x] [Variáveis em Java](fundamentos/variaveis_em_java) Sintaxe para criar e inicializar variáveis de tipo primitivo.
     - [x] [Tipos de Dados Primitivos em Java](fundamentos/variaveis_em_java/tipos_de_dados_primitivos_em_java)
     - [x] [Arrays](fundamentos/variaveis_em_java/arrays)
-    - [x] [Questões e Exercícios](fundamentos/variaveis_em_java/questoes_e_exercicios)
+    - [x] [📘 Questões e Exercícios](fundamentos/variaveis_em_java/questoes_e_exercicios)
 - [x] [Operdadores](fundamentos/operadores)
     - [x] [Atribuição, Operadores Aritméticos e Unários](fundamentos/operadores/atribuicao_op_aritmeticos_unarios)
     - [x] [Operadores de Igualdade, Relacionais e Condicionais](fundamentos/operadores/op_igualdade_condicionaiis_relacionais)
     - [x] [Operadores Bitwise e de Deslocamento de Bits](fundamentos/operadores/op_bitwise_deslocamento)
-    - [x] [Questões e Exercícios](fundamentos/operadores/questoes_e_exercicios)
+    - [x] [📘 Questões e Exercícios](fundamentos/operadores/questoes_e_exercicios)
 - [x] [Ciclo de Vida de um Programa Java](fundamentos/ciclo_de_vida)
 - [ ] Tipos de Dados
 - [ ] Variáveis e Escopos
