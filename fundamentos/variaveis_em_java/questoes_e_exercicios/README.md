@@ -13,7 +13,7 @@
 ---
 
 <details>
-<summary> Verifique suas respostas🔻</summary>
+<summary>Verifique suas respostas (🖱️ <b><ins>clique aqui</ins></b>)</summary>
 </br>
 
 - O termo "variável de instância" é outro nome para `campo não estático`.  
