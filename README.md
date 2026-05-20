@@ -187,55 +187,6 @@ flowchart TD
 
 ---
 
-## 📁 Estrutura do Repositório
-
-```
-roadmap_java_dev/
-│
-├── README.md                   ← você está aqui
-│
-├── 01-fundamentos/
-│   ├── README.md               ← resumo da etapa
-│   ├── sintaxe-basica/
-│   ├── tipos-de-dados/
-│   └── ...
-│
-├── 02-oop/
-│   └── ...
-│
-├── 03-avancado/
-│   └── ...
-│
-├── 04-funcional/
-│   └── ...
-│
-├── 05-build-tools/
-│   └── ...
-│
-├── 06-frameworks-web/
-│   └── ...
-│
-├── 07-banco-de-dados/
-│   └── ...
-│
-├── 08-documentacao-logging/
-│   └── ...
-│
-└── 09-testes/
-    └── ...
-```
-
-Cada subpasta de tópico segue o padrão:
-
-```
-sintaxe-basica/
-├── README.md       ← teoria, explicações, anotações pessoais
-├── exemplos/       ← arquivos .java com código comentado
-└── exercicios/     ← desafios resolvidos
-```
-
----
-
 ## Referências
 
 | Recurso | Link |
