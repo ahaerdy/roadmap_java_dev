@@ -80,6 +80,26 @@ Finalmente, as declarações de controle de fluxo regulam a ordem em que as decl
 
 ---
 
+## Tip: Diferença entre `Declaração` e `Expressão` 
+
+```
+A diferença essencial entre **expressão** e **declaração** em Java está no papel que cada uma desempenha dentro do código:
+
+- **Expressão**:  
+  - É uma combinação de variáveis, operadores e chamadas de métodos que resulta em um **valor único**.  
+  - Exemplo: `1 + 2`, `x * y`, `System.out.println("Olá")`.  
+  - Uma expressão pode ser parte de uma declaração, mas por si só não é considerada uma unidade completa de execução.
+
+- **Declaração**:  
+  - É uma **unidade completa de execução** no programa.  
+  - Pode ser formada por uma expressão seguida de ponto e vírgula (como `aValue++ ;`), ou por outros tipos como declarações de variável (`int x = 5;`) e declarações de controle de fluxo (`if`, `for`, `while`).  
+  - Uma declaração pode conter uma ou mais expressões, mas vai além delas, pois define uma ação completa que o programa executa.
+
+👉 Em resumo: a **expressão** calcula ou retorna um valor, enquanto a **declaração** representa uma instrução completa que o programa executa.  
+```
+
+---
+
 ## Blocos
 Um bloco é um grupo de zero ou mais declarações entre chaves balanceadas e pode ser usado em qualquer lugar onde uma única declaração é permitida. O exemplo a seguir, **BlockDemo**, ilustra o uso de blocos:
 
