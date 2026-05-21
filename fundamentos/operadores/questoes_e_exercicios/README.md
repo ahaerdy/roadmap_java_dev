@@ -92,7 +92,7 @@ class PrePostDemo {
 <details>
 <summary>Verifique suas respostas (🖱️ <b><ins>clique aqui</ins></b>)</summary>
 
-### ✅ Respostas às Perguntas
+### ✅ Respostas
 
 Considere o seguinte trecho de código:
 

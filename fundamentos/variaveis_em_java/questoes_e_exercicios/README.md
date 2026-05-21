@@ -16,7 +16,7 @@
 <summary>Verifique suas respostas (🖱️ <b><ins>clique aqui</ins></b>)</summary>
 </br>
 
-## ✅ Respostas às Questões
+## ✅ Respostas
 
 - O termo "variável de instância" é outro nome para `campo não estático`.  
     - Detalhamento: uma “variável de classe” em Java é uma variável declarada com o modificador static dentro da classe, mas fora dos métodos. Ela pertence à classe em si e não a uma instância específica, sendo compartilhada por todos os objetos criados a partir dessa classe.
