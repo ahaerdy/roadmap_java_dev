@@ -63,7 +63,7 @@ flowchart TD
 - [x] [Casting de Tipos](fundamentos/aprofundamentos/casting_de_tipos) 
 - [x] [Strings e Métodos](fundamentos/aprofundamentos/strings_e_metodos)
 - [x] [Operações Matemáticas](./fundamentos/aprofundamentos/operacoes_matematicas)
-- [ ] Arrays 
+- [ ] [Arrays](./fundamentos/aprofundamentos/arrays) 
 - [ ] Condicionais
 - [ ] Laços de Repetição
 - [ ] Introdução à OOP
