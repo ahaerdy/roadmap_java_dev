@@ -5,7 +5,7 @@ Um Array em Java é uma coleção de variáveis do mesmo tipo. Por exemplo, um a
 Aqui está uma ilustração de arrays em Java:
 
 <p align="center">
-  <img src="000-Midia_e_Anexos/2026-05-22-16-05-40.png" alt="" width="480">
+  <img src="000-Midia_e_Anexos/2026-05-22-16-05-40.png" alt="" width="360">
 </p>
 
 ## Declarando uma Variável de Array em Java
