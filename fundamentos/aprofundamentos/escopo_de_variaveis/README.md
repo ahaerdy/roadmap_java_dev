@@ -1,4 +1,3 @@
-```markdown
 # Escopo de Variáveis em Java 
 
 ## 1. Visão Geral
