@@ -33,7 +33,9 @@ Bicycle myBike = new Bicycle();
 
 ### Respostas
 
-Operadores podem ser usados na construção de expressões, que calculam valores. Expressões são os componentes centrais das declarações. Declarações podem ser agrupadas em blocos.
+Operadores podem ser usados na construção de expressões, que calculam valores. 
+Expressões são os componentes centrais das declarações. 
+Declarações podem ser agrupadas em blocos.
 
 O trecho de código a seguir é um exemplo de uma expressão composta:
 
