@@ -76,13 +76,48 @@ String three = one + " " + two;
 ## Performance de Concatenação
 Dentro de loops, use `StringBuilder` para evitar overhead:
 
+### O problema
+Strings em Java são **imutáveis**. Se você fizer:
+
+```java
+String result = "";
+for (int i = 0; i < strings.length; i++) {
+    result += strings[i];
+}
+```
+
+- Cada vez que o operador `+` é usado, uma **nova String** é criada na memória, copiando o conteúdo anterior e adicionando o novo.  
+- Em loops grandes, isso gera **muitos objetos temporários**, causando **overhead** (uso excessivo de CPU e memória).
+
+### A solução com StringBuilder
+
+O `StringBuilder` é uma classe **mutável**, projetada para construir Strings de forma eficiente. Usando o `for` tradicional:
+
 ```java
 StringBuilder temp = new StringBuilder();
-for(String s : strings) {
-    temp.append(s);
+for (int i = 0; i < strings.length; i++) {
+    temp.append(strings[i]);
 }
 String result = temp.toString();
 ```
+
+- `new StringBuilder()` → cria um buffer interno que pode ser modificado.  
+- `append(strings[i])` → adiciona cada String ao buffer sem criar novos objetos.  
+- `toString()` → converte o resultado final em uma String imutável.
+
+### Vantagens
+- **Performance**: evita a criação de múltiplos objetos temporários.  
+- **Eficiência em loops**: ideal para concatenação repetitiva.  
+- **Flexibilidade**: possui métodos como `insert`, `delete`, `replace`, além de `append`.
+
+### Comparação rápida
+
+| Abordagem | Funcionamento | Performance |
+|-----------|---------------|-------------|
+| **String +** | Cria nova String a cada concatenação | Lento em loops grandes |
+| **StringBuilder** | Usa buffer mutável, concatena sem recriar | Muito mais rápido |
+| **StringBuffer** | Igual ao StringBuilder, mas sincronizado (thread-safe) | Mais lento que StringBuilder |
+
 
 ## Comprimento da String
 ```java
