@@ -39,13 +39,9 @@ O valor inteiro: 10
 O valor double: 10.0
 ```
 
-No exemplo acima, estamos atribuindo a variável do tipo int chamada `num` a uma variável do tipo double chamada `data`.  
+No exemplo acima, estamos atribuindo a variável do tipo int chamada `num` a uma variável do tipo double chamada `data`. Aqui, o Java primeiro converte o dado do tipo int em double e, em seguida, o atribui à variável double.
 
-Aqui, o Java primeiro converte o dado do tipo int em double e, em seguida, o atribui à variável double.
-
-Na Conversão de Tipos Ampliada, o tipo de dado menor (com tamanho menor) é convertido em um tipo de dado maior (com tamanho maior).  
-
-Portanto, **não há perda de dados**. É por isso que esse tipo de conversão acontece automaticamente.
+Na Conversão de Tipos Ampliada, o tipo de dado menor (com tamanho menor) é convertido em um tipo de dado maior (com tamanho maior). Portanto, **não há perda de dados**. É por isso que esse tipo de conversão acontece automaticamente.
 
 **Nota:** Isso também é conhecido como **Conversão Implícita de Tipos**.
 
