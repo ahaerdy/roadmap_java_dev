@@ -47,6 +47,7 @@ flowchart TD
 - [x] [Expressões, Declarações e Blocos](fundamentos/expressoes_declaracoes_blocos)
     - [x] [📘 Questões e Exercícios](fundamentos/expressoes_declaracoes_blocos)
 - [x] [Declarações de Controle de Fluxo](fundamentos/declaracoes_de_controle_de_fluxo)
+- [x] [As instruções if-then e if-then-else](fundamentos/instrucoes_ifthen_e_ifthenelse)
 - [x] [Ciclo de Vida de um Programa Java](fundamentos/ciclo_de_vida)
 - [ ] Tipos de Dados
 - [ ] Variáveis e Escopos
