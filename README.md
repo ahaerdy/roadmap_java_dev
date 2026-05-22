@@ -203,7 +203,7 @@ Aprofundamentos:
 
 | Etapa | Tópicos | Concluídos | Progresso |
 |---|---|---|---|
-| 1. Fundamentos | 33 | 13 | `█████░░░░░` 45% |
+| 1. Fundamentos | 33 | 22 | `███████░░░`  73% |
 | 2. Orientação a Objetos | 22 | 0 | `░░░░░░░░░░` 0% |
 | 3. Avançado & Concorrência | 17 | 0 | `░░░░░░░░░░` 0% |
 | 4. Programação Funcional | 4 | 0 | `░░░░░░░░░░` 0% |
