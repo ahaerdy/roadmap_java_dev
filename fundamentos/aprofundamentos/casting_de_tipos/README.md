@@ -1,11 +1,11 @@
 # Casting de Tipos em Java
 
-Antes de aprender sobre Conversão de Tipos em Java, certifique-se de conhecer os Tipos de Dados em Java.
+Antes de aprender sobre Conversão de Tipos em Java, certifique-se de conhecer os [Tipos de Dados](../tipos_de_dados_em_java/) em Java.
 
 ## Conversão de Tipos
 O processo de converter o valor de um tipo de dado (int, float, double, etc.) para outro tipo de dado é conhecido como **conversão de tipos** (typecasting).
 
-Em Java, existem 13 tipos de conversão de tipos. No entanto, neste tutorial, vamos focar apenas nos 2 principais tipos:
+Em Java, existem 13 formas de conversão de tipos. No entanto, neste tutorial, vamos focar apenas nas 2 principais formas:
 
 1. Conversão de Tipos Ampliada (Widening Type Casting)  
 2. Conversão de Tipos Reduzida (Narrowing Type Casting)
