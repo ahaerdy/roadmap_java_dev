@@ -45,13 +45,14 @@ flowchart TD
     - [x] [Operadores Bitwise e de Deslocamento de Bits](fundamentos/operadores/op_bitwise_deslocamento)
     - [x] [📘 Questões e Exercícios](fundamentos/operadores/questoes_e_exercicios)
 - [x] [Expressões, Declarações e Blocos](fundamentos/expressoes_declaracoes_blocos)
-    - [x] [📘 Questões e Exercícios](fundamentos/expressoes_declaracoes_blocos)
+    - [x] [📘 Questões e Exercícios](fundamentos/expressoes_declaracoes_blocos/)
 - [x] [Declarações de Controle de Fluxo](fundamentos/declaracoes_de_controle_de_fluxo)
     - [x] [As instruções if-then e if-then-else](fundamentos/declaracoes_de_controle_de_fluxo/instrucoes_ifthen_e_ifthenelse)
     - [x] [A Instrução switch](fundamentos/declaracoes_de_controle_de_fluxo/instrucao_switch)
     - [x] [As instruções while e do-while](fundamentos/declaracoes_de_controle_de_fluxo/instrucoes_while_e_dowhile)
     - [x] [A Instrução for](/fundamentos/declaracoes_de_controle_de_fluxo/instrucao_for)
     - [x] [Declarações de Ramificação](fundamentos/declaracoes_de_controle_de_fluxo/declaracoes_de_ramificacao)
+    - [x] [📘 Questões e Exercícios](fundamentos/declaracoes_de_controle_de_fluxo/questoes_e_exercicios)
 - [x] [Ciclo de Vida de um Programa Java](fundamentos/ciclo_de_vida)
 - [ ] Tipos de Dados
 - [ ] Variáveis e Escopos
