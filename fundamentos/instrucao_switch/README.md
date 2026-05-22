@@ -1,4 +1,3 @@
-```markdown
 # A Instrução switch
 
 Diferente das instruções if-then e if-then-else, a instrução switch pode ter vários caminhos possíveis de execução. Um switch funciona com os tipos primitivos byte, short, char e int. Ele também funciona com tipos enumerados (discutidos em Tipos Enum), a classe String e algumas classes especiais que encapsulam certos tipos primitivos: Character, Byte, Short e Integer (discutidos em Números e Strings).
