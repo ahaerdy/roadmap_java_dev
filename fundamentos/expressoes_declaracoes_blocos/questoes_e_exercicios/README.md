@@ -33,9 +33,9 @@ Bicycle myBike = new Bicycle();
 
 ### Respostas
 
-Operadores podem ser usados na construção de expressões, que calculam valores. 
-Expressões são os componentes centrais das declarações. 
-Declarações podem ser agrupadas em blocos.
+- Operadores podem ser usados na construção de expressões, que calculam valores. 
+- Expressões são os componentes centrais das declarações. 
+- Declarações podem ser agrupadas em blocos.
 
 O trecho de código a seguir é um exemplo de uma expressão composta:
 
@@ -43,8 +43,8 @@ O trecho de código a seguir é um exemplo de uma expressão composta:
 1 * 2 * 3
 ```
 
-Declarações são aproximadamente equivalentes a frases em linguagens naturais, mas em vez de terminar com um ponto, uma declaração termina com um ponto e vírgula.  
-Um bloco é um grupo de zero ou mais declarações entre chaves balanceadas e pode ser usado em qualquer lugar onde uma única declaração é permitida.
+- Declarações são aproximadamente equivalentes a frases em linguagens naturais, mas em vez de terminar com um ponto, uma declaração termina com um ponto e vírgula.  
+- Um bloco é um grupo de zero ou mais declarações entre chaves balanceadas e pode ser usado em qualquer lugar onde uma única declaração é permitida.
 
 #### Exercícios
 
