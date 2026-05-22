@@ -3,6 +3,8 @@
 ## Criando uma String
 Strings em Java são objetos. Portanto, você precisa usar o operador `new` para criar um novo objeto String:
 
+>  Em Java, Strings são instâncias da classe java.lang.String, não tipos primitivos, e representam sequências imutáveis de caracteres. Isso significa que, uma vez criada, uma String não pode ser alterada — qualquer modificação gera um novo objeto.
+
 ```java
 String myString = new String("Hello World");
 ```
