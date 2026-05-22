@@ -50,6 +50,7 @@ flowchart TD
 - [x] [As instruções if-then e if-then-else](fundamentos/instrucoes_ifthen_e_ifthenelse)
 - [x] [A Instrução switch](fundamentos/instrucao_switch)
 - [x] [As instruções while e do-while](fundamentos/instrucoes_while_e_dowhile)
+- [x] [A Instrução for](/fundamentos/instrucao_for)
 - [x] [Ciclo de Vida de um Programa Java](fundamentos/ciclo_de_vida)
 - [ ] Tipos de Dados
 - [ ] Variáveis e Escopos
