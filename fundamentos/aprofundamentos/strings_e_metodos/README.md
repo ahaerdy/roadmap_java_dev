@@ -1,7 +1,7 @@
 # Strings e Métodos
 
 ## Representação Interna de String
-Um **Java String** (antes do Java 9) é representado internamente na JVM usando bytes, codificados como **UTF-16**. UTF-16 usa 2 bytes para representar um único caractere. Assim, os caracteres de uma String Java são representados usando um array de `char`.
+Uma **Java String** é representado internamente na JVM usando bytes, codificados como **UTF-16**. UTF-16 usa 2 bytes para representar um único caractere. Assim, os caracteres de uma String Java são representados usando um array de `char`.
 
 ## Compact Strings
 A partir do **Java 9**, a JVM pode otimizar strings usando **compact strings**. Se a string contiver apenas caracteres **ISO-8859-1/Latin-1**, ela usará apenas 1 byte por caractere internamente, representados por um array de `byte`.
