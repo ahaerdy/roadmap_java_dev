@@ -73,7 +73,7 @@ String two = "World";
 String three = one + " " + two;
 ```
 
-## Performance de Concatenação
+## ⭐️ Performance de Concatenação
 Dentro de loops, use `StringBuilder` para evitar overhead:
 
 ### O problema
