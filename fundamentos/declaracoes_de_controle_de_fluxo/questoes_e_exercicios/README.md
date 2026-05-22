@@ -69,6 +69,7 @@ System.out.println("third string");
 ```
 
 **Exercício:** Qual saída você acha que o código produzirá se aNumber for 3?  
+
 **Solução:**  
 ```
 second string
@@ -100,6 +101,7 @@ System.out.println("third string");
 ```
 
 **Exercício:** Use chaves { e } para esclarecer ainda mais o código e reduzir a possibilidade de erros por futuros mantenedores do código.  
+
 **Solução:**  
 ```java
 if (aNumber >= 0) {
