@@ -1,4 +1,4 @@
-# As instruções while e do-while (The Java™ Tutorials - Oracle)
+# As instruções while e do-while
 
 ## A instrução while
 A instrução **while** executa continuamente um bloco de instruções enquanto uma determinada condição for verdadeira. Sua sintaxe pode ser expressa como:
