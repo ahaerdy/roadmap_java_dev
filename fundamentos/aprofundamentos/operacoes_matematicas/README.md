@@ -1,6 +1,6 @@
 # Operadores Matemáticos e Classe Math em Java
 
-## Operadores Matemáticos em Java
+## Operadores Matemáticos
 
 ### Operadores básicos
 | Operador | Descrição |
