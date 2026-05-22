@@ -183,6 +183,15 @@ Esse algoritmo mostra como **inserir um novo valor em um array em uma posição 
    ```
    - O loop começa no último índice (`19`) e vai até logo após o índice `10`.  
    - Em cada iteração, o elemento da posição `i-1` é copiado para a posição `i`.  
+        i = 19 → `ints[19]` = `ints[18]`
+        i = 18 → `ints[18]` = `ints[17]`
+        i = 17 → `ints[17]` = `ints[16]`
+        i = 16 → `ints[16]` = `ints[15]`
+        i = 15 → `ints[15]` = `ints[14]`
+        i = 14 → `ints[14]` = `ints[13]`
+        i = 13 → `ints[13]` = `ints[12]`
+        i = 12 → `ints[12]` = `ints[11]`
+        i = 11 → `ints[11]` = `ints[10]`
    - Isso desloca todos os elementos a partir da posição `10` uma casa para a direita, liberando espaço no índice `10`.
 
 4. **Inserção do novo valor**  
