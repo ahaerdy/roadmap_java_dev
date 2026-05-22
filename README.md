@@ -61,7 +61,7 @@ flowchart TD
 - [x] [Tipos de Dados](fundamentos/aprofundamentos/tipos_de_dados_em_java)
 - [x] [Escopo de Variáveis](fundamentos/aprofundamentos/escopo_de_variaveis)
 - [x] [Casting de Tipos](fundamentos/aprofundamentos/casting_de_tipos) 
-- [ ] Strings e Métodos
+- [x] [Strings e Métodos](fundamentos/aprofundamentos/strings_e_metodos)
 - [ ] Operações Matemáticas
 - [ ] Arrays 
 - [ ] Condicionais
