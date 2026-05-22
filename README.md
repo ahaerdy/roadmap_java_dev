@@ -45,6 +45,8 @@ flowchart TD
     - [x] [Operadores Bitwise e de Deslocamento de Bits](fundamentos/operadores/op_bitwise_deslocamento)
     - [x] [📘 Questões e Exercícios](fundamentos/operadores/questoes_e_exercicios)
 - [x] [Expressões, Declarações e Blocos](fundamentos/expressoes_declaracoes_blocos)
+    - [x] [📘 Questões e Exercícios](fundamentos/expressoes_declaracoes_blocos)
+- [x] [Declarações de Controle de Fluxo](fundamentos/declaracoes_de_controle_de_fluxo)
 - [x] [Ciclo de Vida de um Programa Java](fundamentos/ciclo_de_vida)
 - [ ] Tipos de Dados
 - [ ] Variáveis e Escopos
