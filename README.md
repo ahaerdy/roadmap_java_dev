@@ -57,7 +57,7 @@ flowchart TD
 Aprofundamentos:
 
 - [x] [Ciclo de Vida de um Programa Java](fundamentos/ciclo_de_vida)
-- [ ] Tipos de Dados
+- [ ] [Variáveis em Java](fundamentos/aprofundamentos/variaveis_em_java)
 - [ ] Variáveis e Escopos
 - [ ] Casting de Tipos
 - [ ] Strings e Métodos
