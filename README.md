@@ -59,7 +59,7 @@ Aprofundamentos:
 - [x] [Ciclo de Vida de um Programa Java](fundamentos/ciclo_de_vida)
 - [x] [Variáveis em Java](fundamentos/aprofundamentos/variaveis_em_java)
 - [x] [Tipos de Dados](fundamentos/aprofundamentos/tipos_de_dados_em_java)
-- [ ] Variáveis e Escopos
+- [x] [Escopo de Variáveis](/fundamentos/aprofundamentos/escopo_de_variaveis)
 - [ ] Casting de Tipos
 - [ ] Strings e Métodos
 - [ ] Operações Matemáticas
