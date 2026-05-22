@@ -158,6 +158,40 @@ for(int i=ints.length-1; i > insertIndex; i--){
 ints[insertIndex] = newValue;
 ```
 
+Esse algoritmo mostra como **inserir um novo valor em um array em uma posição específica**, deslocando os elementos existentes para abrir espaço. Vamos detalhar:
+
+### Passo a passo
+
+1. **Criação do array**  
+   ```java
+   int[] ints = new int[20];
+   ```
+   Aqui é criado um array de inteiros com 20 posições, todas inicialmente com valor `0`.
+
+2. **Definição da posição de inserção e do valor**  
+   ```java
+   int insertIndex = 10;
+   int newValue = 123;
+   ```
+   O valor `123` será inserido na posição de índice `10`.
+
+3. **Deslocamento dos elementos**  
+   ```java
+   for(int i = ints.length - 1; i > insertIndex; i--){
+       ints[i] = ints[i-1];
+   }
+   ```
+   - O loop começa no último índice (`19`) e vai até logo após o índice `10`.  
+   - Em cada iteração, o elemento da posição `i-1` é copiado para a posição `i`.  
+   - Isso desloca todos os elementos a partir da posição `10` uma casa para a direita, liberando espaço no índice `10`.
+
+4. **Inserção do novo valor**  
+   ```java
+   ints[insertIndex] = newValue;
+   ```
+   Finalmente, o valor `123` é colocado na posição `10`.
+
+
 ## Removendo Elementos de um Array
 
 ```java
