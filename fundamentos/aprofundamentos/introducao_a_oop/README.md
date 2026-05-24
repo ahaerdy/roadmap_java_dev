@@ -13,9 +13,6 @@
 - Conceitos Adicionais para Classes Java
 - Classes em Outras Linguagens de Programação  
 
-Jakob Jenkov  
-Última atualização: 30-07-2024  
-
 As classes Java são alguns dos blocos de construção centrais de aplicações Java, toolkits, frameworks, APIs etc. Uma pequena aplicação Java pode consistir em uma única classe Java com um método `main()`, como abordado no tutorial sobre o método main em Java.  
 
 À medida que sua aplicação Java cresce, manter todo o código na mesma classe torna cada vez mais difícil ter uma visão geral. Portanto, pode ser benéfico começar a dividir o código Java em várias classes.  
