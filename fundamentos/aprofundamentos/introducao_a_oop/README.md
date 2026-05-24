@@ -1,4 +1,4 @@
-# Introdução à Programação Orientada a Onjetos
+# Introdução à Programação Orientada a Objetos
 
 ## Classes Java
 
@@ -130,7 +130,8 @@ Cada variável referencia um objeto diferente da classe `Car`. Esses objetos sã
 ---
 
 ## Conceitos Adicionais para Classes Java
-Além dos conceitos básicos, você precisará aprofundar:
+Após essa apresentação dos conceitos básicos, você precisará aprofundar:
+
 - Campos
 - Construtores
 - Métodos
