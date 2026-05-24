@@ -130,7 +130,7 @@ Cada variável referencia um objeto diferente da classe `Car`. Esses objetos sã
 ---
 
 ## Conceitos Adicionais para Classes Java
-Após essa apresentação dos conceitos básicos, você precisará aprofundar:
+Após essa apresentação básica conceitos, você precisará aprofundar:
 
 - Campos
 - Construtores
