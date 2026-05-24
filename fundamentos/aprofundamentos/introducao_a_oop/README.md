@@ -140,10 +140,4 @@ Além dos conceitos básicos, você precisa aprender sobre:
 - Modificadores de acesso
 - Interfaces  
 
----
-
-## Classes em Outras Linguagens de Programação
-Classes são um conceito comum em muitas linguagens de programação.  
-- Classes em Java  
-- Classes em Python  
-
+Este detalhamento será visto na etapa 2 (Orientação a Objetos).
