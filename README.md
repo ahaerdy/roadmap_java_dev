@@ -205,7 +205,7 @@ flowchart TD
 | Etapa | Tópicos | Concluídos | Progresso |
 |---|---|---|---|
 | 1. Fundamentos | 27 | 30 | `██████████`  100% |
-| 2. Orientação a Objetos | 24 | 1 | █░░░░░░░░░░ 4% |
+| 2. Orientação a Objetos | 24 | 1 | █░░░░░░░░░ 4% |
 | 3. Avançado & Concorrência | 17 | 0 | `░░░░░░░░░░` 0% |
 | 4. Programação Funcional | 4 | 0 | `░░░░░░░░░░` 0% |
 | 5. Ferramentas de Build | 3 | 0 | `░░░░░░░░░░` 0% |
