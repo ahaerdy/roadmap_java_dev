@@ -1,7 +1,5 @@
 # O que são declarações condicionais em programação?
 
-Seres humanos projetaram sistemas de computador para tornar a vida mais fácil para si mesmos. Computadores tornam nossa vida mais fácil de várias maneiras, muitas para mencionar. Por exemplo, usamos computadores para realizar cálculos ANOVA complexos, e computadores são usados para executar programas de software. Como os computadores não podem pensar por conta própria, e os seres humanos querem colocar computadores para executar trabalhos complexos e até simples, o software precisa ser projetado para rodar no sistema de computador e dar a ele certas instruções a seguir. Para ser capaz de saber e entender a atividade que precisa executar para seu dono em qualquer momento. Linguagens de programação são usadas para alcançar esses objetivos.
-
 Declarações condicionais, expressões ou simplesmente condicionais são recursos das linguagens de programação que dizem ao computador para executar certas ações, desde que certas condições sejam atendidas. Declarações condicionais são usadas através das várias linguagens de programação para instruir o computador sobre a decisão a tomar quando dadas algumas condições. Essas decisões são tomadas se e somente se as condições pré-estabelecidas forem verdadeiras ou falsas, dependendo das funções que o programador tem em mente. Todas as linguagens de programação têm sintaxe de expressão condicional (embora a sintaxe difira ligeiramente de uma linguagem para outra). 
 
 Por exemplo, uma típica declaração condicional em C# lê assim:
