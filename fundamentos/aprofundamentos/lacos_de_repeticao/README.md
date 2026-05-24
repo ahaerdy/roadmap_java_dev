@@ -3,15 +3,15 @@
 
 Em programação de computadores, **loops** são usados para repetir um bloco de código. Por exemplo, se você quiser mostrar uma mensagem 100 vezes, em vez de digitar o mesmo código 100 vezes, você pode usar um loop. Em Java, existem três tipos de loops:
 
-- **for loop**
-- **while loop**
-- **do...while loop**
+- **loops for**
+- **loops while**
+- **loops do...while**
 
-Este tutorial foca no **for loop**. Você aprenderá sobre os outros tipos de loops nos próximos tutoriais.
+Este tutorial foca no **floop for**. Você aprenderá sobre os outros tipos de loops nos próximos tutoriais.
 
-### Java for Loop
+### Loop for
 
-O **for loop** em Java é usado para executar um bloco de código por um certo número de vezes. A sintaxe do for loop é:
+O **loop for** em Java é usado para executar um bloco de código por um certo número de vezes. A sintaxe do loop for é:
 
 ```
 for  (initialExpression; testExpression; updateExpression) {
@@ -26,9 +26,7 @@ Aqui,
 - **updateExpression** atualiza o valor de initialExpression.
 - A condição é avaliada novamente. O processo continua até que a condição seja falsa.
 
-Para aprender mais sobre condições, visite **Java relational and logical operators**.
-
-#### Fluxograma do Java for loop
+#### Fluxograma do loop for
 
 ### Exemplo 1: Exibir um Texto Cinco Vezes
 
@@ -46,9 +44,7 @@ class Main {
 }
 ```
 
-**Run Code**
-
-**Output**
+**Saída**
 
 ```
 Java is fun
@@ -85,9 +81,7 @@ class Main {
 }
 ```
 
-**Run Code**
-
-**Output**
+**Saída**
 
 ```
 1
@@ -128,9 +122,7 @@ class Main {
 }
 ```
 
-**Run Code**
-
-**Output:**
+**Saída**
 
 ```
 Sum = 500500
@@ -157,8 +149,6 @@ class Main {
   }
 }
 ```
-
-**Run Code**
 
 A saída deste programa é a mesma do Exemplo 3.
 
