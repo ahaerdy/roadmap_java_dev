@@ -48,8 +48,6 @@ Verifica **se** o dia é Monday, o que pode resultar apenas em true ou false (bo
 
 Enquanto a declaração `if` pode ser usada para verificar uma condição, `else if` é usada para verificar múltiplas condições. A declaração `else if` (ou `elif` em Python), tem sintaxe similar à declaração `if`, seguida pelo bloco `else if`. Por exemplo:
 
-Exemplo em C#:
-
 ```csharp
 if (myDay == " Sunny")
     {
@@ -73,8 +71,6 @@ Nas declarações `else if`, as condições são verificadas de cima para baixo;
 ## Decalaração else
 
 A declaração `else` é a declaração padrão de todas as expressões condicionais, em todas as linguagens de programação. Ou seja, quando todos os `if` e `else if` retornam false (de cima para baixo), então o bloco final (padrão) `else` é executado. A sintaxe da declaração `else` é simplesmente escrever `else` seguido pela declaração padrão entre chaves de abertura e fechamento.
-
-Exemplo em C#:
 
 ```csharp
 using namespace Conditional;
