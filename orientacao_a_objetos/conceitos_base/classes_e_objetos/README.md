@@ -3,8 +3,8 @@
 ## Classes e Objetos em Java
 Java é uma linguagem de programação orientada a objetos. O conceito central da abordagem orientada a objetos é dividir problemas complexos em objetos menores.
 
-Um objeto é qualquer entidade que possui estado e comportamento.  
-Por exemplo, uma bicicleta é um objeto.  
+Um objeto é qualquer entidade que possui estado e comportamento. Por exemplo, uma bicicleta é um objeto.  
+
 Ela possui:
 - **Estados**: parada, primeira marcha, etc.  
 - **Comportamentos**: frear, acelerar, etc.
@@ -16,9 +16,7 @@ Antes de aprendermos sobre objetos, vamos primeiro conhecer as classes em Java.
 ## Classe em Java
 Uma classe é um **modelo** para o objeto. Antes de criar um objeto, precisamos definir a classe.
 
-Podemos pensar na classe como um esboço (protótipo) de uma casa. Ela contém todos os detalhes sobre os andares, portas, janelas, etc.  
-Com base nessas descrições, construímos a casa. A casa é o objeto.  
-Como muitas casas podem ser feitas a partir da mesma descrição, podemos criar muitos objetos a partir de uma classe.
+Podemos pensar na classe como um esboço (protótipo) de uma casa. Ela contém todos os detalhes sobre os andares, portas, janelas, etc. Com base nessas descrições, construímos a casa. A casa é o objeto. Como muitas casas podem ser feitas a partir da mesma descrição, podemos criar muitos objetos a partir de uma classe.
 
 ### Criar uma classe em Java
 Podemos criar uma classe em Java usando a palavra-chave `class`.
