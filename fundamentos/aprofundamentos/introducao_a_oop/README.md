@@ -130,7 +130,7 @@ Cada variável referencia um objeto diferente da classe `Car`. Esses objetos sã
 ---
 
 ## Conceitos Adicionais para Classes Java
-Além dos conceitos básicos, você precisa aprender sobre:
+Além dos conceitos básicos, você precisará aprofundar:
 - Campos
 - Construtores
 - Métodos
@@ -140,4 +140,4 @@ Além dos conceitos básicos, você precisa aprender sobre:
 - Modificadores de acesso
 - Interfaces  
 
-Este detalhamento será visto na etapa 2 (Orientação a Objetos).
+Isto será feito na etapa 2 (Orientação a Objetos).
