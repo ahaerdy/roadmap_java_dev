@@ -88,7 +88,7 @@ class Main {
 5
 ```
 
-Como o programa funciona.
+Como o programa funciona:
 
 | Iteração | Variável | Condição: i | Ação |
 |---|---:|---|---|
