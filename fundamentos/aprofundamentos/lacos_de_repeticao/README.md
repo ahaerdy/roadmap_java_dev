@@ -41,7 +41,7 @@ class Main {
 }
 ```
 
-**Saída**
+**Saída:**
 
 ```
 Java is fun
@@ -78,7 +78,7 @@ class Main {
 }
 ```
 
-**Saída**
+**Saída:**
 
 ```
 1
@@ -119,7 +119,7 @@ class Main {
 }
 ```
 
-**Saída**
+**Saída:**
 
 ```
 Sum = 500500
@@ -147,7 +147,7 @@ class Main {
 }
 ```
 
-A saída deste programa é a mesma do Exemplo 3.
+A Saída: deste programa é a mesma do Exemplo 3.
 
 ### Loop for-each
 
@@ -168,7 +168,7 @@ class Main {
 }
 ```
 
-**Saída**
+**Saída:**
 
 ```
 3
