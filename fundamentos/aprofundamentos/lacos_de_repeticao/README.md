@@ -51,7 +51,7 @@ Java is fun
 Java is fun
 ```
 
-Aqui está como este programa funciona.
+Como o programa funciona:
 
 | Iteração | Variável | Condição: i | Ação |
 |---|---:|---|---|
