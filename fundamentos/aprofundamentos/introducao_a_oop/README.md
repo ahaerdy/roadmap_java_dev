@@ -21,7 +21,7 @@ Uma classe Java é uma unidade única e coerente de código Java. Ela pode conte
 
 Uma classe deve ser armazenada em seu próprio arquivo. Portanto, à medida que a classe cresce, o arquivo também cresce e se torna mais difícil de manter uma visão geral mental.  
 
-Sua aplicação Java normalmente terá que conter pelo menos uma classe, mas pode conter quantas classes você achar adequadas para dividir sua aplicação. O Java também vem com muitas classes pré-definidas.
+Sua aplicação Java normalmente terá que conter pelo menos uma classe, mas poderá conter quantas você achar necessárias para dividir sua aplicação. O Java também vem com muitas classes pré-definidas.
 
 ---
 
