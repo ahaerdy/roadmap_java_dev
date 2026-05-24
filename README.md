@@ -204,16 +204,16 @@ flowchart TD
 
 | Etapa | Tópicos | Concluídos | Progresso |
 |---|---|---|---|
-| 1. Fundamentos | 27 | 30 | `██████████`  100% |
-| 2. Orientação a Objetos | 24 | 1 | █░░░░░░░░░ 4% |
-| 3. Avançado & Concorrência | 17 | 0 | `░░░░░░░░░░` 0% |
-| 4. Programação Funcional | 4 | 0 | `░░░░░░░░░░` 0% |
-| 5. Ferramentas de Build | 3 | 0 | `░░░░░░░░░░` 0% |
-| 6. Frameworks Web | 4 | 0 | `░░░░░░░░░░` 0% |
-| 7. Banco de Dados | 4 | 0 | `░░░░░░░░░░` 0% |
-| 8. Documentação & Logging | 5 | 0 | `░░░░░░░░░░` 0% |
-| 9. Testes | 9 | 0 | `░░░░░░░░░░` 0% |
-| **Total** | **79** | **0** | `░░░░░░░░░░` **0%** |
+| 1. Fundamentos | 27 | 30 | ██████████ 100% |
+| 2. Orientação a Objetos | 24 | 1 | ░░░░░░░░░░ 4% |
+| 3. Avançado & Concorrência | 17 | 0 | ░░░░░░░░░░ 0% |
+| 4. Programação Funcional | 4 | 0 | ░░░░░░░░░░ 0% |
+| 5. Ferramentas de Build | 3 | 0 | ░░░░░░░░░░ 0% |
+| 6. Frameworks Web | 4 | 0 | ░░░░░░░░░░ 0% |
+| 7. Banco de Dados | 4 | 0 | ░░░░░░░░░░ 0% |
+| 8. Documentação & Logging | 5 | 0 | ░░░░░░░░░░ 0% |
+| 9. Testes | 9 | 0 | ░░░░░░░░░░ 0% |
+| **Total** | **97** | **31** | █░░░░░░░░░░ 32% |
 
 ---
 
