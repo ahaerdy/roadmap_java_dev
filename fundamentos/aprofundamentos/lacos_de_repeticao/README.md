@@ -1,4 +1,3 @@
-
 # Laços de Repetição
 
 Em programação de computadores, **loops** são usados para repetir um bloco de código. Por exemplo, se você quiser mostrar uma mensagem 100 vezes, em vez de digitar o mesmo código 100 vezes, você pode usar um loop. Em Java, existem três tipos de loops:
@@ -25,8 +24,6 @@ Aqui,
 - **testExpression** é avaliada. Se a condição for verdadeira, o corpo do for loop é executado.
 - **updateExpression** atualiza o valor de initialExpression.
 - A condição é avaliada novamente. O processo continua até que a condição seja falsa.
-
-#### Fluxograma do loop for
 
 ### Exemplo 1: Exibir um Texto Cinco Vezes
 
