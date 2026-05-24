@@ -66,8 +66,6 @@ else if (MyDay == "Cloudy")
     }
 ```
 
-Verificando múltiplas declarações condicionais com `if`, `else if`
-
 Nas declarações `else if`, as condições são verificadas de cima para baixo; se o primeiro bloco retornar true, o segundo e o terceiro blocos não serão verificados, mas se o primeiro bloco `if` retornar false, o segundo bloco será verificado. Essa verificação continua até que um bloco retorne um resultado verdadeiro.
 
 ## Decalaração else
@@ -109,8 +107,6 @@ static void Main(string[] args)
 }
 ```
 
-Exemplo de declaração `else`
-
 Encontre o exemplo executável abaixo:
 
 ```csharp
@@ -147,8 +143,6 @@ class Program
     }
 }
 ```
-
-Execute o exemplo completo para declarações `if-else`.
 
 ## switch
 
