@@ -17,11 +17,11 @@ As classes Java são alguns dos blocos de construção centrais de aplicações 
 
 À medida que sua aplicação Java cresce, manter todo o código na mesma classe torna cada vez mais difícil ter uma visão geral. Portanto, pode ser benéfico começar a dividir o código Java em várias classes.  
 
-Uma classe Java é uma unidade única e coerente de código Java que pertence junto. Uma classe Java pode conter uma mistura de dados (variáveis) e ações (métodos). Agrupar variáveis e operações sobre essas variáveis em classes Java facilita estruturar seu programa quando ele fica grande demais para caber confortavelmente em uma única classe.  
+Uma classe Java é uma unidade única e coerente de código Java. Ela pode conter uma mistura de dados (variáveis) e ações (métodos). Agrupar variáveis e operações sobre essas variáveis em classes facilita estruturar seu programa quando ele fica grande demais para caber adequadamente em uma única classe.  
 
-Uma classe Java deve ser armazenada em seu próprio arquivo. Portanto, à medida que a classe cresce, o arquivo também cresce e se torna mais difícil de manter uma visão geral mental.  
+Uma classe deve ser armazenada em seu próprio arquivo. Portanto, à medida que a classe cresce, o arquivo também cresce e se torna mais difícil de manter uma visão geral mental.  
 
-Sua aplicação Java normalmente terá que conter pelo menos uma classe Java, mas pode conter quantas classes você achar adequado para dividir sua aplicação. O Java também vem com muitas classes pré-definidas, para que você não precise codificar cada pequena função desejada.  
+Sua aplicação Java normalmente terá que conter pelo menos uma classe Java, mas pode conter quantas classes você achar adequadas para dividir sua aplicação. O Java também vem com muitas classes pré-definidas.
 
 ---
 
