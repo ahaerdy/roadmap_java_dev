@@ -34,7 +34,7 @@ Do exemplo acima, podemos ver como um programa pode ser usado para expressar vá
 
 Para maior clareza, vamos mergulhar nos tipos de declarações condicionais. Tenha em mente que todas as declarações condicionais retornam `bool`, ou seja, **true** ou **false**.
 
-## if statement
+## Decalaração if 
 
 A declaração `if` é a primeira condição que um programador usa para abrir o terreno das declarações condicionais. A sintaxe do `if` é tão simples quanto escrever `if` com chaves de abertura e fechamento, seguido pela condição que o programador pretende comparar ou verificar. A expressão `if` simplesmente compara se a condição (ou condições) contida nas chaves é verdadeira ou falsa. Se for verdadeira, o bloco de código `if` é executado. Se for falsa, a execução passa para o próximo bloco para verificar.
 
@@ -48,7 +48,7 @@ if (day == " Monday") // Condition
 
 Verifica **se** o dia é Monday, o que pode resultar apenas em true ou false (bool).
 
-## else if statement
+## Decalaração else if
 
 Enquanto a declaração `if` pode ser usada para verificar uma condição, `else if` é usada para verificar múltiplas condições. A declaração `else if` (ou `elif` em Python), tem sintaxe similar à declaração `if`, seguida pelo bloco `else if`. Por exemplo:
 
@@ -74,7 +74,7 @@ Verificando múltiplas declarações condicionais com `if`, `else if`
 
 Nas declarações `else if`, as condições são verificadas de cima para baixo; se o primeiro bloco retornar true, o segundo e o terceiro blocos não serão verificados, mas se o primeiro bloco `if` retornar false, o segundo bloco será verificado. Essa verificação continua até que um bloco retorne um resultado verdadeiro.
 
-## else statement
+## Decalaração else
 
 A declaração `else` é a declaração padrão de todas as expressões condicionais, em todas as linguagens de programação. Ou seja, quando todos os `if` e `else if` retornam false (de cima para baixo), então o bloco final (padrão) `else` é executado. A sintaxe da declaração `else` é simplesmente escrever `else` seguido pela declaração padrão entre chaves de abertura e fechamento.
 
