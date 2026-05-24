@@ -72,8 +72,9 @@ flowchart TD
 
 ### 2. Orientação a Objetos
 
-**Conceitos Base**
-- [ ] Classes e Objetos
+**Conceitos Base:**
+
+- [x] [Classes e Objetos](./orientacao_a_objetos/conceitos_base/classes_e_objetos)
 - [ ] Atributos e Métodos
 - [ ] Modificadores de Acesso
 - [ ] Palavra-chave `static`
