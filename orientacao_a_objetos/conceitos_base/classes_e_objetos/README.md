@@ -1,4 +1,3 @@
-```markdown
 # Classe e Objetos em Java (Com Exemplo) - Programiz
 
 ## Classe e Objetos em Java
