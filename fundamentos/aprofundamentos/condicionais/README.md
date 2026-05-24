@@ -32,7 +32,7 @@ Para maior clareza, vamos mergulhar nos tipos de declarações condicionais. Ten
 
 ## Decalaração if 
 
-A declaração `if` é a primeira condição que um programador usa para abrir o terreno das declarações condicionais. A sintaxe do `if` é tão simples quanto escrever `if` com parênteses de abertura e fechamento, seguido pela condição que o programador pretende comparar ou verificar. A expressão `if` simplesmente compara se a condição (ou condições) contida nos parênteses é verdadeira ou falsa. Se for verdadeira, o bloco de código `if` é executado. Se for falsa, a execução passa para o próximo bloco para verificar.
+A declaração `if` é a primeira condição que um programador usa para abrir o terreno das declarações condicionais. A sintaxe do `if` é tão simples quanto escrever `if` com parênteses de abertura e fechamento, seguido pela condição que o programador pretende comparar ou verificar. A expressão `if` simplesmente compara se a condição (ou condições) contida entre parênteses é verdadeira ou falsa. Se for verdadeira, o bloco de código `if` é executado. Se for falsa, a execução passa para o próximo bloco para verificar.
 
 ```csharp
 if (day == " Monday") // Condition
