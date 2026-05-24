@@ -203,7 +203,7 @@ flowchart TD
 
 | Etapa | Tópicos | Concluídos | Progresso |
 |---|---|---|---|
-| 1. Fundamentos | 27 | 30 | `████████░░`  90% |
+| 1. Fundamentos | 27 | 30 | `██████████`  100% |
 | 2. Orientação a Objetos | 22 | 0 | `░░░░░░░░░░` 0% |
 | 3. Avançado & Concorrência | 17 | 0 | `░░░░░░░░░░` 0% |
 | 4. Programação Funcional | 4 | 0 | `░░░░░░░░░░` 0% |
