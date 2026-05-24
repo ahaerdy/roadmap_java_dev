@@ -32,13 +32,10 @@ Uma classe Java pode conter os seguintes blocos de construção:
 - **Métodos**  
 - **Classes Aninhadas**
 
-**Campos** são **variáveis** (dados) locais da classe ou **instâncias** (objetos) dessa classe.  
-
-**Construtores** são métodos que inicializam uma instância da classe.  
-
-**Métodos** são operações que a classe ou suas instâncias podem executar.  
-
-**Classes aninhadas** são classes definidas dentro de outra classe.  
+🔹**Campos** são **variáveis** (dados) locais da classe ou **instâncias** (objetos) dessa classe.  
+🔹**Construtores** são métodos que inicializam uma instância da classe.  
+🔹**Métodos** são operações que a classe ou suas instâncias podem executar.  
+🔹**Classes aninhadas** são classes definidas dentro de outra classe.  
 
 Nem todas as classes Java possuem campos, construtores e métodos. Às vezes, você tem classes que contêm apenas campos (dados) ou apenas métodos (operações).  
 
