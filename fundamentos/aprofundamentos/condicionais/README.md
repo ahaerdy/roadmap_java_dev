@@ -28,7 +28,7 @@ public static void Weather(string myDay)
 
 Do exemplo acima, podemos ver como um programa pode ser usado para expressar várias decisões com base na veracidade ou falsidade das condições dadas. Testamos para `Weather("Cloudy")`. Além de `if`, `else if` e `else` declarações condicionais (como ilustrado no exemplo acima), linguagens de programação também têm `if else` (C e C++), `elif` (Python), e `switch case` (C#, Java, JavaScript, e um novo recurso na versão 3.10 do Python). As declarações condicionais são vitais no campo da programação e engenharia de software, na medida em que as condições podem ser usadas pelos programadores e engenheiros de software para permitir que uma máquina simule o comportamento de uma pessoa que tem a habilidade de fazer escolhas e executar algumas ações com base na decisão tomada. Com expressões condicionais, a linguagem de programação dá aos programadores ferramentas e recursos que eles podem manipular para colocar uma máquina para trabalhar de forma eficaz.
 
-Para maior clareza, vamos mergulhar nos tipos de declarações condicionais. Tenha em mente que todas as declarações condicionais retornam valores booleanos, ou seja, **true** ou **false**.
+Para maior clareza, vamos mergulhar nos tipos de declarações condicionais. Tenha em mente que todas as declarações condicionais retornam valores `booleanos`, ou seja, **true** ou **false**.
 
 ## Decalaração if 
 
