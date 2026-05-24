@@ -64,7 +64,7 @@ flowchart TD
 - [x] [Strings e Métodos](fundamentos/aprofundamentos/strings_e_metodos)
 - [x] [Operações Matemáticas](./fundamentos/aprofundamentos/operacoes_matematicas)
 - [ ] [Arrays](./fundamentos/aprofundamentos/arrays) 
-- [ ] Condicionais
+- [ ] [Condicionais](./fundamentos/aprofundamentos/condicionais)
 - [ ] Laços de Repetição
 - [ ] Introdução à OOP
 
