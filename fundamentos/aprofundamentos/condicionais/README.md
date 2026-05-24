@@ -150,8 +150,6 @@ class Program
 
 `switch` é outra versão da declaração condicional. Ele torna o código mais limpo e legível do que as convencionais declarações `if`, `else if` e `else`. Nas expressões `switch`, cada bloco é terminado por uma palavra-chave `break`. As declarações em `switch` são expressas com `case`s. Para clareza, vamos usar uma declaração `switch` para ilustrar nosso exemplo anterior:
 
-Exemplo em C#:
-
 ```csharp
 using System;
 namespace Conditional {
