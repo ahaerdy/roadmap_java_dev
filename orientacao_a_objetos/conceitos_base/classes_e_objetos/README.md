@@ -1,6 +1,6 @@
-# Classe e Objetos em Java (Com Exemplo) - Programiz
+# Classes e Objetos em Java
 
-## Classe e Objetos em Java
+## Classes e Objetos em Java
 Java é uma linguagem de programação orientada a objetos. O conceito central da abordagem orientada a objetos é dividir problemas complexos em objetos menores.
 
 Um objeto é qualquer entidade que possui estado e comportamento.  
