@@ -107,7 +107,7 @@ static void Main(string[] args)
 }
 ```
 
-Outro exemplo em C#:
+Outro exemplo:
 
 ```csharp
 using System;
