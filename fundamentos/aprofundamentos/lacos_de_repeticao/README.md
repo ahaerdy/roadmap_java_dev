@@ -25,7 +25,7 @@ Aqui,
 - **updateExpression** atualiza o valor de initialExpression.
 - A condição é avaliada novamente. O processo continua até que a condição seja falsa.
 
-### Exemplo 1: Exibir um Texto Cinco Vezes
+#### Exemplo 1: Exibir um Texto Cinco Vezes
 
 ```java
 // Program to print a text 5 times
@@ -62,7 +62,7 @@ Aqui está como este programa funciona.
 | 5ª | i = 5 | n = 5 true | **Java is fun** é impresso. i é incrementado para 6. |
 | 6ª | i = 6 | n = 5 false | O loop é terminado. |
 
-### Exemplo 2: Exibir números de 1 a 5
+#### Exemplo 2: Exibir números de 1 a 5
 
 ```java
 // Program to print numbers from 1 to 5
@@ -99,7 +99,7 @@ Aqui está como o programa funciona.
 | 5ª | i = 5 | n = 5 true | **5** é impresso. i é incrementado para 6. |
 | 6ª | i = 6 | n = 5 false | O loop é terminado. |
 
-### Exemplo 3: Exibir a Soma dos primeiros n Números Naturais
+#### Exemplo 3: Exibir a Soma dos primeiros n Números Naturais
 
 ```java
 // Program to find the sum of natural numbers from 1 to 1000.
@@ -149,7 +149,7 @@ class Main {
 
 A saída deste programa é a mesma do Exemplo 3.
 
-### Java for-each Loop
+### Loop for-each
 
 O loop **for** em Java tem uma sintaxe alternativa que facilita iterar por arrays e coleções. Por exemplo,
 
@@ -168,9 +168,7 @@ class Main {
 }
 ```
 
-**Run Code**
-
-**Output**
+**Saída**
 
 ```
 3
@@ -183,7 +181,7 @@ Aqui, usamos o **for-each loop** para imprimir cada elemento do array **numbers*
 
 Para aprender mais, visite **Java for-each Loop**.
 
-### Java Infinite for Loop
+### Loop for Infinito
 
 Se definirmos a expressão de teste de forma que ela nunca avalie para falsa, o for loop executará para sempre. Isso é chamado de **infinite for loop**. Por exemplo,
 
@@ -198,8 +196,6 @@ class Infinite {
   }
 }
 ```
-
-**Run Code**
 
 Aqui, a expressão de teste, **i \u003C= 10**, nunca é falsa e **Hello** é impresso repetidamente até que a memória se esgote.
 
