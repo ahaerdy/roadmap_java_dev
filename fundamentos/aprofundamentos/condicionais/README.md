@@ -72,6 +72,8 @@ Nas declarações `else if`, as condições são verificadas de cima para baixo;
 
 A declaração `else` é a declaração padrão de todas as expressões condicionais, em todas as linguagens de programação. Ou seja, quando todos os `if` e `else if` retornam false (de cima para baixo), então o bloco final (padrão) `else` é executado. A sintaxe da declaração `else` é simplesmente escrever `else` seguido pela declaração padrão entre chaves de abertura e fechamento.
 
+Exemplo de declaração `else`:
+
 ```csharp
 using namespace Conditional;
 
@@ -107,7 +109,7 @@ static void Main(string[] args)
 }
 ```
 
-Outro exemplo:
+Exemplo completo para declarações `if-else`.
 
 ```csharp
 using System;
