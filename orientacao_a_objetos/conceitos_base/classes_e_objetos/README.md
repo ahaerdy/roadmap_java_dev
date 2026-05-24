@@ -29,7 +29,7 @@ class ClassName {
 ```
 
 Aqui:
-- **fields (variáveis)** representam o estado do objeto.  
+- **fields (campos)** representam o estado do objeto.  
 - **methods (métodos)** representam o comportamento do objeto.  
 
 Exemplo para o objeto bicicleta:
