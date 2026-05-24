@@ -96,7 +96,7 @@ Bicycle sportsBicycle = new Bicycle();
 
 // acessar campo e método
 sportsBicycle.gear; // Apenas acessa, mas não mostra nada
-sportsBicycle.braking();
+sportsBicycle.braking(); // Executa o método
 ```
 
 Aqui, criamos um objeto `sportsBicycle` da classe `Bicycle`.  
