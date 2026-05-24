@@ -66,7 +66,7 @@ flowchart TD
 - [x] [Arrays](./fundamentos/aprofundamentos/arrays) 
 - [x] [Condicionais](./fundamentos/aprofundamentos/condicionais)
 - [x] [Laços de Repetição](./fundamentos/aprofundamentos/lacos_de_repeticao)
-- [ ] [Introdução à OOP](introducao_a_oop)
+- [x] [Introdução à OOP](./fundamentos/aprofundamentos/introducao_a_oop)
 
 ---
 
