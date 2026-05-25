@@ -1,10 +1,10 @@
 # Métodos em Java
 
-Os métodos são onde você coloca as operações sobre dados (variáveis) em seu código. Em outras palavras, você agrupa operações (código) dentro de métodos. Os métodos devem estar localizados dentro de uma classe. Métodos são semelhantes ao que é chamado de funções ou procedimentos em outras linguagens de programação (por exemplo, Pascal ou JavaScript).  
+Os métodos são onde você coloca as operações sobre dados (variáveis) em seu código. Em outras palavras, você agrupa operações (código) dentro de métodos. Os métodos devem estar localizados dentro de uma classe. Métodos são semelhantes ao que é chamado de funções ou procedimentos em outras linguagens de programação (exemplos: Pascal e JavaScript).  
 
-Um método é um grupo de instruções que executa alguma operação sobre alguns dados e pode ou não retornar um resultado.  
+Um método é um grupo de instruções que executa alguma operação sobre dados e pode ou não retornar um resultado.  
 
-Aqui está um exemplo simples de método:
+Segue um exemplo simples de método:
 
 ```java
 public MyClass{
