@@ -22,7 +22,7 @@ Nas seções seguintes explicaremos o que cada um dos elementos na definição d
 
 ## Parâmetros de Método
 
-Parâmetros de método tornam possível passar valores para o método, sobre os quais o método pode operar. Os parâmetros do método são declarados dentro dos parênteses após o nome do método.  
+Parâmetros de método tornam possível passar valores para o método, sobre os quais o método pode operar. Os parâmetros são declarados dentro dos parênteses após o nome do método.  
 
 No exemplo abaixo os parâmetros do método estão em negrito:
 
