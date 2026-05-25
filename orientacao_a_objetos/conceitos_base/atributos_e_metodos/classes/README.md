@@ -2,9 +2,9 @@
 
 As classes Java são alguns dos principais blocos de construção de aplicativos, toolkits, frameworks, APIs Java, etc. Um pequeno aplicativo Java pode consistir em uma única classe Java com um método `main()` nela, como abordado no tutorial sobre o método main em Java. À medida que o seu aplicativo Java cresce, manter todo o código na mesma classe torna cada vez mais difícil manter uma visão geral do código. Portanto, pode ser benéfico começar a dividir o código Java em múltiplas classes.
 
-Uma classe Java é uma unidade única e coerente de código Java que pertence ao mesmo contexto. Uma classe Java pode conter uma mistura de dados (variáveis) e ações (métodos). Agrupar variáveis e operações sobre essas variáveis em classes Java facilita a estruturação do seu programa Java quando ele se torna grande demais para caber confortavelmente dentro de uma única classe Java. Uma classe Java deve ser armazenada em seu próprio arquivo. Portanto, à medida que a classe cresce, o arquivo que você está editando também cresce e se torna mais difícil de manter uma visão geral na sua mente.
+Uma classe é uma unidade única e coerente de código que pertence ao mesmo contexto. Uma classe pode conter uma mistura de dados (variáveis) e ações (métodos). Agrupar variáveis e operações sobre essas variáveis em classes facilita a estruturação do seu programa quando ele se torna grande demais para caber confortavelmente dentro de uma única classe. Uma classe deve ser armazenada em seu próprio arquivo. Portanto, à medida que a classe cresce, o arquivo que você está editando também cresce e se torna mais difícil de manter uma visão geral na sua mente.
 
-Seu aplicativo Java normalmente terá que conter pelo menos uma única classe Java, mas pode conter quantas classes você julgar adequado para dividir o seu aplicativo. O Java também vem com muitas classes predefinidas para você, para que você não precise codificar sozinho cada pequena função que possa desejar.
+Seu aplicativo normalmente terá que conter pelo menos uma única classe, mas pode conter quantas classes julgar adequado para dividir o seu aplicativo. O Java também vem com muitas classes predefinidas, para que você não precise codificar funções básicas essenciais.
 
 ## Blocos de Construção de uma Classe Java
 
