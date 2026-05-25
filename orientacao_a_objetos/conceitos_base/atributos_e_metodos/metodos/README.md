@@ -14,9 +14,9 @@ public MyClass{
 }
 ```
 
-O exemplo acima define um método chamado `writeText` dentro de uma classe chamada `MyClass`. O método recebe um único parâmetro chamado `text`. Esse parâmetro é usado na instrução dentro do método. O método não retorna nenhum valor.  
+O exemplo acima define um método chamado `writeText` dentro de uma classe chamada `MyClass`. O método recebe um único parâmetro chamado `text`. Esse parâmetro é usado na instrução dentro do método, que não retorna nenhum valor.  
 
-Nas seções seguintes explicarei o que cada um dos elementos na definição do método acima significa.
+Nas seções seguintes explicaremos o que cada um dos elementos na definição do método acima significa.
 
 ---
 
