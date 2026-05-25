@@ -1,29 +1,29 @@
 # Classes Java
 
-As classes Java são alguns dos principais blocos de construção de aplicativos, toolkits, frameworks, APIs Java, etc. Um pequeno aplicativo Java pode consistir em uma única classe Java com um método `main()` nela, como abordado no tutorial sobre o método main em Java. À medida que o seu aplicativo Java cresce, manter todo o código na mesma classe torna cada vez mais difícil manter uma visão geral do código. Portanto, pode ser benéfico começar a dividir o código Java em múltiplas classes.
+Classes são alguns dos principais blocos de construção de aplicativos, toolkits, frameworks, APIs, etc e, Java. Um pequeno aplicativo pode consistir em uma única classe com um método `main()` nela, como abordado no tutorial sobre o método main. À medida que o seu aplicativo cresce, manter todo o código na mesma classe se torna cada vez mais difícil de gerenciar. Portanto, pode se tornar necessário começar a dividir o código em múltiplas partes (classes).
 
-Uma classe é uma unidade única e coerente de código que pertence ao mesmo contexto. Uma classe pode conter uma mistura de dados (variáveis) e ações (métodos). Agrupar variáveis e operações sobre essas variáveis em classes facilita a estruturação do seu programa quando ele se torna grande demais para caber confortavelmente dentro de uma única classe. Uma classe deve ser armazenada em seu próprio arquivo. Portanto, à medida que a classe cresce, o arquivo que você está editando também cresce e se torna mais difícil de manter uma visão geral na sua mente.
+Uma classe é uma unidade única e coerente de código que pertence ao mesmo contexto. Ela pode conter uma mistura de dados (variáveis) e ações (métodos). Agrupar variáveis e métodos sobre essas variáveis em classes distintas facilita a estruturação do seu programa caso ele se torne grande demais para visualizar dentro de uma única classe. Uma classe deve ser armazenada em seu próprio arquivo. 
 
-Seu aplicativo normalmente terá que conter pelo menos uma única classe, mas pode conter quantas classes julgar adequadas. O Java também vem com classes predefinidas, o que dispensa ter que codificar funções básicas essenciais.
+Seu aplicativo normalmente terá que conter pelo menos uma única classe, mas poderá conter quantas classes você julgar necessárias. O Java também dispõe de classes predefinidas, o que dispensa ter que escrever muitas das funções básicas essenciais típicas da programação.
 
 ## Blocos de Construção de uma Classe Java
 
-Uma classe pode conter os seguintes blocos de construção:
+Uma classe poderá conter os seguintes blocos de construção:
 
 * Campos
 * Construtores
 * Métodos
 * Classes Aninhadas
 
-Campos são variáveis (dados) que são locais à classe, ou instâncias (objetos) dessa classe. Voltaremos às instâncias mais tarde. Os campos serão abordados em mais detalhes no tutorial sobre campos em Java.
+Campos são variáveis (dados) locais à classe, ou instâncias (objetos) dessa classe. Voltaremos às instâncias mais tarde. 
 
-Construtores são métodos que inicializam uma instância da classe. Os construtores frequentemente definem os valores dos campos na instância fornecida. Os construtores serão abordados em mais detalhes no tutorial sobre construtores.
+Construtores são métodos que inicializam uma instância da classe. Os construtores frequentemente definem os valores dos campos na instância fornecida.
 
-Métodos são operações que a classe ou instâncias dessa classe podem executar. Por exemplo, um método pode executar uma operação em parâmetros de entrada, ou alterar o valor de campos mantidos internamente no objeto, etc. Os métodos serão abordados em mais detalhes no tutorial sobre métodos em Java.
+Métodos são operações que a classe ou instâncias dessa classe podem executar. Por exemplo, um método pode executar uma operação em parâmetros de entrada, ou alterar o valor de campos mantidos internamente no objeto, etc. 
 
-Classes aninhadas são classes Java que definidas dentro de outra classe. As classes aninhadas são tipicamente destinadas a serem usadas apenas internamente pela classe que as contém, ou usadas em conexão com a classe que as contém. As classes aninhadas serão abordadas em mais detalhes no tutorial sobre classes aninhadas.
+Classes aninhadas são classes Java definidas dentro de outra classe. As classes aninhadas são tipicamente destinadas a serem usadas apenas internamente pela classe que as contém (ou usadas em conexão com as mesmas). 
 
-Nem todas as classes possuem campos, construtores e métodos. Às vezes, existem classes que contêm apenas campos (dados) e, às vezes, classes que contêm apenas métodos (operações). Dependerá do que a classe Java tiver de fazer.
+Nem todas as classes possuem campos, construtores e métodos. Às vezes, classes contêm apenas campos (dados) e, às vezes, apenas métodos (operações).
 
 ## Definindo uma Classe em Java
 
@@ -36,19 +36,19 @@ public class MyClass {
 
 ```
 
-Isso define uma classe Java pública chamada `MyClass`. A classe não possui campos, construtores ou métodos.
+O código acima define uma classe Java pública chamada `MyClass`. Esta classe não possui campos, construtores ou métodos.
 
 ## Arquivos .java
 
-A definição da classe acima deve ser colocada em seu próprio arquivo chamado `MyClass.java`. Os arquivos Java devem ter o mesmo nome da classe que eles contêm, com a extensão de arquivo `.java`. Certifique-se de manter os mesmos caracteres em maiúsculas e minúsculas do nome da classe também no nome do arquivo.
+A classe acima deve ser alocada em seu próprio arquivo chamado `MyClass.java`. Os arquivos devem ter o mesmo nome da classe que eles contêm, com extensão `.java`. Certifique-se de manter os mesmos caracteres em maiúsculas e minúsculas do nome da classe também no nome do arquivo.
 
-Coloque apenas uma única definição de classe em cada arquivo, a menos que sua classe contenha classes internas de algum tipo. As classes internas serão abordadas no tutorial sobre classes aninhadas.
+Use apenas uma única definição de classe em cada arquivo, a menos que sua classe contenha classes internas. 
 
 ## Classe Com Campos
 
 Como mencionado anteriormente, uma classe pode conter dados na forma de variáveis. As variáveis que pertencem à classe são tipicamente chamadas de "campos".
 
-O próximo exemplo mostra uma classe que deve modelar um carro. Portanto, a classe se chama `Car` e possui três campos. Aqui está a classe em código:
+O próximo exemplo mostra uma classe que deve modelar um carro. A classe se chama `Car` e possui três campos. Segue o código:
 
 ```java
 public class Car {
@@ -59,11 +59,11 @@ public class Car {
 
 ```
 
-Este código define uma classe chamada `Car`. A classe `Car` possui três campos. A classe `Car` não possui métodos. Apenas declarações de campo. Os campos serão descritos em mais detalhes no texto sobre campos.
+Este código define uma classe chamada `Car`. Ela possui três campos e não possui métodos.
 
 ## Classe Com Construtor
 
-Uma classe Java pode ter um construtor. Um construtor é um método especial que é chamado quando um objeto da classe fornecida é criado (explicado mais adiante). O propósito de um construtor é inicializar os campos na classe. Os campos também são chamados de "estado interno". Aqui está um exemplo de uma classe Java com dois construtores:
+Uma classe Java pode ter um construtor. Um construtor é um método especial que é chamado quando um objeto da classe fornecida é criado (explicado mais adiante). O propósito de um construtor é inicializar os campos na classe. Os campos também são chamados de "estado interno". segue um exemplo de uma classe Java com dois construtores:
 
 ```java
 public class Car {
@@ -83,13 +83,13 @@ public class Car {
 
 ```
 
-Os construtores são métodos que têm o mesmo nome que a classe e que não possuem um tipo de retorno especificado. O primeiro construtor não recebe parâmetros e o segundo recebe 3 parâmetros. O construtor que recebe 3 parâmetros armazena os valores desses parâmetros nos campos do objeto criado. Os construtores serão abordados em mais detalhes no tutorial sobre construtores em Java.
+Os construtores são métodos que têm o mesmo nome que a classe e que não possuem um tipo de retorno especificado. O primeiro construtor não recebe parâmetros e o segundo recebe 3 parâmetros. O construtor que recebe 3 parâmetros armazena os valores desses parâmetros nos campos do objeto criado. 
 
 ## Classe Com Métodos
 
-Uma classe Java também pode conter operações. Essas operações são tipicamente chamadas de métodos. Um método Java contém instruções Java que tipicamente executam operações em um campo na classe, ou nos valores de um dos parâmetros (também variáveis) passados para o método quando ele for chamado.
+Uma classe pode conter operações. Essas operações são tipicamente chamadas de métodos. Um método contém instruções que tipicamente executam operações em um campo na classe, ou nos valores dos parâmetros (também variáveis) passados para o método quando ele é chamado.
 
-Aqui está o exemplo da classe Java `Car` da seção anterior com um método adicionado:
+Aqui está o exemplo da classe `Car` com um método adicionado:
 
 ```java
 public class Car {
@@ -104,11 +104,11 @@ public class Car {
 
 ```
 
-Na definição da classe acima, adicionei um método `setColor()`. Quando chamado, este método define a variável interna de cor (campo) para um novo valor. Os métodos serão descritos em mais detalhes no texto sobre métodos.
+Na definição da classe acima, foi adicionado o método `setColor()`. Quando chamado, este método define um novo valor para a variável interna de cor. 
 
 ## Classe Com Classe Aninhada
 
-Como mencionado anteriormente, você pode definir uma classe aninhada dentro de outra classe. Aqui está um exemplo:
+Exemplo de classe aninhada:
 
 ```java
 public class MyClass {
@@ -121,11 +121,11 @@ public class MyClass {
 
 ```
 
-No exemplo acima, a classe externa é chamada `MyClass` e a classe aninhada é chamada `MyNestedClass`. Nenhuma das classes neste exemplo possui quaisquer campos ou métodos, mas tanto a classe externa quanto a aninhada poderiam ter tantos campos e métodos quanto necessários. Você poderá ler mais sobre classes aninhadas no tutorial sobre classes aninhadas.
+No código acima, a classe externa é chamada `MyClass` e a classe aninhada é chamada `MyNestedClass`. Nenhuma das classes neste exemplo possui quaisquer campos ou métodos, mas tanto a classe externa quanto a aninhada poderiam ter tantos campos e métodos quanto necessários. 
 
 ## Classes e Objetos
 
-Uma classe Java é um modelo para a aparência de objetos dessa classe. Em outras palavras, a classe `Car` na seção anterior é um modelo para a aparência dos objetos `Car`.
+Uma classe Java é um modelo para objetos dessa classe. A  classe `Car` da seção anterior é um modelo para objetos `Car`.
 
 Para criar objetos de uma determinada classe, você usa a palavra-chave `new`. Aqui está um exemplo:
 
@@ -144,10 +144,10 @@ Este exemplo cria 3 variáveis `Car` e atribui uma nova instância da classe `Ca
 
 Depois de criar os 3 objetos `Car`, o método `setColor()` é chamado em cada objeto. Agora a cor (representada como um texto) é definida individualmente para cada objeto `Car`.
 
-Criar um objeto de uma determinada classe também é chamado de "instanciar" um objeto. O objeto é, portanto, também chamado de uma "instância" da classe fornecida. 
+Criar um objeto de uma determinada classe também é chamado de "instanciar" um objeto. O objeto é, portanto, uma "instância" da classe fornecida. 
 
-## Mais Conceitos sobre Classes
+## Mais Conceitos
 
-O que você viu neste texto cobre apenas o básico das classes. Você deverá aprofundar sobre campos, construtores, métodos, classes aninhadas, classes abstratas, herança, modificadores de acesso e interfaces. Todos esses conceitos serão discutidos em seus próprios textos.
+O que você viu neste texto cobre apenas o básico das classes. Mais adiante verremos sobre campos, construtores, métodos, classes aninhadas, classes abstratas, herança, modificadores de acesso e interfaces. Todos serão discutidos seções próprias.
 
 
