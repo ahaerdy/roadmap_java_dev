@@ -75,7 +75,10 @@ flowchart TD
 **Conceitos Base:**
 
 - [x] [Classes e Objetos](./orientacao_a_objetos/conceitos_base/classes_e_objetos)
-- [ ] Atributos e Métodos
+- [x] [Atributos e Métodos](./orientacao_a_objetos/conceitos_base/atributos_e_metodos)
+    - [x] [Classes](./orientacao_a_objetos/conceitos_base/atributos_e_metodos/classes/)
+    - [x] [Métodos](./orientacao_a_objetos/conceitos_base/atributos_e_metodos/metodos/)
+    - [x] [Propriedades](./orientacao_a_objetos/conceitos_base/atributos_e_metodos/propriedades/) 
 - [ ] Modificadores de Acesso
 - [ ] Palavra-chave `static`
 - [ ] Palavra-chave `final`
