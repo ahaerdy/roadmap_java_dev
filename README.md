@@ -81,9 +81,9 @@ flowchart TD
     - [x] [Propriedades](./orientacao_a_objetos/conceitos_base/atributos_e_metodos/propriedades/) 
 - [x] [Modificadores de Acesso](./orientacao_a_objetos/conceitos_base/modificadores_de_acesso)
 - [x] [Palavra-chave `static`](./orientacao_a_objetos/conceitos_base/palavrachave_static)
-    - [x] [Palavra-chave static em Java explicada com exemplos](./orientacao_a_objetos/conceitos_base/palavrachave_static/palavrachave_static_com_exemplos/)
-    - [x] [Campos static e não-static em Java](./orientacao_a_objetos/conceitos_base/palavrachave_static/campos_estatico_e_naoestatico/)
-    - [x] [Guia da palavra-chave static em Java](./orientacao_a_objetos/conceitos_base/palavrachave_static/guia_para_palavrachave_static/)
+    - [x] [Palavra-chave `static` em Java explicada com exemplos](./orientacao_a_objetos/conceitos_base/palavrachave_static/palavrachave_static_com_exemplos/)
+    - [x] [Campos `static` e `nonstatic` em Java](./orientacao_a_objetos/conceitos_base/palavrachave_static/campos_estatico_e_naoestatico/)
+    - [x] [Guia da palavra-chave `static` em Java](./orientacao_a_objetos/conceitos_base/palavrachave_static/guia_para_palavrachave_static/)
 - [ ] Palavra-chave `final`
 - [ ] Classes Aninhadas
 - [ ] Pacotes (`packages`)
