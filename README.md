@@ -85,6 +85,8 @@ flowchart TD
     - [x] [Campos estáticos e não estáticos em Java](./orientacao_a_objetos/conceitos_base/palavrachave_static/campos_estatico_e_naoestatico/)
     - [x] [Guia da palavra-chave `static` em Java](./orientacao_a_objetos/conceitos_base/palavrachave_static/guia_para_palavrachave_static/)
 - [x] [Palavra-chave `final`](./orientacao_a_objetos/conceitos_base/palavrachave_final/)
+    - [x] [Palavra-chave `final`](./orientacao_a_objetos/conceitos_base/palavrachave_final/palavrachave_final/)
+    - [x] [Como funciona a palavra-chave final em Java?](./orientacao_a_objetos/conceitos_base/palavrachave_final/como_funciona_a_palavrachave_final_em_java/)
 - [ ] Classes Aninhadas
 - [ ] Pacotes (`packages`)
 
