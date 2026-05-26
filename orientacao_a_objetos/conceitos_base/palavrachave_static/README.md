@@ -4,6 +4,6 @@ A palavra-chave `static` em Java é usada para criar membros (variáveis e méto
 
 Ver também:
 
-- [Palavra-chave static em Java explicada com exemplos](./palavrachave_static_com_exemplos/)
-- [Campos static e não-static em Java](./campos_estatico_e_naoestatico/)
-- [Guia da palavra-chave static em Java](./guia_para_palavrachave_static/)
+- [Palavra-chave `static` em Java explicada com exemplos](./palavrachave_static_com_exemplos/)
+- [Campos `static` e `nonstatic` em Java](./campos_estatico_e_naoestatico/)
+- [Guia da palavra-chave `static` em Java](./guia_para_palavrachave_static/)
