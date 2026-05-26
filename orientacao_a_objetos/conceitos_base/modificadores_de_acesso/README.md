@@ -1,4 +1,3 @@
-```markdown
 # Modificadores de Acesso em Java
 
 Um modificador de acesso em Java especifica quais classes podem acessar uma determinada classe e seus campos, construtores e métodos. Os modificadores de acesso podem ser especificados separadamente para uma classe, seus construtores, campos e métodos. Os modificadores de acesso em Java também são às vezes chamados informalmente de especificadores de acesso, mas o nome correto é **modificadores de acesso**.
