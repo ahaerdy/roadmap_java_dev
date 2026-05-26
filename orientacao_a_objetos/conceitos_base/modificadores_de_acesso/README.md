@@ -124,6 +124,31 @@ public class SmartClock extends Clock {
 }
 ```
 
+No exemplo do **modificador protected**, o campo `time` da classe `Clock` foi declarado como:
+
+```java
+protected long time = 0; // tempo em milissegundos
+```
+
+Isso significa que:
+
+- Assim como no **default**, o campo pode ser acessado por qualquer classe dentro do mesmo pacote.  
+- A diferença é que, com **protected**, **subclasses** também podem acessar esse campo, mesmo que estejam em pacotes diferentes.  
+
+Na prática, a classe `SmartClock`, que **herda** de `Clock`, consegue acessar diretamente o campo `time` porque ele está marcado como **protected**:
+
+```java
+public class SmartClock extends Clock {
+    public long getTimeInSeconds() {
+        return this.time / 1000; // acesso permitido por ser protected
+    }
+}
+```
+
+Se `time` fosse apenas **default**, `SmartClock` só teria acesso se estivesse no mesmo pacote. Como está marcado como **protected**, o acesso é garantido pela relação de herança, independentemente do pacote.  
+
+👉 Em resumo: o modificador **protected** amplia o alcance do **default**, permitindo acesso também por subclasses fora do pacote.
+
 ---
 
 ## Modificador **public**
