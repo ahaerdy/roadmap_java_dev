@@ -38,8 +38,6 @@ Como esse `final` realmente funciona?
 
 Essa é uma pergunta favorita em entrevistas. O entrevistador tenta descobrir o quanto você entende o comportamento de objetos em relação a construtores, métodos, variáveis de classe (`static`) e variáveis de instância.  
 
-Hoje em dia também perguntam sobre o conceito de *effectively final* a partir do Java 1.8.  
-
 ### Exemplo:
 
 ```java
