@@ -1,9 +1,8 @@
+# Como funciona a palavra-chave `final` em Java? 
 
-# Como funciona a palavra-chave "final" em Java?
+Em Java usamos a palavra-chave `final` com variáveis para especificar que seus valores não devem ser alterados. Mas percebo que você pode mudar o valor no construtor/métodos da classe. Novamente, se a variável for `static`, então ocorre um erro de compilação.  
 
-Em Java usamos a palavra-chave `final` com variáveis para especificar que seus valores não devem ser alterados. Mas perceba que você pode mudar o valor no construtor/métodos da classe. Entretanto, se a variável for `static`, ocorre um erro de compilação.  
-
-Vejamos o código:
+Aqui está o código:
 
 ```java
 import java.util.ArrayList;
@@ -26,7 +25,6 @@ class Test {
 ```
 
 O código acima funciona bem e não gera erros.  
-
 Agora, altere a variável para `static`:
 
 ```java
@@ -36,19 +34,45 @@ private static final List foo;
 Agora ocorre um erro de compilação.  
 Como esse `final` realmente funciona?
 
-## Explicação
+---
 
-- `final` → referência não pode ser reatribuída, mas pode ser inicializada no construtor.
-- `static` `final` → referência única da classe, precisa ser inicializada na declaração ou em bloco estático.
+## Resposta mais votada (668 votos)
 
-👉 O erro ocorre porque o compilador não permite que um campo static final seja inicializado dentro do construtor.
+Essa é uma pergunta favorita em entrevistas. O entrevistador tenta descobrir o quanto você entende o comportamento de objetos em relação a construtores, métodos, variáveis de classe (`static`) e variáveis de instância.  
+
+Hoje em dia também perguntam sobre o conceito de *effectively final* a partir do Java 1.8.  
+
+### Exemplo:
+
+```java
+import java.util.ArrayList;
+import java.util.List;
+
+class Test {
+    private final List foo;  // comentário-1
+
+    public Test() {
+        foo = new ArrayList();  // comentário-2
+        foo.add("foo");  // Modificação-1 comentário-3
+    }
+
+    public void setFoo(List foo) {
+        // this.foo = foo; // resulta em erro de compilação
+    }
+}
+```
+
+### Sobre construtor:
+- O construtor pode ser invocado apenas uma vez por criação de objeto usando `new`.
+- Não pode ser chamado múltiplas vezes.
+
+### Sobre método:
+- Um método pode ser chamado quantas vezes quiser (inclusive nunca).
+- O compilador sabe disso.
 
 ---
 
-### Detalhando
-
-#### Cenário 1
-
+### Cenário 1
 ```java
 private final List foo;
 ```
@@ -59,8 +83,7 @@ private final List foo;
 
 ---
 
-#### Cenário 2
-
+### Cenário 2
 ```java
 private static final List foo = new ArrayList();
 ```
@@ -72,7 +95,6 @@ private static final List foo = new ArrayList();
 ---
 
 ### Cenário 3
-
 ```java
 t.foo.add("bar");  // Modificação-2
 ```
