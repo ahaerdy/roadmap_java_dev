@@ -90,45 +90,9 @@ private static final List foo = new ArrayList();
 
 ---
 
-### Cenário 3
-```java
-t.foo.add("bar");  // Modificação-2
-```
-- Aqui você não está mudando a referência, mas adicionando conteúdo dentro da lista.  
-- O compilador reclama apenas se você tentar atribuir um novo `ArrayList()` à variável `foo`.
-
----
-
 ### Regras
 - Uma variável `final` inicializada não pode ser alterada para referenciar outro objeto.  
 - Classes `final` não podem ser estendidas.  
 - Métodos `final` não podem ser sobrescritos.  
 - Métodos `final` podem sobrescrever métodos da superclasse.
 
----
-
-### *Effectively final* no Java 1.8
-```java
-public class EffectivelyFinalDemo {
-    public void process() {
-        int thisValueIsFinalWithoutFinalKeyword = 10; // efetivamente final
-
-        class MethodLocalClass {
-            public void innerMethod() {
-                System.out.println(thisValueIsFinalWithoutFinalKeyword);
-            }
-        }
-    }
-}
-```
-
-- No Java 1.7 ou anterior, seria necessário usar `final`.  
-- No Java 1.8, se a variável não for reatribuída, ela é considerada *efetivamente final*.  
-- Isso é usado em classes internas locais de método.
-
----
-
-**Resumo:**  
-- `final` em variáveis significa que a referência não pode mudar.  
-- Isso não torna o objeto imutável — apenas impede que a variável aponte para outro objeto.  
-- Para imutabilidade, é necessário projetar a classe cuidadosamente.
