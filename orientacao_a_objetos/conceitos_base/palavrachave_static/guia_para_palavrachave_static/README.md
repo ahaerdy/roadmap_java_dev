@@ -1,23 +1,18 @@
 # Um Guia para a Palavra-chave Static em Java
 
 ## 1. Visão Geral
-Neste tutorial, exploraremos em detalhes a palavra-chave **static** da linguagem Java.  
-A palavra-chave *static* significa que um membro – como um campo ou método – pertence à classe em si, em vez de a qualquer instância específica dessa classe.  
-Como resultado, podemos acessar membros estáticos sem a necessidade de criar uma instância de um objeto.  
+Neste tutorial, exploraremos em detalhes a palavra-chave **static** da linguagem Java. A palavra-chave *static* significa que um membro – como um campo ou método – pertence à classe em si, em vez de a qualquer instância específica dessa classe. Como resultado, podemos acessar membros estáticos sem a necessidade de criar uma instância de um objeto.  
 
 Começaremos discutindo as diferenças entre campos e métodos estáticos e não estáticos. Em seguida, cobriremos classes e blocos de código estáticos e explicaremos por que componentes não estáticos não podem ser acessados a partir de um contexto estático.
 
 ---
 
 ## 2. Os Campos static (Ou Variáveis de Classe)
-Em Java, quando declaramos um campo como *static*, exatamente uma única cópia desse campo é criada e compartilhada entre todas as instâncias dessa classe.  
-Não importa quantas vezes instanciamos uma classe: sempre haverá apenas uma cópia do campo estático pertencente a ela.  
+Em Java, quando declaramos um campo como *static*, exatamente uma única cópia desse campo é criada e compartilhada entre todas as instâncias dessa classe. Não importa quantas vezes instanciamos uma classe: sempre haverá apenas uma cópia do campo estático pertencente a ela.  
 
 O valor desse campo estático é compartilhado entre todos os objetos da mesma classe.  
-Do ponto de vista da memória, variáveis estáticas são armazenadas na memória heap.
 
-Imagine uma classe com várias variáveis de instância, onde cada novo objeto criado dessa classe tem sua própria cópia dessas variáveis.  
-No entanto, se quisermos que uma variável rastreie o número de objetos criados, usamos uma variável estática. Isso permite que o contador seja incrementado a cada novo objeto:
+Imagine uma classe com várias variáveis de instância, onde cada novo objeto criado dessa classe tem sua própria cópia dessas variáveis. No entanto, se quisermos que uma variável rastreie o número de objetos criados, usamos uma variável estática. Isso permite que o contador seja incrementado a cada novo objeto:
 
 ```java
 public class Car {
@@ -49,17 +44,14 @@ Campos estáticos são úteis quando:
 - O valor da variável é independente dos objetos.
 - O valor deve ser compartilhado entre todos os objetos.
 
-Por fim, é importante saber que campos estáticos podem ser acessados por meio de uma instância (`ford.numberOfCars++`) ou diretamente pela classe (`Car.numberOfCars++`).  
-A segunda forma é preferida, pois indica claramente que se trata de uma variável de classe.
+Por fim, é importante saber que campos estáticos podem ser acessados por meio de uma instância (`ford.numberOfCars++`) ou diretamente pela classe (`Car.numberOfCars++`). A segunda forma é preferida, pois indica claramente que se trata de uma variável de classe.
 
 ---
 
 ## 3. Os Métodos static (Ou Métodos de Classe)
-Assim como os campos estáticos, métodos estáticos também pertencem a uma classe em vez de a um objeto.  
-Portanto, podemos invocá-los sem instanciar a classe.  
+Assim como os campos estáticos, métodos estáticos também pertencem a uma classe em vez de a um objeto. Portanto, podemos invocá-los sem instanciar a classe.  
 
-Geralmente, usamos métodos estáticos para realizar operações que não dependem da criação de instâncias.  
-Por exemplo, podemos usar um método estático para compartilhar código entre todas as instâncias da classe:
+Geralmente, usamos métodos estáticos para realizar operações que não dependem da criação de instâncias. Por exemplo, podemos usar um método estático para compartilhar código entre todas as instâncias da classe:
 
 ```java
 static void setNumberOfCars(int numberOfCars) {
@@ -69,8 +61,7 @@ static void setNumberOfCars(int numberOfCars) {
 
 Além disso, podemos usar métodos estáticos para criar classes utilitárias ou auxiliares. Exemplos populares são as classes `Collections` ou `Math` do JDK, `StringUtils` do Apache e `CollectionUtils` do Spring Framework.
 
-Assim como os campos estáticos, métodos estáticos **não podem ser sobrescritos**.  
-Isso ocorre porque métodos estáticos em Java são resolvidos em tempo de compilação, enquanto a sobrescrita de métodos faz parte do polimorfismo em tempo de execução.
+Assim como os campos estáticos, métodos estáticos **não podem ser sobrescritos**. Isso ocorre porque métodos estáticos em Java são resolvidos em tempo de compilação, enquanto a sobrescrita de métodos faz parte do polimorfismo em tempo de execução.
 
 Combinações válidas:
 - Métodos de instância podem acessar diretamente métodos e variáveis de instância.
@@ -81,8 +72,7 @@ Combinações válidas:
 ---
 
 ## 4. Os Blocos de Código static
-Normalmente, inicializamos variáveis estáticas diretamente durante a declaração.  
-No entanto, se as variáveis estáticas exigirem lógica de múltiplas instruções durante a inicialização, podemos usar um bloco estático.
+Normalmente, inicializamos variáveis estáticas diretamente durante a declaração. No entanto, se as variáveis estáticas exigirem lógica de múltiplas instruções durante a inicialização, podemos usar um bloco estático.
 
 Exemplo:
 
@@ -103,8 +93,7 @@ public class StaticBlockDemo {
 }
 ```
 
-A JVM resolve os campos e blocos estáticos na ordem em que são declarados.  
-Principais razões para usar blocos estáticos:
+A JVM resolve os campos e blocos estáticos na ordem em que são declarados. Principais razões para usar blocos estáticos:
 - Inicializar variáveis estáticas com lógica adicional além da atribuição.
 - Inicializar variáveis estáticas com tratamento de exceções personalizado.
 
@@ -161,5 +150,4 @@ Resultado: **Non-static variable cannot be referenced from a static context**.
 ---
 
 ## 7. Conclusão
-Neste artigo, vimos a palavra-chave *static* em ação e discutimos os principais motivos para usar campos, métodos, blocos e classes internas estáticas.  
-Por fim, aprendemos o que causa o erro **“Non-static variable cannot be referenced from a static context”**.  
+Neste artigo, vimos a palavra-chave *static* em ação e discutimos os principais motivos para usar campos, métodos, blocos e classes internas estáticas. Por fim, aprendemos o que causa o erro **“Non-static variable cannot be referenced from a static context”**.  
