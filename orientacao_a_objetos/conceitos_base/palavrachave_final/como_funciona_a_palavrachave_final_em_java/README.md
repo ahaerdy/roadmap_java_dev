@@ -1,4 +1,4 @@
-# Como funciona a palavra-chave `final` em Java? 
+# Como funciona a palavra-chave `final` em Java? (detalhamento)
 
 Em Java usamos a palavra-chave `final` com variáveis para especificar que seus valores não devem ser alterados. Mas perceba que você pode mudar o valor no construtor/métodos da classe. Se a variável for `static`, então ocorre um erro de compilação.  
 
