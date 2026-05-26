@@ -13,7 +13,7 @@ A tabela a seguir resume em quais construções cada modificador pode ser aplica
 
 |               | private | default | protected | public |
 |---------------|---------|---------|-----------|--------|
-| Classe        | Não     | Sim     | Não       | Sim    |
+| Classe        | Não     | ✅     | Não       | ✅    |
 | Classe Interna| Sim     | Sim     | Sim       | Sim    |
 | Construtor    | Sim     | Sim     | Sim       | Sim    |
 | Método        | Sim     | Sim     | Sim       | Sim    |
