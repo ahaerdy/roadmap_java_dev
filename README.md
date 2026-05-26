@@ -79,7 +79,7 @@ flowchart TD
     - [x] [Classes](./orientacao_a_objetos/conceitos_base/atributos_e_metodos/classes/)
     - [x] [Métodos](./orientacao_a_objetos/conceitos_base/atributos_e_metodos/metodos/)
     - [x] [Propriedades](./orientacao_a_objetos/conceitos_base/atributos_e_metodos/propriedades/) 
-- [ ] Modificadores de Acesso
+- [ ] [Modificadores de Acesso](./orientacao_a_objetos/conceitos_base/modificadores_de_acesso)
 - [ ] Palavra-chave `static`
 - [ ] Palavra-chave `final`
 - [ ] Classes Aninhadas

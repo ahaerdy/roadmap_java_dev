@@ -184,14 +184,3 @@ Exemplo:
 ```
 java -Dkey1=value -cp . com.jenkov.MyApp
 ```
-
-## Properties é Subclasse de Hashtable (Erro de Design)
-A classe `Properties` é subclasse de `Hashtable`, permitindo `put()` e `get()` com valores não-String, o que quebra o propósito da classe.  
-Exemplo problemático:
-
-```java
-Properties asProperties = new Properties();
-asProperties.put("abc", 999);
-String abc = asProperties.getProperty("abc");
-System.out.println(abc); // retorna null
-```
