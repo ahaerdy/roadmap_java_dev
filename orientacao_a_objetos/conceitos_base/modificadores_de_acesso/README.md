@@ -1,17 +1,15 @@
 # Modificadores de Acesso em Java
 
-Um modificador de acesso em Java especifica quais classes podem acessar uma determinada classe e seus campos, construtores e métodos. Os modificadores de acesso podem ser especificados separadamente para uma classe, seus construtores, campos e métodos. Os modificadores de acesso em Java também são às vezes chamados informalmente de especificadores de acesso, mas o nome correto é **modificadores de acesso**.
+Um modificador de acesso em Java especifica quais classes podem acessar uma determinada classe e seus campos, construtores e métodos. Eles são às vezes chamados informalmente de especificadores de acesso, mas o nome correto é **modificadores de acesso**.
 
-Classes, campos, construtores e métodos podem ter um dos quatro modificadores de acesso em Java:
+Classes, campos, construtores e métodos podem ter um dos quatro modificadores de acesso:
 
 - **private**
 - **default (package)**
 - **protected**
 - **public**
 
-Cada um desses modificadores será abordado nas seções seguintes deste tutorial.
-
-A tabela a seguir resume em quais construções Java cada modificador pode ser aplicado:
+A tabela a seguir resume em quais construções cada modificador pode ser aplicado:
 
 |               | private | default | protected | public |
 |---------------|---------|---------|-----------|--------|
