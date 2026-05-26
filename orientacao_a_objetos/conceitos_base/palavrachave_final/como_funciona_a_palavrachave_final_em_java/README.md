@@ -51,10 +51,10 @@ import java.util.ArrayList;
 import java.util.List;
 
 class Test {
-    private final List foo;  // comentário-1
+    private final List foo; 
 
     public Test() {
-        foo = new ArrayList();  // comentário-2
+        foo = new ArrayList();  
         foo.add("foo");  // Modificação-1 comentário-3
     }
 
