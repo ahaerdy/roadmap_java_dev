@@ -88,7 +88,7 @@ Exemplo:
 
 ```java
 public class Clock {
-    long time = 0;
+    long time = 0; // <- modificador defaul sendo aplicado aqui
 }
 
 public class ClockReader {
@@ -99,6 +99,10 @@ public class ClockReader {
     }
 }
 ```
+
+Como não há nenhum modificador explícito (`private`, `protected` ou `public`), o Java aplica automaticamente o modificador **default**. Isso significa que o campo `time` pode ser acessado por qualquer classe que esteja no **mesmo pacote** da classe `Clock`, como a classe `ClockReader` no exemplo.  
+
+Portanto, o acesso `clock.time` dentro de `ClockReader` funciona porque ambas as classes estão no mesmo pacote e o campo `time` foi declarado com acesso **default**.
 
 ---
 
