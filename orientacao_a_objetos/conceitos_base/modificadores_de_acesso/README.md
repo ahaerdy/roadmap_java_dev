@@ -13,7 +13,7 @@ A tabela a seguir resume em quais construções cada modificador pode ser aplica
 
 |               | private | default | protected | public |
 |---------------|---------|---------|-----------|--------|
-| Classe        | Não     | ✅     | Não       | ✅    |
+| Classe        | ❌     | ✅     | ❌       | ✅    |
 | Classe Interna| ✅     | ✅     | ✅       | ✅    |
 | Construtor    | ✅     | ✅     | ✅       | ✅    |
 | Método        | ✅     | ✅     | ✅       | ✅    |
@@ -146,7 +146,7 @@ public class ClockReader {
 
 ## Modificadores de Classe
 
-O modificador de acesso aplicado a uma classe tem precedência sobre os modificadores de seus membros. Classes só podem ser **default** ou **public**. Não podem ser **private** ou **protected**.
+O modificador de acesso aplicado a uma classe tem precedência sobre os modificadores de seus membros. Classes só podem ser **default** ou **public**. ❌ podem ser **private** ou **protected**.
 
 ---
 
