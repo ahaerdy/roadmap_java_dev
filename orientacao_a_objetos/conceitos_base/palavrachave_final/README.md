@@ -6,7 +6,7 @@ A palavra-chave `final` em Java é um modificador não relacionado a acesso, usa
 - Quando aplicada a um método, impede que o método seja sobrescrito em uma subclasse.
 - Quando aplicada a uma classe, impede que a classe seja estendida (herdada).
 
-Veja também:
+Ver também:
 
 - [Palavra-chave `final`](./palavrachave_final/)
 - [Como funciona a palavra-chave final em Java?](./como_funciona_a_palavrachave_final_em_java/)
