@@ -36,45 +36,19 @@ private static final List foo;
 Agora ocorre um erro de compilação.  
 Como esse `final` realmente funciona?
 
----
+## Explicação
 
-## Resposta mais votada (668 votos)
+- `final` → referência não pode ser reatribuída, mas pode ser inicializada no construtor.
+- `static` `final` → referência única da classe, precisa ser inicializada na declaração ou em bloco estático.
 
-Essa é uma pergunta favorita em entrevistas. O entrevistador tenta descobrir o quanto você entende o comportamento de objetos em relação a construtores, métodos, variáveis de classe (`static`) e variáveis de instância.  
-
-Hoje em dia também perguntam sobre o conceito de *effectively final* a partir do Java 1.8.  
-
-### Exemplo:
-
-```java
-import java.util.ArrayList;
-import java.util.List;
-
-class Test {
-    private final List foo; 
-
-    public Test() {
-        foo = new ArrayList();  
-        foo.add("foo");  // Modificação-1 comentário-3
-    }
-
-    public void setFoo(List foo) {
-        // this.foo = foo; // resulta em erro de compilação
-    }
-}
-```
-
-### Sobre construtor:
-- O construtor pode ser invocado apenas uma vez por criação de objeto usando `new`.
-- Não pode ser chamado múltiplas vezes.
-
-### Sobre método:
-- Um método pode ser chamado quantas vezes quiser (inclusive nunca).
-- O compilador sabe disso.
+👉 O erro ocorre porque o compilador não permite que um campo static final seja inicializado dentro do construtor.
 
 ---
 
-### Cenário 1
+### Detalhando
+
+#### Cenário 1
+
 ```java
 private final List foo;
 ```
@@ -85,7 +59,8 @@ private final List foo;
 
 ---
 
-### Cenário 2
+#### Cenário 2
+
 ```java
 private static final List foo = new ArrayList();
 ```
@@ -97,6 +72,7 @@ private static final List foo = new ArrayList();
 ---
 
 ### Cenário 3
+
 ```java
 t.foo.add("bar");  // Modificação-2
 ```
