@@ -13,11 +13,11 @@ A tabela a seguir resume em quais construções cada modificador pode ser aplica
 
 |               | private | default | protected | public |
 |---------------|---------|---------|-----------|--------|
-| Classe        | Não     | Sim     | Não       | Sim    |
-| Classe Interna| Sim     | Sim     | Sim       | Sim    |
-| Construtor    | Sim     | Sim     | Sim       | Sim    |
-| Método        | Sim     | Sim     | Sim       | Sim    |
-| Campo         | Sim     | Sim     | Sim       | Sim    |
+| Classe        | Não     | ✅     | Não       | ✅    |
+| Classe Interna| ✅     | ✅     | ✅       | ✅    |
+| Construtor    | ✅     | ✅     | ✅       | ✅    |
+| Método        | ✅     | ✅     | ✅       | ✅    |
+| Campo         | ✅     | ✅     | ✅       | ✅    |
 
 Atribuir um modificador de acesso a uma classe, construtor, campo ou método também é chamado de “marcar” esse elemento como público, privado, etc.
 
