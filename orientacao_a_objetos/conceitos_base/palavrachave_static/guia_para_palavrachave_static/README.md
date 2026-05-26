@@ -1,4 +1,4 @@
-# Um Guia para a Palavra-chave Static em Java | Baeldung
+# Um Guia para a Palavra-chave Static em Java
 
 ## 1. Visão Geral
 Neste tutorial, exploraremos em detalhes a palavra-chave **static** da linguagem Java.  
