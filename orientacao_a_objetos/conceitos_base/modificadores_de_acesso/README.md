@@ -175,7 +175,7 @@ public class ClockReader {
 
 ## Modificadores de Classe
 
-O modificador de acesso aplicado a uma classe tem precedência sobre os modificadores de seus membros. Classes só podem ser **default** ou **public**. ❌ podem ser **private** ou **protected**.
+O modificador de acesso aplicado a uma classe tem precedência sobre os modificadores de seus membros. Classes só podem ser **default** ou **public**. Não podem ser **private** ou **protected**.
 
 ---
 
