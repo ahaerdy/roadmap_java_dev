@@ -1,6 +1,6 @@
 # Propriedades em Java
 
-A classe Java Properties, `java.util.Properties`, é como um `Map` de pares chave e valor do tipo `String`. A classe Java Properties pode escrever os pares chave-valor em um arquivo de propriedades no disco e ler novamente esses valores. Este é um mecanismo frequentemente usado para armazenar propriedades simples de configuração em aplicações Java.
+A classe Java Properties, `java.util.Properties`, é como um mapa de pares chave e valor do tipo `String`. A classe Java Properties pode escrever os pares chave-valor em um arquivo de propriedades no disco e ler novamente esses valores. Este é um mecanismo frequentemente usado para armazenar propriedades simples de configuração em aplicações Java.
 
 ## Criar uma Instância de Properties
 Para usar a classe Java Properties, você deve primeiro criar uma instância de `Properties`. Isso é feito via seu construtor e a instrução `new` do Java.  
