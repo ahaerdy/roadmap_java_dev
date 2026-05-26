@@ -1,4 +1,4 @@
-# A Palavra-chave “final” em Java 
+# A Palavra-chave `final` em Java 
 
 ## 1. Visão Geral
 Enquanto a herança nos permite reutilizar código existente, às vezes precisamos impor limitações à extensibilidade por diversos motivos; a palavra-chave `final` nos permite fazer exatamente isso.  
