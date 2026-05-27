@@ -146,7 +146,7 @@ Saída:
 
 ---
 
-### Acessando campos privados via métodos acessores
+### Acessando campos privados via métodos acessores (**getters** e **setters**)
 
 Campos privados geralmente são acessados por meio de métodos **getters** e **setters** (no primeiro exemplo, a classe `Clock` já implementava esse princípio através do método `readClock` **DENTRO** da classe Clock). 
 
