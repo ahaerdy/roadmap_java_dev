@@ -39,42 +39,28 @@ Você também pode acessar a variável estática usando qualquer objeto dessa cl
 ### Classe Main (exemplo)
 
 ```java
-public class Main {
+public class MyClass {
     public static void main(String[] args) {
-        // 1. Exibe o valor inicial da variável estática antes de qualquer modificação
-        // Como COUNT é static, podemos acessá-la diretamente pelo nome da classe, sem instanciar
-        System.out.println("Valor inicial de COUNT: " + Counter.COUNT); // Esperado: 0
-
-        System.out.println("\n--- Testando via Construtor ---");
-        
-        // 2. Criando a primeira instância de Counter
-        // O construtor será executado e incrementará o COUNT em 1
+        // 1. Criamos o primeiro objeto (c1) da classe Counter.
+        // O construtor é executado e incrementa a variável estática COUNT para 1.
         Counter c1 = new Counter();
-        System.out.println("Após criar c1 (COUNT acessado via classe): " + Counter.COUNT); // Esperado: 1
-        
-        // 3. Criando a segunda instância de Counter
-        // O construtor incrementa o MESMO COUNT compartilhado na memória
+
+        // 2. Criamos o segundo objeto (c2) da classe Counter.
+        // Como COUNT é compartilhada, o construtor incrementa o valor atual (1) para 2.
         Counter c2 = new Counter();
-        System.out.println("Após criar c2 (COUNT acessado via classe): " + Counter.COUNT); // Esperado: 2
 
-        System.out.println("\n--- Testando via Método Estático ---");
+        // 3. Acessamos a variável estática diretamente pelo nome da classe.
+        // Saída esperada: "2"
+        System.out.println(Counter.COUNT);
 
-        // 4. Chamando o método estático de incremento
-        // Métodos estáticos pertencem à classe e não dependem de objetos para serem invocados
-        Counter.increment();
-        System.out.println("Após chamar Counter.increment(): " + Counter.COUNT); // Esperado: 3
-
-        System.out.println("\n--- Provando o Compartilhamento de Memória ---");
-        
-        // 5. Modificando o valor diretamente pela classe e observando o impacto
-        Counter.COUNT = 10;
-        System.out.println("Valor alterado diretamente na classe Counter: " + Counter.COUNT); // Esperado: 10
-        
-        // Nota importante: Embora seja possível acessar membros estáticos através de referências 
-        // de objetos (ex: c1.COUNT ou c2.COUNT), isso é considerado uma má prática em Java.
-        // O correto e seguro é sempre acessar pelo nome da classe (Counter.COUNT).
+        // 4. Demonstração adicional baseada na introdução:
+        // Também é possível acessar a mesma variável estática usando qualquer objeto da classe.
+        // Ambas as linhas abaixo também exibirão "2", pois apontam para a mesma variável compartilhada.
+        // System.out.println(c1.COUNT);
+        // System.out.println(c2.COUNT);
     }
 }
+
 ```
 
 
