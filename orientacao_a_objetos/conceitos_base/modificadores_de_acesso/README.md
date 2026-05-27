@@ -42,9 +42,7 @@ O campo `time` não pode ser acessado fora da classe `Clock`.
 
 Aqui estão os exemplos práticos de onde a variável `private` **pode** e **não pode** ser acessada, seguindo a mesma estrutura:
 
----
-
-### 🟢 Onde PODE ser acessada (Apenas dentro da mesma classe)
+🟩 Onde PODE ser acessada (Apenas dentro da mesma classe)
 
 O modificador `private` restringe o acesso exclusivamente ao escopo da própria classe onde a variável foi declarada.
 
