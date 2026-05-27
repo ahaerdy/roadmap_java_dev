@@ -143,10 +143,6 @@ A saída é 62, porque a variável `MOON_COUNT` recebe esse valor dentro do bloc
 
 ---
 
-Aqui está o texto unificado e expandido. O conteúdo original foi mantido e integrado ao detalhamento técnico, acompanhado de exemplos práticos em código e da aplicação real no padrão de projeto *Builder*.
-
----
-
 ## Classes Aninhadas Estáticas
 
 Uma classe pode ter uma classe aninhada estática que pode ser acessada usando o nome da classe externa.
