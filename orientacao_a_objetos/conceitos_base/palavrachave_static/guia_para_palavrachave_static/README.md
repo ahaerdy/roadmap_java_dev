@@ -87,7 +87,7 @@ public class Car {
     }
 
     // 3. MÉTODO ESTÁTICO (Método de Classe)
-    // Pertence à classe e pode ser chamado sem que nenhum objeto tenha sido criado.
+    // Pertence à classe e pode ser chamado SEM QUE nenhum objeto tenha sido criado.
     public static void setNumberOfCars(int numberOfCars) {
         // Como o método é estático, alteramos a variável estática diretamente pelo escopo da classe
         Car.numberOfCars = numberOfCars;
@@ -209,12 +209,27 @@ Diferença principal:
 Exemplo de uso em padrão Singleton:
 
 ```java
-public class Singleton {
+ppublic class Singleton {
+    
+    // 1. CONSTRUTOR PRIVADO
+    // Garante que nenhuma classe externa consiga dar "new Singleton()".
+    // O controle de criação da instância fica restrito estritamente a esta classe.
     private Singleton() {}
+
+    // 2. CLASSE ANINHADA ESTÁTICA (Static Nested Class)
+    // Como é estática, ela não precisa de uma instância de "Singleton" para existir.
+    // Ela é privada, ou seja, é invisível para o mundo externo, funcionando como um segredo de implementação.
     private static class SingletonHolder {
+        // Atributo estático e final (constante) que armazena a única instância do Singleton.
+        // Pela regra de escopo, classes aninhadas têm privilégio para acessar o construtor privado acima.
         public static final Singleton instance = new Singleton();
     }
+
+    // 3. MÉTODO ESTÁTICO DE ACESSO GLOBAL
+    // Ponto de entrada para que qualquer parte do sistema obtenha a instância única.
     public static Singleton getInstance() {
+        // Quando este método é chamado pela primeira vez, a JVM lê "SingletonHolder.instance".
+        // Só NESTE MOMENTO a classe SingletonHolder é carregada na memória e a instância é criada (Lazy Loading).
         return SingletonHolder.instance;
     }
 }
