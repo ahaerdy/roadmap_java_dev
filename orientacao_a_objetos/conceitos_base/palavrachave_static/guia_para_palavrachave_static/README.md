@@ -247,15 +247,15 @@ Se você deixar o construtor de uma classe como `public`, qualquer desenvolvedor
 
 Com o **Singleton**, nós trancamos a porta do construtor (`private`) e controlamos o acesso por um gargalo. Ele é ideal para:
 
-1. **Gerenciador de Conexão com Banco de Dados:** Para todo mundo usar o mesmo canal.
-2. **Gerenciador de Logs (Logger):** Para que todas as partes do sistema escrevam centralizadamente no mesmo arquivo de texto, sem um atropelar o arquivo do outro.
-3. **Gerenciador de Configurações da Aplicação:** Carrega os dados de um arquivo `.properties` ou `.env` uma vez só na memória e serve o sistema inteiro.
+1. **Gerenciador de Conexão com Banco de Dados:** para que todas as rotinas usam o mesmo canal.
+2. **Gerenciador de Logs (Logger):** para que todas as partes do sistema escrevam centralizadamente no mesmo arquivo de texto, sem um atropelar o arquivo do outro.
+3. **Gerenciador de Configurações da Aplicação:** para carregar os dados de um arquivo `.properties` ou `.env` uma vez só na memória e serve o sistema inteiro.
 
 ### Como criar uma classe Main para provar o uso?
 
 Para provar que o código realmente bloqueia novas criações e compartilha exatamente o mesmo objeto, precisamos de uma classe `Main`.
 
-Como não conseguimos dar `new Singleton()`, nós chamamos o método `getInstance()`. Se chamarmos esse método duas vezes em variáveis diferentes, **ambas apontarão para o mesmíssimo endereço de memória**.
+Como não conseguimos dar `new Singleton()`, nós chamamos o método `getInstance()`. Se chamarmos esse método duas vezes em variáveis diferentes, **ambas apontarão para o mesmo endereço de memória**.
 
 Veja o exemplo prático abaixo para executar e testar:
 
