@@ -323,23 +323,11 @@ public class Main {
     }
 }
 
-### Saída Esperada no Console:
+### Saída:
 
 <p align="center">
   <img src="000-Midia_e_Anexos/2026-05-27-17-01-54.png" alt="" width="1024">
 </p>
-
-```text
---- Solicitando a Instância pela Primeira Vez ---
-
---- Solicitando a Instância pela Segunda Vez ---
-
---- Comparando as Referências de Memória ---
-Provado: s1 e s2 são EXATAMENTE o mesmo objeto!
-ID do objeto s1: 1534030866
-ID do objeto s2: 1534030866
-
-```
 
 ### Resumo do código:
 
