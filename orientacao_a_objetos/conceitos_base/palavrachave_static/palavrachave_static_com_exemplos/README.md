@@ -100,28 +100,44 @@ public class MyClass {
 
 ---
 
+Aqui está o trecho reescrito, com o código Java totalmente documentado através de comentários *inline* para explicar o papel do bloco estático e a ordem de execução:
+
+---
+
 ## Blocos Estáticos
 
-Blocos de código estáticos são usados para inicializar variáveis estáticas. Esses blocos são executados imediatamente após a declaração das variáveis estáticas.
+Blocos de código estáticos são usados para inicializar variáveis estáticas (especialmente útil para lógicas complexas ou constantes). Esses blocos são executados automaticamente apenas uma vez, no momento em que a classe é carregada na memória, logo após a declaração das variáveis estáticas e antes de qualquer objeto ser criado ou método ser chamado.
 
 **Exemplo:**
+
 ```java
 public class Saturn {
+    // Declaração de uma constante estática (final). 
+    // Ela não recebeu valor aqui, o que nos obriga a inicializá-la no bloco static.
     public static final int MOON_COUNT;
+
+    // Bloco estático de inicialização.
+    // É executado automaticamente assim que a classe Saturn é mencionada/carregada.
     static {
-        MOON_COUNT = 62;
+        MOON_COUNT = 62; // Inicializa a variável estática com o valor 62
     }
 }
 
+```
+
+```java
 public class Main {
     public static void main(String[]  args) {
-        System.out.println(Saturn.MOON_COUNT);
+        // Acessa a variável estática diretamente pelo nome da classe.
+        // No momento em que "Saturn" é lido, o bloco static roda e define o valor como 62.
+        System.out.println(Saturn.MOON_COUNT); 
     }
 }
 // Saída "62"
+
 ```
 
-A saída é **62**, porque a variável `MOON_COUNT` recebe esse valor no bloco estático.
+A saída é 62, porque a variável `MOON_COUNT` recebe esse valor dentro do bloco estático no exato momento em que a classe `Saturn` é carregada para ser utilizada no método `main`.
 
 ---
 
