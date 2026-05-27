@@ -139,6 +139,8 @@ public class Main {
 
 A saída é 62, porque a variável `MOON_COUNT` recebe esse valor dentro do bloco estático no exato momento em que a classe `Saturn` é carregada para ser utilizada no método `main`.
 
+**Observação**: em Java, o bloco estático roda exclusivamente quando a classe é carregada na memória pela JVM (Java Virtual Machine), o que acontece na primeira vez em que a classe é mencionada no código. Depois disso, a classe permanece carregada, e as próximas referências apenas acessam os valores que já estão na memória.
+
 ---
 
 ## Classes Aninhadas Estáticas
