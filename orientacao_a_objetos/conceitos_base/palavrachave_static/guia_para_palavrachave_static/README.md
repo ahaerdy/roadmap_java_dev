@@ -41,6 +41,7 @@ public void whenNumberOfCarObjectsInitialized_thenStaticCounterIncreases() {
 ```
 
 Campos estáticos são úteis quando:
+
 - O valor da variável é independente dos objetos.
 - O valor deve ser compartilhado entre todos os objetos.
 
@@ -49,7 +50,8 @@ Por fim, é importante saber que campos estáticos podem ser acessados por meio 
 ---
 
 ## 3. Os Métodos static (Ou Métodos de Classe)
-Assim como os campos estáticos, métodos estáticos também pertencem a uma classe em vez de a um objeto. Portanto, podemos invocá-los sem instanciar a classe.  
+
+Assim como os campos estáticos, métodos estáticos também pertencem a uma classe em vez de a um objeto. Portanto, podemos invocá-los **sem instanciar a classe**.  
 
 Geralmente, usamos métodos estáticos para realizar operações que não dependem da criação de instâncias. Por exemplo, podemos usar um método estático para compartilhar código entre todas as instâncias da classe:
 
@@ -58,6 +60,98 @@ static void setNumberOfCars(int numberOfCars) {
     Car.numberOfCars = numberOfCars;
 }
 ```
+
+### Detalhamento
+
+O exemplo completo foi estruturado para demonstrar como métodos e variáveis estáticas interagem com o sistema de memória do Java. Abaixo, o código está dividido entre a classe de definição (`Car`) e a classe de execução (`Main`), ambas totalmente documentadas com comentários *inline*.
+
+---
+
+### 1. A Classe Principal (Car.java)
+
+Esta classe define a estrutura do objeto e contém o membro estático que gerencia o estado global da frota.
+
+```java
+public class Car {
+    // 1. ATRIBUTO ESTÁTICO (Variável de Classe)
+    // Alocado na área de memória estática (Metaspace). Existe apenas uma cópia para toda a classe.
+    public static int numberOfCars = 0;
+
+    // 2. ATRIBUTOS DE INSTÂNCIA (Variáveis de Objeto)
+    // Cada carro criado com "new" terá suas próprias cópias isoladas na memória Heap.
+    public String model;
+    public String color;
+
+    // Construtor para inicializar os atributos específicos de cada objeto
+    public Car(String model, String color) {
+        this.model = model;
+        this.color = color;
+    }
+
+    // 3. MÉTODO ESTÁTICO (Método de Classe)
+    // Pertence à classe e pode ser chamado sem que nenhum objeto tenha sido criado.
+    public static void setNumberOfCars(int numberOfCars) {
+        // Como o método é estático, alteramos a variável estática diretamente pelo escopo da classe
+        Car.numberOfCars = numberOfCars;
+        
+        // RESTRIÇÃO: A linha abaixo geraria erro de compilação se estivesse ativa:
+        // this.model = model; 
+        // Métodos estáticos não possuem a referência "this" porque não estão associados a nenhum objeto.
+    }
+
+    // Método comum de instância para exibir as propriedades individuais do carro
+    public void exibirDetalhes() {
+        System.out.println("Carro: " + this.model + " | Cor: " + this.color);
+    }
+}
+
+```
+
+---
+
+### 2. A Classe de Teste (Main.java)
+
+Esta classe coordena os testes para evidenciar que o método estático modifica o valor na raiz da classe, afetando uniformemente o comportamento do sistema.
+
+```java
+public class Main {
+    public static void main(String[] args) {
+        
+        System.out.println("--- Cenário 1: Invocação do Método Estático ---");
+
+        // Chamamos o método estático DIRETAMENTE pela classe "Car", sem dar "new"
+        Car.setNumberOfCars(100);
+
+        // O valor já está guardado na memória global da classe
+        System.out.println("Valor de numberOfCars via classe: " + Car.numberOfCars); // Saída: 100
+
+
+        System.out.println("\n--- Cenário 2: Instanciação de Objetos Isolados ---");
+
+        // Criamos dois carros independentes. Cada um recebe seu próprio modelo e cor
+        Car carroDoArthur = new Car("Civic", "Preto");
+        Car carroDaPaloma = new Car("Fit", "Cinza");
+
+        carroDoArthur.exibirDetalhes(); // Saída: Civic | Preto
+        carroDaPaloma.exibirDetalhes(); // Saída: Fit | Cinza
+
+
+        System.out.println("\n--- Cenário 3: Compartilhamento de Estado Global ---");
+
+        // Modificamos o valor novamente usando o método estático da classe
+        Car.setNumberOfCars(250);
+
+        // A alteração reflete imediatamente para o ecossistema completo
+        System.out.println("Novo valor global consultado via classe Car: " + Car.numberOfCars); // Saída: 250
+        
+        // Nota: Se tentássemos acessar via "carroDoArthur.numberOfCars", o valor exibido também seria 250,
+        // pois o objeto aponta para a mesma variável centralizada na classe.
+    }
+}
+```
+
+---
+
 
 Além disso, podemos usar métodos estáticos para criar classes utilitárias ou auxiliares. Exemplos populares são as classes `Collections` ou `Math` do JDK, `StringUtils` do Apache e `CollectionUtils` do Spring Framework.
 
