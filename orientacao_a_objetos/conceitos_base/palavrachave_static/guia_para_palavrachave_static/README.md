@@ -279,6 +279,8 @@ public class Main {
         // Se s1 e s2 forem iguais (==), significa que ocupam o mesmo espaço na memória Heap.
         if (s1 == s2) {
             System.out.println("Provado: s1 e s2 são EXATAMENTE o mesmo objeto!");
+            // 1 e s2 não são objetos diferentes. Na realidade, eles são duas variáveis de referência distintas
+            // que apontam para o mesmo objeto alocado no mesmo endereço de espaço de memória Heap.
         } else {
             System.out.println("Objetos diferentes (Isso nunca vai acontecer aqui).");
         }
