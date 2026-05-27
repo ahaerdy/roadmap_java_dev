@@ -41,8 +41,6 @@ O campo `time` não pode ser acessado fora da classe `Clock`.
 
 Aqui estão os exemplos práticos de onde a variável `private` **pode** e **não pode** ser acessada, seguindo a mesma estrutura:</br>
 
-#### 🟩 Onde PODE ser acessada (Apenas dentro da mesma classe)
-
 O modificador `private` restringe o acesso exclusivamente ao escopo da própria classe onde a variável foi declarada.
 
 ```java
@@ -103,11 +101,11 @@ Saída (linha 12 descomentada) :
   <img src="000-Midia_e_Anexos/2026-05-27-08-07-21.png" alt="" width="640">
 </p>
 
-#### 🟥 Onde NÃO PODE ser acessada (Classes externas ou Subclasses)
+Exemplos adicionais onde a variável `private` NÃO PODE ser acessada (Classes externas ou Subclasses)
 
-Nenhuma outra classe no universo do seu código — mesmo que seja uma herança (subclasse) ou que esteja no mesmo pacote — conseguirá tocar nessa variável diretamente.
+Nenhuma outra classe no universo do seu código — mesmo que seja uma herança (subclasse) ou que esteja no mesmo pacote — conseguirá acessar nessa variável diretamente.
 
-#### Cenário 1: Uma classe externa tentando acessar
+Cenário 1: Uma classe externa tentando acessar
 
 ```java
 public class ClockReader {
@@ -118,10 +116,15 @@ public class ClockReader {
         System.out.println(clock.time); 
     }
 }
-
 ```
 
-#### Cenário 2: Uma subclasse (Herança) tentando acessar
+Saída:
+
+<p align="center">
+  <img src="000-Midia_e_Anexos/2026-05-27-08-21-11.png" alt="" width="640">
+</p>
+
+Cenário 2: Uma subclasse (Herança) tentando acessar
 
 ```java
 // SmartClock herda tudo de Clock, mas...
