@@ -48,10 +48,21 @@ Exemplo:
 
 ```java
 public class Customer {
-    private    String email;
-               String position;   // sem modificador = acesso de pacote
-    protected  String name;
-    public     String city;
+    // 1. PRIVATE (Privado): Visível APENAS dentro desta própria classe (Customer).
+    // Nenhuma outra classe, mesmo que esteja no mesmo pacote ou seja uma subclasse, pode acessá-lo diretamente.
+    private String email;
+
+    // 2. DEFAULT / PACKAGE-PRIVATE (Padrão/Sem modificador): Visível apenas para classes do MESMO PACOTE.
+    // Classes fora do pacote onde "Customer" está localizado não conseguem enxergar ou alterar este campo.
+    String position;
+
+    // 3. PROTECTED (Protegido): Visível para classes do MESMO PACOTE e por SUBCLASSES (herança).
+    // Mesmo que uma classe filha (subclasse) esteja em outro pacote diferente, ela terá acesso a este atributo.
+    protected String name;
+
+    // 4. PUBLIC (Público): Visível para QUALQUER classe em qualquer pacote do projeto.
+    // É o nível de acesso mais permissivo de todos.
+    public String city;
 }
 ```
 
