@@ -102,7 +102,6 @@ Saída (linha 12 descomentada) :
 <p align="center">
   <img src="000-Midia_e_Anexos/2026-05-27-08-07-21.png" alt="" width="640">
 </p>
----
 
 #### 🟥 Onde NÃO PODE ser acessada (Classes externas ou Subclasses)
 
@@ -154,7 +153,13 @@ public class Clock {
 
 ```
 
-</details>
+### O paradoxo da Classe Privada
+
+O modificador private significa: "Este elemento só pode ser acessado dentro do escopo onde ele foi definido".
+
+- Se você pudesse criar uma private class Clock no seu arquivo, ela só seria visível dentro dela mesma. Nenhuma outra classe no universo do seu código (nem a Main, nem nenhuma outra) conseguiria enxergar a existência dela.
+- Se ninguém consegue enxergar a classe, ninguém pode criar um objeto dela (como new Clock()).
+- Se ninguém pode criar o objeto, a classe se torna um código fantasma: ela existe no arquivo, ocupa espaço, mas é 1000% inútil porque nunca poderá ser instanciada ou usada
 
 ### Acessando campos privados via métodos acessores
 
