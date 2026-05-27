@@ -61,13 +61,11 @@ static void setNumberOfCars(int numberOfCars) {
 }
 ```
 
-### Detalhamento
+### Detalhamento (aprofundando)
 
-O exemplo completo foi estruturado para demonstrar como métodos e variáveis estáticas interagem com o sistema de memória do Java. Abaixo, o código está dividido entre a classe de definição (`Car`) e a classe de execução (`Main`), ambas totalmente documentadas com comentários *inline*.
+Um exemplo foi estruturado para demonstrar como métodos e variáveis estáticas interagem com o sistema de memória do Java. Abaixo, o código COMPLETO dividido entre a classe de definição (`Car`) e a classe de execução (`Main`).
 
----
-
-### 1. A Classe Principal (Car.java)
+#### 1. A Classe Principal (Car.java)
 
 Esta classe define a estrutura do objeto e contém o membro estático que gerencia o estado global da frota.
 
@@ -107,9 +105,7 @@ public class Car {
 
 ```
 
----
-
-### 2. A Classe de Teste (Main.java)
+### #2. A Classe de Teste (Main.java)
 
 Esta classe coordena os testes para evidenciar que o método estático modifica o valor na raiz da classe, afetando uniformemente o comportamento do sistema.
 
@@ -149,6 +145,10 @@ public class Main {
     }
 }
 ```
+
+Saída:
+
+
 
 ---
 
