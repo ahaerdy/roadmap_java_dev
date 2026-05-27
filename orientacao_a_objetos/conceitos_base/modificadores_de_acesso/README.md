@@ -72,6 +72,32 @@ public class Clock {
 }
 ```
 
+Classe Main:
+
+```java
+public class Main {
+    public static void main(String[] args) {
+        // 1. Criando uma instância (objeto) da classe Clock
+        Clock meuRelogio = new Clock();
+
+        // 2. FORMA CORRETA: Acessando o valor através do método público
+        // Como 'readClock()' é público, qualquer classe pode chamá-lo.
+        long valorDoRelogio = meuRelogio.readClock();
+        System.out.println("Horário lido com sucesso: " + valorDoRelogio);
+
+        // 3. FORMA INCORRETA (Se desproteger a linha abaixo, o código não compila):
+        // System.out.println(meuRelogio.time);
+        // Erro: time has private access in Clock
+    }
+}
+```
+
+Saída:
+
+<p align="center">
+  <img src="000-Midia_e_Anexos/2026-05-27-07-58-26.png" alt="" width="360">
+</p>
+
 ---
 
 ### 🔴 Onde NÃO PODE ser acessada (Classes externas ou Subclasses)
