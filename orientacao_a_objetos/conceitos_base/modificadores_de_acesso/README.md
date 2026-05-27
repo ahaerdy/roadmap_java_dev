@@ -150,7 +150,7 @@ Saída:
 
 Campos privados geralmente são acessados por meio de métodos **getters** e **setters** (no primeiro exemplo, a classe `Clock` já implementava esse princípio através do método `readClock` **DENTRO** da classe Clock). 
 
-Aqui aprofundamos com mais exemplos:
+Segue um exemplo:
 
 ```java
 public class Clock {
@@ -201,6 +201,26 @@ public class Clock {
     }
 }
 ```
+
+O `this(time)` faz o que chamamos em Java de **encadeamento de construtores** (*constructor chaining*). Em termos simples: ele é uma instrução que diz ao Java para **chamar outro construtor da mesma classe** antes de executar o resto do código do construtor atual.
+
+Aqui está o passo a passo de como ele funciona no seu exemplo:
+
+#### O Fluxo de Execução
+
+Quando alguém executa `new Clock(1000, 50);`, o Java faz o seguinte caminho:
+
+1. Ele entra no **segundo construtor** (o público, que recebe dois parâmetros).
+2. A primeira linha que ele encontra é `this(time);` (onde `time` vale `1000`).
+3. O Java temporariamente "pausa" esse construtor e pula direto para o **primeiro construtor** (o privado), que aceita apenas um parâmetro do tipo `long`.
+4. O construtor privado roda e executa `this.time = time;` (guardando o valor `1000` no atributo da classe).
+5. Assim que o construtor privado termina, o Java **volta** para o construtor público, exatamente na linha logo abaixo do `this(time);`.
+6. Ele continua a execução e roda `this.time += timeOffset;` (somando mais `50` ao valor, totalizando `1050`).
+
+#### Duas regras de ouro do `this(...)` como construtor:
+
+* **Deve ser a primeira linha:** O Java exige estritamente que a chamada `this(...)` seja a **primeira instrução** dentro do construtor. Se você tentar colocar qualquer linha de código antes dele, o compilador vai gerar um erro.
+* **Evita duplicação:** A principal utilidade disso é não precisar repetir o código de inicialização básica (como `this.time = time;`) em todos os construtores que você criar. Você centraliza a lógica em um construtor principal e faz os outros "reaproveitarem" ele.
 
 ---
 
