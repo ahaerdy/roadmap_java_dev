@@ -82,7 +82,7 @@ flowchart TD
 - [x] [Modificadores de Acesso](./orientacao_a_objetos/conceitos_base/modificadores_de_acesso) (private, default, protected, public) ✓
 - [x] [Palavra-chave `static`](./orientacao_a_objetos/conceitos_base/palavrachave_static)
     - [x] [Palavra-chave `static` em Java explicada com exemplos](./orientacao_a_objetos/conceitos_base/palavrachave_static/palavrachave_static_com_exemplos/) ✓
-    - [x] [Campos estáticos, não estáticos (e final) em Java](./orientacao_a_objetos/conceitos_base/palavrachave_static/campos_estatico_e_naoestatico/)
+    - [x] [Campos estáticos, não estáticos (e final) em Java](./orientacao_a_objetos/conceitos_base/palavrachave_static/campos_estatico_e_naoestatico/) ✓
     - [x] [Guia da palavra-chave `static` em Java](./orientacao_a_objetos/conceitos_base/palavrachave_static/guia_para_palavrachave_static/)
 - [x] [Palavra-chave `final`](./orientacao_a_objetos/conceitos_base/palavrachave_final/) (apresentação)
     - [x] [Palavra-chave `final`](./orientacao_a_objetos/conceitos_base/palavrachave_final/palavrachave_final/) (detalhamento)
