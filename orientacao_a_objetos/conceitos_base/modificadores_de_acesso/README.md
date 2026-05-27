@@ -38,31 +38,24 @@ public class Clock {
 O campo `time` não pode ser acessado fora da classe `Clock`.
 
 <details>
-<summary>Exemplos de código (🖱️ <b><ins>clique aqui</ins></b>)</summary>
+<summary>## Exemplos de código (🖱️ <b><ins>clique aqui</ins></b>)</summary>
 
-Com base no exemplo que você deu (que usa o modificador `private`), vamos ver como funciona o comportamento para o modificador **default** (package-private), que é o caso do seu código original.
-
-Aqui estão os exemplos de como a variável `time` pode e não pode ser acessada:
+Aqui estão os exemplos práticos de onde a variável `private` **pode** e **não pode** ser acessada, seguindo a mesma estrutura:
 
 ---
 
-### 🟢 Onde PODE ser acessada (Mesmo Pacote)
+### 🟢 Onde PODE ser acessada (Apenas dentro da mesma classe)
 
-O modificador *default* permite o acesso livre para qualquer classe que esteja dentro do **mesmo pacote** (*package*).
+O modificador `private` restringe o acesso exclusivamente ao escopo da própria classe onde a variável foi declarada.
 
 ```java
-package cronometro; // Ambas as classes estão no pacote 'cronometro'
-
 public class Clock {
-    long time = 0; // Modificador default
-}
+    private long time = 0;
 
-// Outra classe no MESMO pacote
-class ClockReader {
-    void mostrarTempo() {
-        Clock clock = new Clock();
-        // FUNCIONA: ClockReader está no mesmo pacote que Clock
-        System.out.println(clock.time); 
+    // FUNCIONA: O método 'readClock' está DENTRO da classe Clock,
+    // então ele tem permissão total para ler ou modificar a variável 'time'.
+    public long readClock() {
+        return this.time; 
     }
 }
 
@@ -70,21 +63,33 @@ class ClockReader {
 
 ---
 
-### 🔴 Onde NÃO PODE ser acessada (Pacotes Diferentes)
+### 🔴 Onde NÃO PODE ser acessada (Classes externas ou Subclasses)
 
-Se outra classe tentar acessar a variável estando em um **pacote diferente**, o compilador Java vai gerar um erro, mesmo que a classe `Clock` seja pública.
+Nenhuma outra classe no universo do seu código — mesmo que seja uma herança (subclasse) ou que esteja no mesmo pacote — conseguirá tocar nessa variável diretamente.
+
+#### Cenário 1: Uma classe externa tentando acessar
 
 ```java
-package relogio_digital; // Pacote DIFERENTE do pacote 'cronometro'
-
-import cronometro.Clock;
-
-public class Painel {
+public class ClockReader {
     void exibir() {
         Clock clock = new Clock();
-        // ERRO DE COMPILAÇÃO: 'time' não é público e não pode ser 
-        // acessado de fora do pacote 'cronometro'.
+        // ERRO DE COMPILAÇÃO: 'time' tem acesso privado em 'Clock'.
+        // Você não pode acessá-lo diretamente a partir de outra classe.
         System.out.println(clock.time); 
+    }
+}
+
+```
+
+#### Cenário 2: Uma subclasse (Herança) tentando acessar
+
+```java
+// SmartClock herda tudo de Clock, mas...
+public class SmartClock extends Clock {
+    void resetar() {
+        // ERRO DE COMPILAÇÃO: Mesmo sendo uma "filha" da classe Clock,
+        // o atributo 'time' é privado da mãe e não é herdado diretamente.
+        this.time = 0; 
     }
 }
 
@@ -92,11 +97,21 @@ public class Painel {
 
 ---
 
-### 📝 Resumo Rápido de Visibilidade
+### 💡 O "Macete" para permitir o acesso
 
-* **`private`**: Visível **apenas dentro** da própria classe `Clock`.
-* **`default` (seu código)**: Visível dentro da classe `Clock` e por **qualquer outra classe do mesmo pacote**.
-* **`public`**: Visível por **qualquer classe**, de qualquer pacote do projeto.
+Para que as classes de fora consigam interagir com uma variável `private`, a boa prática de orientação a objetos dita que você deve criar métodos públicos de acesso (os famosos **Getters e Setters**):
+
+```java
+public class Clock {
+    private long time = 0;
+
+    // Método Getter público: permite que o mundo externo LEIA o valor de forma controlada
+    public long getTime() {
+        return this.time;
+    }
+}
+
+```
 
 </details>
 
