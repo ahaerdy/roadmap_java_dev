@@ -79,7 +79,7 @@ flowchart TD
     - [x] [Classes](./orientacao_a_objetos/conceitos_base/atributos_e_metodos/classes/)
     - [x] [Métodos](./orientacao_a_objetos/conceitos_base/atributos_e_metodos/metodos/)
     - [x] [Propriedades](./orientacao_a_objetos/conceitos_base/atributos_e_metodos/propriedades/) 
-- [x] [Modificadores de Acesso](./orientacao_a_objetos/conceitos_base/modificadores_de_acesso) (provate, default, protected, public)
+- [x] [Modificadores de Acesso](./orientacao_a_objetos/conceitos_base/modificadores_de_acesso) (private, default, protected, public)
 - [x] [Palavra-chave `static`](./orientacao_a_objetos/conceitos_base/palavrachave_static)
     - [x] [Palavra-chave `static` em Java explicada com exemplos](./orientacao_a_objetos/conceitos_base/palavrachave_static/palavrachave_static_com_exemplos/)
     - [x] [Campos estáticos e não estáticos em Java](./orientacao_a_objetos/conceitos_base/palavrachave_static/campos_estatico_e_naoestatico/)
