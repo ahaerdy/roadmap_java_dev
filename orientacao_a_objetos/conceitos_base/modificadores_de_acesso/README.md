@@ -173,7 +173,9 @@ public class Clock {
 
 ### Construtores privados
 
-Um construtor privado não pode ser chamado fora da classe, mas pode ser usado dentro dela:
+Um construtor privado não pode ser chamado fora da classe, mas pode ser usado dentro dela.
+
+#### Classe Clock
 
 ```java
 public class Clock {
