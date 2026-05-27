@@ -37,6 +37,69 @@ public class Clock {
 
 O campo `time` não pode ser acessado fora da classe `Clock`.
 
+<details>
+<summary>Exemplos de código (🖱️ <b><ins>clique aqui</ins></b>)</summary>
+
+Com base no exemplo que você deu (que usa o modificador `private`), vamos ver como funciona o comportamento para o modificador **default** (package-private), que é o caso do seu código original.
+
+Aqui estão os exemplos de como a variável `time` pode e não pode ser acessada:
+
+---
+
+### 🟢 Onde PODE ser acessada (Mesmo Pacote)
+
+O modificador *default* permite o acesso livre para qualquer classe que esteja dentro do **mesmo pacote** (*package*).
+
+```java
+package cronometro; // Ambas as classes estão no pacote 'cronometro'
+
+public class Clock {
+    long time = 0; // Modificador default
+}
+
+// Outra classe no MESMO pacote
+class ClockReader {
+    void mostrarTempo() {
+        Clock clock = new Clock();
+        // FUNCIONA: ClockReader está no mesmo pacote que Clock
+        System.out.println(clock.time); 
+    }
+}
+
+```
+
+---
+
+### 🔴 Onde NÃO PODE ser acessada (Pacotes Diferentes)
+
+Se outra classe tentar acessar a variável estando em um **pacote diferente**, o compilador Java vai gerar um erro, mesmo que a classe `Clock` seja pública.
+
+```java
+package relogio_digital; // Pacote DIFERENTE do pacote 'cronometro'
+
+import cronometro.Clock;
+
+public class Painel {
+    void exibir() {
+        Clock clock = new Clock();
+        // ERRO DE COMPILAÇÃO: 'time' não é público e não pode ser 
+        // acessado de fora do pacote 'cronometro'.
+        System.out.println(clock.time); 
+    }
+}
+
+```
+
+---
+
+### 📝 Resumo Rápido de Visibilidade
+
+* **`private`**: Visível **apenas dentro** da própria classe `Clock`.
+* **`default` (seu código)**: Visível dentro da classe `Clock` e por **qualquer outra classe do mesmo pacote**.
+* **`public`**: Visível por **qualquer classe**, de qualquer pacote do projeto.
+
+</details>
+
 ### Acessando campos privados via métodos acessores
 
 Campos privados geralmente são acessados por meio de métodos **getters** e **setters**:
