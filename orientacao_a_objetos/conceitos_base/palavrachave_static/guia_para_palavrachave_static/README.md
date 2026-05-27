@@ -292,8 +292,42 @@ public class Main {
 }
 
 ```
+public class Main {
+    public static void main(String[] args) {
+        
+        // LINHA ABAIXO GERARIA ERRO DE COMPILAÇÃO:
+        // Singleton objeto = new Singleton(); // Erro! O construtor é privado.
+
+        System.out.println("--- Solicitando a Instância pela Primeira Vez ---");
+        // A JVM vai carregar a classe SingletonHolder e criar o objeto na memória agora.
+        Singleton s1 = Singleton.getInstance();
+
+        System.out.println("\n--- Solicitando a Instância pela Segunda Vez ---");
+        // A JVM apenas retorna o objeto que já foi criado anteriormente.
+        Singleton s2 = Singleton.getInstance();
+
+        System.out.println("\n--- Comparando as Referências de Memória ---");
+        
+        // Se s1 e s2 forem iguais (==), significa que ocupam o mesmo espaço na memória Heap.
+        if (s1 == s2) {
+            System.out.println("Provado: s1 e s2 são EXATAMENTE o mesmo objeto!");
+            // 1 e s2 não são objetos diferentes. Na realidade, eles são duas variáveis de referência distintas
+            // que apontam para o mesmo objeto alocado no mesmo endereço de espaço de memória Heap.
+        } else {
+            System.out.println("Objetos diferentes (Isso nunca vai acontecer aqui).");
+        }
+
+        // Exibindo o código de identificação hash do objeto (endereço simulado)
+        System.out.println("ID do objeto s1: " + System.identityHashCode(s1));
+        System.out.println("ID do objeto s2: " + System.identityHashCode(s2));
+    }
+}
 
 ### Saída Esperada no Console:
+
+<p align="center">
+  <img src="000-Midia_e_Anexos/2026-05-27-17-01-54.png" alt="" width="1024">
+</p>
 
 ```text
 --- Solicitando a Instância pela Primeira Vez ---
