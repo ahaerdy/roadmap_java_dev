@@ -87,14 +87,30 @@ O modificador **default** é aplicado quando nenhum modificador é escrito. Ele 
 Exemplo:
 
 ```java
+// Primeira classe do arquivo. 
+// Nota: Em Java, você só pode ter uma classe 'public' por arquivo .java, 
+// e o nome do arquivo deve ser exatamente o nome dessa classe (Clock.java).
 public class Clock {
-    long time = 0; // <- modificador defaul sendo aplicado aqui
+    // Atributo do tipo long inicializado em 0.
+    // Como nenhum modificador (public, private, protected) foi especificado,
+    // ele usa o modificador "default" (também conhecido como package-private).
+    // Isso significa que apenas classes dentro do MESMO pacote podem acessá-lo diretamente.
+    long time = 0; 
 }
 
-public class ClockReader {
+// Segunda classe. Para que o código compile no mesmo arquivo, 
+// esta classe não pode ser declarada como 'public'.
+class ClockReader {
+    // Instancia um novo objeto da classe Clock.
+    // Isso é permitido desde que ClockReader esteja no mesmo pacote que Clock,
+    // ou que Clock seja public (como é o caso).
     Clock clock = new Clock();
 
+    // Método público que retorna o valor do tempo.
     public long readClock() {
+        // Acessa diretamente o atributo 'time' do objeto 'clock'.
+        // Isso só funciona porque ClockReader está no mesmo pacote que Clock,
+        // respeitando o modificador "default" da variável 'time'.
         return clock.time;
     }
 }
