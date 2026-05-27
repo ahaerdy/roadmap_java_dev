@@ -101,11 +101,11 @@ Saída (linha 12 descomentada) :
   <img src="000-Midia_e_Anexos/2026-05-27-08-07-21.png" alt="" width="640">
 </p>
 
-Exemplos adicionais onde a variável `private` NÃO PODE ser acessada (Classes externas ou Subclasses)
+### Exemplos adicionais onde a variável `private` NÃO PODE ser acessada (Classes externas ou Subclasses)
 
 Nenhuma outra classe no universo do seu código — mesmo que seja uma herança (subclasse) ou que esteja no mesmo pacote — conseguirá acessar nessa variável diretamente.
 
-Cenário 1: Uma classe externa tentando acessar
+#### Cenário 1: Uma classe externa tentando acessar
 
 ```java
 public class ClockReader {
@@ -124,7 +124,7 @@ Saída:
   <img src="000-Midia_e_Anexos/2026-05-27-08-21-11.png" alt="" width="640">
 </p>
 
-Cenário 2: Uma subclasse (Herança) tentando acessar
+#### Cenário 2: Uma subclasse (Herança) tentando acessar
 
 ```java
 // SmartClock herda tudo de Clock, mas...
@@ -137,6 +137,12 @@ public class SmartClock extends Clock {
 }
 
 ```
+
+Saída: 
+
+<p align="center">
+  <img src="000-Midia_e_Anexos/2026-05-27-08-23-31.png" alt="" width="640">
+</p>
 
 ---
 
