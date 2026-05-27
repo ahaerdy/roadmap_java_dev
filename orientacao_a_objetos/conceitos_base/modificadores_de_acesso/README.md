@@ -177,18 +177,26 @@ Um construtor privado não pode ser chamado fora da classe, mas pode ser usado d
 
 ```java
 public class Clock {
+    // Atributo privado: guarda o estado interno do tempo do relógio
     private long time = 0;
 
+    // Construtor Privado: SÓ pode ser invocado por membros de dentro desta mesma classe
     private Clock(long time) {
+        // Inicializa o atributo 'time' com o valor recebido no parâmetro
         this.time = time;
     }
 
+    // Construtor Público: Pode ser chamado por qualquer classe externa (ex: new Clock(1000, 50))
     public Clock(long time, long timeOffset) {
+        // USO DO CONSTRUTOR PRIVADO: O 'this(time)' chama o construtor privado acima para inicializar a variável
         this(time);
+        // Aplica o deslocamento (offset) somando o valor ao atributo 'time' já inicializado
         this.time += timeOffset;
     }
 
+    // Método Fábrica Estático (Static Factory Method): É público e acessível de fora da classe
     public static Clock newClock() {
+        // USO DO CONSTRUTOR PRIVADO: Como este método está DENTRO da classe, ele pode dar 'new' usando o construtor privado
         return new Clock(System.currentTimeMillis());
     }
 }
