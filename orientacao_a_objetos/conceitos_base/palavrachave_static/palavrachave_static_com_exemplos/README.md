@@ -143,18 +143,27 @@ A saída é 62, porque a variável `MOON_COUNT` recebe esse valor dentro do bloc
 
 ---
 
+Aqui está o texto unificado e expandido. O conteúdo original foi mantido e integrado ao detalhamento técnico, acompanhado de exemplos práticos em código e da aplicação real no padrão de projeto *Builder*.
+
+---
+
 ## Classes Aninhadas Estáticas
 
 Uma classe pode ter uma classe aninhada estática que pode ser acessada usando o nome da classe externa.
 
-**Exemplo:**
+**Exemplo Base:**
+
 ```java
 public class Outer {
+    // Construtor da classe externa
     public Outer() { }
+    
+    // Classe aninhada estática (Static Nested Class)
     public static class Inner {
         public Inner() { }
     }
 }
+
 ```
 
 No exemplo acima, a classe `Inner` pode ser acessada diretamente como um membro estático da classe `Outer`.
@@ -162,9 +171,104 @@ No exemplo acima, a classe `Inner` pode ser acessada diretamente como um membro 
 ```java
 public class Main {
     public static void main(String[]  args) {
-        Outer.Inner inner = new Outer.Inner();
+        // [Tipo da Variável]  [Nome]      [Criação do Objeto na Memória]
+           Outer.Inner         inner   =   new Outer.Inner();
     }
 }
+
 ```
 
-Um dos casos de uso das classes aninhadas estáticas é no **Builder Pattern**, amplamente utilizado em Java.
+### Detalhando o Funcionamento na Memória
+
+A palavra-chave `static` aplicada a uma classe interna muda completamente a sua relação com a classe externa:
+
+1. **Independência de Instância:** A classe `Inner` **não** precisa de uma instância de `Outer` para existir. Você não precisa dar `new Outer()` para conseguir criar um `new Outer.Inner()`.
+2. **Escopo de Acesso:** Por ser estática, a classe `Inner` só pode acessar diretamente os membros (variáveis ou métodos) que também forem **estáticos** na classe `Outer`. Ela não tem acesso direto aos membros de instância da classe externa.
+
+---
+
+### Caso de Uso Real: O Builder Pattern
+
+Um dos casos de uso mais comuns e poderosos das classes aninhadas estáticas é no **Builder Pattern** (Padrão Construtor). Ele é amplamente utilizado em Java para criar objetos complexos passo a passo, evitando construtores gigantescos com dezenas de parâmetros (conhecidos como *Telescoping Constructors*).
+
+Veja como a classe aninhada estática se encaixa perfeitamente nesse padrão:
+
+```java
+// Classe Externa: O objeto complexo que queremos construir
+public class Computador {
+    // Atributos privados e imutáveis (frequentemente declarados como final)
+    private String processador;
+    private int memoriaRAM;
+    private int armazenamentoSSD;
+
+    // O construtor é PRIVADO. Ninguém fora desta classe pode dar "new Computador()".
+    // A única forma de criá-lo é através do Builder.
+    private Computador(Builder builder) {
+        this.processador = builder.processador;
+        this.memoriaRAM = builder.memoriaRAM;
+        this.armazenamentoSSD = builder.armazenamentoSSD;
+    }
+
+    // Métodos Getters para acessar as propriedades do computador pronto
+    public String getProcessador() { return processador; }
+    public int getMemoriaRAM() { return memoriaRAM; }
+    public int getArmazenamentoSSD() { return armazenamentoSSD; }
+
+    // CLASSE ANINHADA ESTÁTICA: O Construtor/Builder do Computador
+    public static class Builder {
+        private String processador;
+        private int memoriaRAM;
+        private int armazenamentoSSD;
+
+        // O construtor do Builder define os parâmetros que são obrigatórios
+        public Builder(String processador) {
+            this.processador = processador;
+        }
+
+        // Métodos fluídos para configurar as partes opcionais (retornam o próprio Builder)
+        public Builder comMemoriaRAM(int memoriaRAM) {
+            this.memoriaRAM = memoriaRAM;
+            return this; // Permite o encadeamento de métodos (.comMemoriaRAM().comArmazenamentoSSD())
+        }
+
+        public Builder comArmazenamentoSSD(int armazenamentoSSD) {
+            this.armazenamentoSSD = armazenamentoSSD;
+            return this;
+        }
+
+        // O método build() finalmente chama o construtor privado da classe externa
+        public Computador build() {
+            return new Computador(this);
+        }
+    }
+}
+
+```
+
+### Como isso é testado no Main?
+
+Graças ao uso da classe aninhada estática, o código de criação do objeto torna-se extremamente limpo, legível e seguro:
+
+```java
+public class Main {
+    public static void main(String[] args) {
+        // Criamos o objeto encadeando as chamadas diretamente a partir de Computador.Builder
+        Computador meuComputador = new Computador.Builder("Intel i9") // Parâmetro obrigatório
+                                        .comMemoriaRAM(32)           // Opcional
+                                        .comArmazenamentoSSD(1024)   // Opcional
+                                        .build();                    // Cria o objeto final
+
+        // Exibindo o resultado da construção
+        System.out.println("Configuração do Computador:");
+        System.out.println("Processador: " + meuComputador.getProcessador());
+        System.out.println("RAM: " + meuComputador.getMemoriaRAM() + "GB");
+        System.out.println("SSD: " + meuComputador.getArmazenamentoSSD() + "GB");
+    }
+}
+
+```
+
+### Por que usar uma classe aninhada estática aqui?
+
+* **Encapsulamento estrito:** O `Builder` precisa acessar o construtor privado de `Computador`. Classes aninhadas têm privilégios de acesso aos membros privados da classe hospedeira.
+* **Coesão:** O `Builder` só faz sentido para construir um `Computador`. Colocá-lo como uma classe aninhada estática deixa claro para o projeto que o ciclo de vida de ambos está fortemente interligado, sem poluir o pacote com uma nova classe separada.
