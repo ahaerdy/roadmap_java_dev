@@ -339,6 +339,10 @@ Como não há nenhum modificador explícito (`private`, `protected` ou `public`)
 
 Portanto, o acesso `clock.time` dentro de `ClockReader` funciona porque ambas as classes estão no mesmo pacote e o campo `time` foi declarado com acesso **default**.
 
+**Observação**: o código está tecnicamente correto e vai compilar perfeitamente exatamente do jeito que está dentro do arquivo Clock.java. O compilador do Java aceita múltiplas classes no mesmo arquivo, desde que apenas uma delas seja public e tenha o mesmo nome do arquivo.
+
+No entanto, se pensarmos em boas práticas de mercado e organização, ClockReader deveria ter um arquivo só para ele (ClockReader.java).
+
 ### Classe Main (utilizando a classe Clock)
 
 ```java
