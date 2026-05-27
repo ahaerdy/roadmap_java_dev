@@ -277,23 +277,23 @@ Saída:
   <img src="000-Midia_e_Anexos/2026-05-27-09-17-56.png" alt="" width="1024">
 </p>
 
-#### Diferença entre **Instanciação Direta** (Construtor) e **Método Fábrica** (Static Factory Method)
+Diferença entre **Instanciação Direta** (Construtor) e **Método Fábrica** (Static Factory Method)
 
 A diferença principal está em quem define as regras de criação do objeto e como a memória do Java é acionada.
 
-1. new Clock(1000, 15); (Instanciação Direta via Construtor)
+#### 1. new Clock(1000, 15); (Instanciação Direta via Construtor)
 
 - **O que faz**: Você está chamando diretamente um construtor público da classe usando a palavra-chave new.
 - **Como funciona**: Você (quem está escrevendo a classe Main) tem o controle total e a obrigação de passar os parâmetros manuais exigidos (1000 e 15).
 - **Metáfora**: É como comprar um móvel planejado onde você precisa passar as medidas exatas para a fábrica começar a cortar a madeira.
 
-2. Clock.newClock(); (Chamada via Método Fábrica)
+#### 2. Clock.newClock(); (Chamada via Método Fábrica)
 
 - **O que faz**: Você está chamando um método estático que atua como uma "fábrica oculta".
 - **Como funciona**: Você não usa a palavra new diretamente. A classe Clock resolve toda a criação internamente de forma automatizada (ela mesma busca a hora atual do sistema e invoca o seu próprio construtor privado). Você apenas recebe o objeto pronto.
 - **Metáfora**: É como ir a uma lanchonete e pedir o "Combo do Dia". Você não precisa dizer ao cozinheiro a quantidade de gramas de carne ou o tempo de chapa; o atendente apenas te entrega o pedido pronto.
 
-> No primeiro caso, você dita os dados de inicialização. No segundo caso, a própria classe decide os dados (a hora atual) através de um processo encapsulado e mais limpo.
+#### No primeiro caso, você dita os dados de inicialização. No segundo caso, a própria classe decide os dados (a hora atual) através de um processo encapsulado e mais limpo.
 
 ---
 
