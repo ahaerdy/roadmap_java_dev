@@ -38,7 +38,7 @@ public class Clock {
 O campo `time` não pode ser acessado fora da classe `Clock`.
 
 <details>
-## <summary> 💡 Exemplos práticos (🖱️ <b><ins>clique aqui</ins></b>)</summary>
+<summary> 💡 Exemplos práticos (🖱️ <b><ins>clique aqui</ins></b>)</summary>
 
 Aqui estão os exemplos práticos de onde a variável `private` **pode** e **não pode** ser acessada, seguindo a mesma estrutura:
 
@@ -49,16 +49,29 @@ Aqui estão os exemplos práticos de onde a variável `private` **pode** e **nã
 O modificador `private` restringe o acesso exclusivamente ao escopo da própria classe onde a variável foi declarada.
 
 ```java
+/**
+ * A classe Clock demonstra o conceito de ocultamento de dados (Data Hiding).
+ */
 public class Clock {
-    private long time = 0;
 
-    // FUNCIONA: O método 'readClock' está DENTRO da classe Clock,
-    // então ele tem permissão total para ler ou modificar a variável 'time'.
+    // O modificador 'private' restringe o acesso diretamente a esta classe.
+    // Nenhuma classe externa (nem mesmo a Main) pode ler ou alterar 
+    // 'time' diretamente, protegendo o estado interno do objeto.
+    // O valor 1000 aqui representa 10:00 em um formato simplificado (HHmm).
+    private long time = 1000;
+
+    /**
+     * Este é um método 'getter'. Ele é public, o que significa que 
+     * serve como a interface oficial para o mundo exterior.
+     *
+     * FUNCIONA: O método 'readClock' está DENTRO da classe Clock,
+     * então ele tem permissão total para acessar a variável 'private time'.
+     */
     public long readClock() {
-        return this.time; 
+        // O uso do 'this' referencia o atributo da própria instância.
+        return this.time;
     }
 }
-
 ```
 
 ---
