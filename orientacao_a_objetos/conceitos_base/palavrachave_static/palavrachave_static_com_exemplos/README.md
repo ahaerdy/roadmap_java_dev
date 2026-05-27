@@ -36,39 +36,6 @@ public class MyClass {
 A saída é **2**, porque a variável `COUNT` é estática e é incrementada em um a cada vez que um novo objeto da classe `Counter` é criado.  
 Você também pode acessar a variável estática usando qualquer objeto dessa classe, como `c1.COUNT`.
 
-### Classe Main (exemplo)
-
-```java
-public class Main {
-    public static void main(String[] args) {
-        // 1. Criamos o primeiro objeto (c1) da classe Counter.
-        // O construtor é executado e incrementa a variável estática COUNT para 1.
-        Counter c1 = new Counter();
-
-        // 2. Criamos o segundo objeto (c2) da classe Counter.
-        // Como COUNT é compartilhada, o construtor incrementa o valor atual (1) para 2.
-        Counter c2 = new Counter();
-
-        // 3. Acessamos a variável estática diretamente pelo nome da classe.
-        // Saída esperada: "2"
-        System.out.println(Counter.COUNT);
-
-        // 4. Demonstração adicional baseada na introdução:
-        // Também é possível acessar a mesma variável estática usando qualquer objeto da classe.
-        // Ambas as linhas abaixo também exibirão "2", pois apontam para a mesma variável compartilhada.
-        // System.out.println(c1.COUNT);
-        // System.out.println(c2.COUNT);
-    }
-}
-
-```
-
-## Explicação:
-
-* **Compartilhamento:** A saída é `2` porque a variável `COUNT` pertence à classe e não a um objeto específico. Toda vez que `new Counter()` é chamado, o construtor mexe na mesma variável global daquela classe.
-* **Formas de Acesso:** O código mostra o padrão recomendado (`Counter.COUNT`), mas a introdução ressalta que o Java também permite o acesso via instância (`c1.COUNT`), embora ambos apontem para o mesmo lugar na memória.
-
-
 ---
 
 ## Métodos Estáticos
@@ -105,8 +72,31 @@ public class MyClass {
 // Saída "2"
 ```
 
-A saída é **2**, porque o valor é incrementado pelo método estático `increment()`.  
-Assim como variáveis estáticas, métodos estáticos também podem ser acessados usando variáveis de instância.
+A saída é **2**, porque o valor é incrementado pelo método estático `increment()`. O método estático foi acessado diretamente pelo nome da classe (`Counter.increment()`).
+
+Assim como variáveis estáticas, métodos estáticos também podem ser acessados usando variáveis de instância. Uma variável de instância (ou objeto) é aquela que você cria usando o operador new. No contexto do seu código anterior, `c1` e `c2` são as variáveis de instância.
+
+Se fôssemos aplicar o que o texto afirmou, o código dentro do main seria escrito assim:
+
+```java
+public class MyClass {
+    public static void main(String[] args) {
+        // Criamos uma variável de instância (objeto) chamada c1
+        Counter c1 = new Counter(); 
+        
+        // Acessando o método estático usando a variável de instância c1:
+        c1.increment(); 
+        
+        // Acessando o método estático usando outra variável de instância:
+        Counter c2 = new Counter();
+        c2.increment();
+
+        System.out.println(Counter.COUNT); // O resultado ainda seria influenciado
+    }
+}
+```
+
+Apesar de o método ser estático, "por trás dos panos" o compilador Java olha para o tipo da variável c1 (que é Counter) e substitui o código internamente por Counter.increment().
 
 ---
 
