@@ -222,6 +222,53 @@ Quando alguém executa `new Clock(1000, 50);`, o Java faz o seguinte caminho:
 * **Deve ser a primeira linha:** O Java exige estritamente que a chamada `this(...)` seja a **primeira instrução** dentro do construtor. Se você tentar colocar qualquer linha de código antes dele, o compilador vai gerar um erro.
 * **Evita duplicação:** A principal utilidade disso é não precisar repetir o código de inicialização básica (como `this.time = time;`) em todos os construtores que você criar. Você centraliza a lógica em um construtor principal e faz os outros "reaproveitarem" ele.
 
+#### Classe Main (exemplo de implementação)
+
+```java
+public class Main {
+    public static void main(String[] args) {
+        
+        System.out.println("=== DEMONSTRAÇÃO DA CLASSE CLOCK ===\n");
+
+        // ------------------------------------------------------------------------
+        // USO 1: O Construtor Público (com dois parâmetros)
+        // ------------------------------------------------------------------------
+        // Criando um relógio que começa às 10:00 (1000) e adicionando um offset de 15 minutos
+        Clock relogioComOffset = new Clock(1000, 15);
+        
+        // Nota: Como a classe Clock não possui um método "getTime" ou "readClock" neste momento,
+        // não conseguimos printar o valor interno no console sem alterar a classe Clock.
+        // Mas o objeto foi criado com sucesso utilizando o encadeamento de construtores!
+        System.out.println("1. Objeto 'relogioComOffset' criado com sucesso usando o construtor público.");
+
+
+        // ------------------------------------------------------------------------
+        // USO 2: O Método Fábrica Estático (A "Fábrica" - IMPORTANTE)
+        // ------------------------------------------------------------------------
+        // Veja que NÃO usamos a palavra 'new'. Chamamos a fábrica direto pela Classe.
+        // Esse método vai rodar lá dentro, capturar o System.currentTimeMillis() e nos devolver o objeto pronto.
+        Clock relogioAtual = Clock.newClock();
+        
+        System.out.println("2. Objeto 'relogioAtual' criado com sucesso através da Fábrica Estática (newClock()).");
+
+
+        // ------------------------------------------------------------------------
+        // O QUE NÃO FUNCIONA? (Restrições do modificador Private)
+        // ------------------------------------------------------------------------
+        
+        // CENÁRIO A: Tentar usar o construtor de 1 parâmetro de fora da classe
+        // Clock relogioErro = new Clock(1000); 
+        // Erro de compilação: Clock(long) has private access in Clock
+
+        // CENÁRIO B: Tentar acessar o atributo diretamente
+        // relogioAtual.time = 2000; 
+        // Erro de compilação: time has private access in Clock
+        
+        System.out.println("\n3. Restrições do 'private' testadas: Construtor de 1 parâmetro e atributo 'time' estão protegidos.");
+    }
+}
+```
+
 ---
 
 ## Modificador **default (package)**
