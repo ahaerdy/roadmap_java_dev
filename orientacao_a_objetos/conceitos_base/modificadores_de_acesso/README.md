@@ -277,7 +277,7 @@ Saída:
   <img src="000-Midia_e_Anexos/2026-05-27-09-17-56.png" alt="" width="720">
 </p>
 
-#### Diferença entre Instanciação Direta (Construtor) e Método Fábrica (Static Factory Method)
+#### Diferença entre **Instanciação Direta** (Construtor) e **Método Fábrica** (Static Factory Method)
 
 A diferença principal está em quem define as regras de criação do objeto e como a memória do Java é acionada.
 
@@ -293,9 +293,7 @@ A diferença principal está em quem define as regras de criação do objeto e c
 - **Como funciona**: Você não usa a palavra new diretamente. A classe Clock resolve toda a criação internamente de forma automatizada (ela mesma busca a hora atual do sistema e invoca o seu próprio construtor privado). Você apenas recebe o objeto pronto.
 - **Metáfora**: É como ir a uma lanchonete e pedir o "Combo do Dia". Você não precisa dizer ao cozinheiro a quantidade de gramas de carne ou o tempo de chapa; o atendente apenas te entrega o pedido pronto.
 
-Em resumo:
-
-No primeiro caso, você dita os dados de inicialização. No segundo caso, a própria classe decide os dados (a hora atual) através de um processo encapsulado e mais limpo.
+> No primeiro caso, você dita os dados de inicialização. No segundo caso, a própria classe decide os dados (a hora atual) através de um processo encapsulado e mais limpo.
 
 ---
 
