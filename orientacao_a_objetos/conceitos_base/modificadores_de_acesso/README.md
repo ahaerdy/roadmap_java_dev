@@ -274,7 +274,7 @@ public class Main {
 Saída:
 
 <p align="center">
-  <img src="000-Midia_e_Anexos/2026-05-27-09-17-56.png" alt="" width="720">
+  <img src="000-Midia_e_Anexos/2026-05-27-09-17-56.png" alt="" width="1024">
 </p>
 
 #### Diferença entre **Instanciação Direta** (Construtor) e **Método Fábrica** (Static Factory Method)
