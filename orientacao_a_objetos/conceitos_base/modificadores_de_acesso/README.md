@@ -146,43 +146,26 @@ Saída:
 
 ---
 
-### 💡 O "Macete" para permitir o acesso
-
-Para que as classes de fora consigam interagir com uma variável `private`, a boa prática de orientação a objetos dita que você deve criar métodos públicos de acesso (os famosos **Getters e Setters**):
-
-```java
-public class Clock {
-    private long time = 0;
-
-    // Método Getter público: permite que o mundo externo LEIA o valor de forma controlada
-    public long getTime() {
-        return this.time;
-    }
-}
-
-```
-
-### O paradoxo da Classe Privada
-
-O modificador private significa: "Este elemento só pode ser acessado dentro do escopo onde ele foi definido".
-
-- Se você pudesse criar uma private class Clock no seu arquivo, ela só seria visível dentro dela mesma. Nenhuma outra classe no universo do seu código (nem a Main, nem nenhuma outra) conseguiria enxergar a existência dela.
-- Se ninguém consegue enxergar a classe, ninguém pode criar um objeto dela (como new Clock()).
-- Se ninguém pode criar o objeto, a classe se torna um código fantasma: ela existe no arquivo, ocupa espaço, mas é 1000% inútil porque nunca poderá ser instanciada ou usada
-
 ### Acessando campos privados via métodos acessores
 
-Campos privados geralmente são acessados por meio de métodos **getters** e **setters**:
+Campos privados geralmente são acessados por meio de métodos **getters** e **setters** (no primeiro exemplo, a classe `Clock` já implementava esse princípio através do método `readClock` **DENTRO** da classe Clock). 
+
+Aqui aprofundamos com mais exemplos:
 
 ```java
 public class Clock {
+    // Atributo privado: impede o acesso direto ou modificações maliciosas/acidentais de fora da classe
     private long time = 0;
 
+    // Método Getter: permite que o mundo exterior consulte o valor de 'time' de forma segura e controlada
     public long getTime() {
+        // Retorna o valor armazenado no atributo 'time' da instância atual (this)
         return this.time;
     }
 
+    // Método Setter: permite que o mundo exterior altere o valor de 'time' seguindo as regras da classe
     public void setTime(long theTime) {
+        // Atribui o valor recebido no parâmetro 'theTime' ao atributo privado 'this.time'
         this.time = theTime;
     }
 }
