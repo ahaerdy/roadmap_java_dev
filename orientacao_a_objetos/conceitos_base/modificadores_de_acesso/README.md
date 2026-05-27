@@ -37,7 +37,7 @@ public class Clock {
 
 O campo `time` não pode ser acessado fora da classe `Clock`.
 
-### 💡 Exemplos práticos
+### Exemplos práticos:
 
 Aqui estão os exemplos práticos de onde a variável `private` **pode** e **não pode** ser acessada, seguindo a mesma estrutura:</br>
 
@@ -74,29 +74,34 @@ public class Clock {
 Classe Main:
 
 ```java
-public class Main {
-    public static void main(String[] args) {
-        // 1. Criando uma instância (objeto) da classe Clock
-        Clock meuRelogio = new Clock();
-
-        // 2. FORMA CORRETA: Acessando o valor através do método público
-        // Como 'readClock()' é público, qualquer classe pode chamá-lo.
-        long valorDoRelogio = meuRelogio.readClock();
-        System.out.println("Horário lido com sucesso: " + valorDoRelogio);
-
-        // 3. FORMA INCORRETA (Se desproteger a linha abaixo, o código não compila):
-        // System.out.println(meuRelogio.time);
-        // Erro: time has private access in Clock
-    }
-}
+1:  public class Main {
+2:      public static void main(String[] args) {
+3:          // 1. Criando uma instância (objeto) da classe Clock
+4:          Clock meuRelogio = new Clock();
+5:  
+6:          // 2. FORMA CORRETA: Acessando o valor através do método público
+7:          // Como 'readClock()' é público, qualquer classe pode chamá-lo.
+8:          long valorDoRelogio = meuRelogio.readClock();
+9:          System.out.println("Horário lido com sucesso: " + valorDoRelogio);
+10: 
+11:         // 3. FORMA INCORRETA (Se desproteger a linha abaixo, o código não compila):
+12:         // System.out.println(meuRelogio.time);
+13:         // Erro: time has private access in Clock
+14:     }
+15: }
 ```
 
-Saída:
+Saída (linha 12 comentada) :
 
 <p align="center">
   <img src="000-Midia_e_Anexos/2026-05-27-07-58-26.png" alt="" width="640">
 </p>
 
+Saída (linha 12 descomentada) :
+
+<p align="center">
+  <img src="000-Midia_e_Anexos/2026-05-27-08-07-21.png" alt="" width="640">
+</p>
 ---
 
 #### 🟥 Onde NÃO PODE ser acessada (Classes externas ou Subclasses)
