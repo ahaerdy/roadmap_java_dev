@@ -271,6 +271,12 @@ public class Main {
 }
 ```
 
+Saída:
+
+<p align="center">
+  <img src="000-Midia_e_Anexos/2026-05-27-09-17-56.png" alt="" width="640">
+</p>
+
 ---
 
 ## Modificador **default (package)**
