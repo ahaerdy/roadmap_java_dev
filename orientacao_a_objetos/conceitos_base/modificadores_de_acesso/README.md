@@ -37,12 +37,11 @@ public class Clock {
 
 O campo `time` não pode ser acessado fora da classe `Clock`.
 
-<details>
-<summary> 💡 Exemplos práticos (🖱️ <b><ins>clique aqui</ins></b>)</summary>
-</br>
-Aqui estão os exemplos práticos de onde a variável `private` <strong>pode</strong> e <strong>não pode</strong> ser acessada, seguindo a mesma estrutura:</br>
-</br>
-🟩 Onde PODE ser acessada (Apenas dentro da mesma classe)
+## 💡 Exemplos práticos (🖱️ <b><ins>clique aqui</ins></b>)</summary>
+
+Aqui estão os exemplos práticos de onde a variável `private` **pode** e **não pode** ser acessada, seguindo a mesma estrutura:</br>
+
+### 🟩 Onde PODE ser acessada (Apenas dentro da mesma classe)
 
 O modificador `private` restringe o acesso exclusivamente ao escopo da própria classe onde a variável foi declarada.
 
@@ -95,12 +94,12 @@ public class Main {
 Saída:
 
 <p align="center">
-  <img src="000-Midia_e_Anexos/2026-05-27-07-58-26.png" alt="" width="360">
+  <img src="000-Midia_e_Anexos/2026-05-27-07-58-26.png" alt="" width="560">
 </p>
 
 ---
 
-### 🔴 Onde NÃO PODE ser acessada (Classes externas ou Subclasses)
+## 🟥 Onde NÃO PODE ser acessada (Classes externas ou Subclasses)
 
 Nenhuma outra classe no universo do seu código — mesmo que seja uma herança (subclasse) ou que esteja no mesmo pacote — conseguirá tocar nessa variável diretamente.
 
