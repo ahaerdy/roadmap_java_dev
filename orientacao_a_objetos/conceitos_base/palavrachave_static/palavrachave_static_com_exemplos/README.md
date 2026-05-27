@@ -36,6 +36,48 @@ public class MyClass {
 A saída é **2**, porque a variável `COUNT` é estática e é incrementada em um a cada vez que um novo objeto da classe `Counter` é criado.  
 Você também pode acessar a variável estática usando qualquer objeto dessa classe, como `c1.COUNT`.
 
+### Classe Main (exemplo)
+
+```java
+public class Main {
+    public static void main(String[] args) {
+        // 1. Exibe o valor inicial da variável estática antes de qualquer modificação
+        // Como COUNT é static, podemos acessá-la diretamente pelo nome da classe, sem instanciar
+        System.out.println("Valor inicial de COUNT: " + Counter.COUNT); // Esperado: 0
+
+        System.out.println("\n--- Testando via Construtor ---");
+        
+        // 2. Criando a primeira instância de Counter
+        // O construtor será executado e incrementará o COUNT em 1
+        Counter c1 = new Counter();
+        System.out.println("Após criar c1 (COUNT acessado via classe): " + Counter.COUNT); // Esperado: 1
+        
+        // 3. Criando a segunda instância de Counter
+        // O construtor incrementa o MESMO COUNT compartilhado na memória
+        Counter c2 = new Counter();
+        System.out.println("Após criar c2 (COUNT acessado via classe): " + Counter.COUNT); // Esperado: 2
+
+        System.out.println("\n--- Testando via Método Estático ---");
+
+        // 4. Chamando o método estático de incremento
+        // Métodos estáticos pertencem à classe e não dependem de objetos para serem invocados
+        Counter.increment();
+        System.out.println("Após chamar Counter.increment(): " + Counter.COUNT); // Esperado: 3
+
+        System.out.println("\n--- Provando o Compartilhamento de Memória ---");
+        
+        // 5. Modificando o valor diretamente pela classe e observando o impacto
+        Counter.COUNT = 10;
+        System.out.println("Valor alterado diretamente na classe Counter: " + Counter.COUNT); // Esperado: 10
+        
+        // Nota importante: Embora seja possível acessar membros estáticos através de referências 
+        // de objetos (ex: c1.COUNT ou c2.COUNT), isso é considerado uma má prática em Java.
+        // O correto e seguro é sempre acessar pelo nome da classe (Counter.COUNT).
+    }
+}
+```
+
+
 ---
 
 ## Métodos Estáticos
