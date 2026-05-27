@@ -39,7 +39,7 @@ Você também pode acessar a variável estática usando qualquer objeto dessa cl
 ### Classe Main (exemplo)
 
 ```java
-public class MyClass {
+public class Main {
     public static void main(String[] args) {
         // 1. Criamos o primeiro objeto (c1) da classe Counter.
         // O construtor é executado e incrementa a variável estática COUNT para 1.
@@ -62,6 +62,11 @@ public class MyClass {
 }
 
 ```
+
+## Explicação:
+
+* **Compartilhamento:** A saída é `2` porque a variável `COUNT` pertence à classe e não a um objeto específico. Toda vez que `new Counter()` é chamado, o construtor mexe na mesma variável global daquela classe.
+* **Formas de Acesso:** O código mostra o padrão recomendado (`Counter.COUNT`), mas a introdução ressalta que o Java também permite o acesso via instância (`c1.COUNT`), embora ambos apontem para o mesmo lugar na memória.
 
 
 ---
