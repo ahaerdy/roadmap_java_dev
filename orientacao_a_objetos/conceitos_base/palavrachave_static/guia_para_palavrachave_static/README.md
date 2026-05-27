@@ -148,7 +148,9 @@ public class Main {
 
 Saída:
 
-
+<p align="center">
+  <img src="000-Midia_e_Anexos/2026-05-27-16-36-11.png" alt="" width="1024">
+</p>
 
 ---
 
