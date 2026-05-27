@@ -303,6 +303,8 @@ O modificador **default** é aplicado quando nenhum modificador é escrito. Ele 
 
 Exemplo:
 
+### Classe Clock
+
 ```java
 // Primeira classe do arquivo. 
 // Nota: Em Java, você só pode ter uma classe 'public' por arquivo .java, 
@@ -336,6 +338,34 @@ class ClockReader {
 Como não há nenhum modificador explícito (`private`, `protected` ou `public`), o Java aplica automaticamente o modificador **default**. Isso significa que o campo `time` pode ser acessado por qualquer classe que esteja no **mesmo pacote** da classe `Clock`, como a classe `ClockReader` no exemplo.  
 
 Portanto, o acesso `clock.time` dentro de `ClockReader` funciona porque ambas as classes estão no mesmo pacote e o campo `time` foi declarado com acesso **default**.
+
+### Classe Main
+
+```java
+public class Main {
+    public static void main(String[] args) {
+        
+        System.out.println("=== TESTANDO VISIBILIDADE DEFAULT (PACKAGE-PRIVATE) ===\n");
+
+        // ⏱️ Cenário 1 ➔ Criando o leitor do relógio
+        // Instanciamos a classe intermediária que tem permissão para ler o Clock.
+        ClockReader leitor = new ClockReader();
+
+        // 💻 Cenário 2 ➔ Lendo o valor através do método do leitor
+        // O leitor consegue acessar o atributo 'time' e nos devolve o valor.
+        long tempoLido = leitor.readClock();
+        System.out.println("🔹 Valor lido via ClockReader: " + tempoLido + " hs");
+
+        // ⚙️ Cenário 3 ➔ Acesso direto da Main ao Clock (Se estiver no mesmo pacote)
+        // Como 'Main' está na mesma pasta/pacote que 'Clock', ela também pode 
+        // criar o relógio e alterar o atributo 'time' diretamente, sem pedir permissão!
+        Clock meuRelogioDireto = new Clock();
+        meuRelogioDireto.time = 1200; // Modificando diretamente o atributo default!
+        
+        System.out.println("🔹 Valor alterado e lido direto na Main: " + meuRelogioDireto.time + " hs");
+    }
+}
+```
 
 ---
 
