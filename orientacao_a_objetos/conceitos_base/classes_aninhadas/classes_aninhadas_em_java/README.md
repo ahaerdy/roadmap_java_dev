@@ -10,10 +10,10 @@ Em Java, as classes aninhadas são consideradas membros de sua classe envolvente
 
 Você pode criar vários tipos diferentes de classes aninhadas em Java. Os tipos são:
 
-* Classes aninhadas estáticas (Static nested classes)
-* Classes aninhadas não estáticas (Non-static nested classes)
-* Classes locais (Local classes)
-* Classes anônimas (Anonymous classes)
+* [Classes aninhadas estáticas (Static nested classes)](#classes-aninhadas-estáticas-static-nested-classes)
+* [Classes aninhadas não estáticas (Non-static nested classes)](#classes-aninhadas-não-estáticas-non-static-nested-classes--inner-classes)
+* [Classes locais (Local classes)](#classes-locais-local-classes)
+* [Classes anônimas (Anonymous classes)](#classes-anônimas-anonymous-classes)
 
 Todos esses tipos de classes aninhadas serão abordados nas seções seguintes.
 
