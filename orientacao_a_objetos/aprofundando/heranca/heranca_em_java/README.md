@@ -27,7 +27,7 @@ Uma hierarquia de classes pode ter múltiplos níveis, o que significa múltiplo
 
 ## Fundamentos da Herança em Java
 
-Quando uma classe herda de uma superclasse, ela herda partes dos métodos e campos da superclasse. A subclasse também pode sobrescrever (redefinir) os métodos herdados. Os campos não podem ser sobrescritos, mas podem ser "ocultados" (*shadowed*) nas subclasses. Como tudo isso funciona é abordado mais adiante neste texto.
+Quando uma classe herda de uma superclasse, ela herda partes dos métodos e campos da superclasse. A subclasse também pode sobrescrever (redefinir) os métodos herdados. Os campos não podem ser sobrescritos, mas podem ser "ocultados" (*shadowed*) nas subclasses. Como tudo isso funciona será abordado mais adiante neste texto.
 
 ### O que é Herdado?
 
@@ -39,7 +39,7 @@ Os construtores não são herdados pelas subclasses, mas um construtor de subcla
 
 ### Java Suporta Apenas Herança Simples
 
-O mecanismo de herança do Java permite apenas que uma classe Java herde de uma única superclasse (herança simples / *singular inheritance*). Em algumas linguagens de programação, como C++, é possível que uma subclasse herde de múltiplas superclasses (herança múltipla). Como a herança múltipla pode criar alguns problemas estranhos, se, por exemplo, as superclasses contiverem métodos com os mesmos nomes e parâmetros, a herança múltipla foi deixada de fora no Java.
+O mecanismo de herança do Java permite apenas que uma classe Java herde de uma única superclasse (herança simples / *singular inheritance*). Em algumas linguagens de programação, como C++, é possível que uma subclasse herde de múltiplas superclasses (herança múltipla). Como herança múltipla pode criar alguns problemas (caso, por exemplo, superclasses contenham métodos com os mesmos nomes e parâmetros), a herança múltipla foi deixada de fora no Java.
 
 ## Declarando Herança em Java
 
