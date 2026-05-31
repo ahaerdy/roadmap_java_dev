@@ -19,8 +19,6 @@ Aqui está um diagrama ilustrando uma classe chamada `Vehicle`, que possui duas 
 
 A classe `Vehicle` é a superclasse de `Car` e `Truck`. `Car` e `Truck` são subclasses de `Vehicle`. A classe `Vehicle` pode conter os campos e métodos que todos os `Vehicle` precisam (por exemplo, uma placa de licença, proprietário, etc.), enquanto `Car` e `Truck` podem conter os campos e métodos que são específicos para `Car` e `Truck`.
 
-Você precisa se referir a objetos `Car` e `Truck` como objetos `Vehicle`? Você precisa processar objetos `Car` e `Truck` uniformemente? Então faz sentido ter uma superclasse `Vehicle` comum para as duas classes. Se você nunca processa objetos `Car` e `Truck` da mesma forma, não há razão para ter uma superclasse comum para eles.
-
 ## Hierarquias de Classes
 
 Superclasses e subclasses formam uma estrutura de herança que também é chamada de *hierarquia de classes*. No topo da hierarquia de classes você tem as superclasses. Na parte inferior da hierarquia de classes você tem as subclasses.
