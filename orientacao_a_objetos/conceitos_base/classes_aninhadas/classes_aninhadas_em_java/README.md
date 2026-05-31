@@ -2,7 +2,7 @@
 
 Em Java, classes aninhadas (nested classes) são classes definidas dentro de outra classe.
 
-O propósito de uma classe aninhada é agrupar claramente a classe aninhada com a classe que a envolve, sinalizando que essas duas classes devem ser usadas juntas. Ou talvez que a classe aninhada só deva ser usada a partir de dentro de sua classe envolvente (proprietária).
+O propósito é agrupar claramente a classe aninhada com a classe que a envolve, sinalizando que essas duas classes devem ser usadas juntas. Ou ainda que a classe aninhada só deva ser usada a partir de dentro de sua classe envolvente (proprietária).
 
 Desenvolvedores Java frequentemente se referem a *classes aninhadas* como *classes internas* (inner classes), mas as classes internas (classes aninhadas não estáticas) são apenas um entre vários tipos diferentes de classes aninhadas em Java.
 
