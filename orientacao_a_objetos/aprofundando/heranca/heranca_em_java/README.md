@@ -104,11 +104,30 @@ Vehicle vehicle = car;
 
 ```
 
-Primeiro, uma instância de `Car` é criada. Segundo, a instância de `Car` é atribuída a uma variável do tipo `Vehicle`. Agora a variável (referência) `Vehicle` aponta para a instância de `Car`. Isso é possível porque a classe `Car` herda da classe `Vehicle`.
+Aqui está o texto formatado em Markdown, pronto para você copiar e colar no seu arquivo original:
 
-Como você pode ver, é possível usar uma instância de alguma subclasse como se fosse uma instância de sua superclasse. Dessa forma, você não precisa saber exatamente de qual subclasse o objeto é uma instância. Você poderia tratar, por exemplo, tanto instâncias de `Truck` quanto de `Car` como instâncias de `Vehicle`.
+### O que realmente acontece na memória?
 
-O processo de referenciar um objeto de uma classe como um tipo diferente da própria classe é chamado de conversão de tipo (*type casting*). Você converte um objeto de um tipo para outro.
+Em linguagens como Java, variáveis que guardam objetos não guardam o objeto em si, mas sim o endereço de memória (o "ponteiro" ou referência) onde o objeto real está localizado.
+
+Quando você executa o código:
+
+```java
+Car     car     = new Car();
+Vehicle vehicle = car;
+
+```
+
+#### 1. `Car car = new Car();`
+
+* **Na memória:** Um objeto real do tipo `Car` é criado em um espaço de memória chamado *Heap*.
+* **A variável:** A variável `car` é criada e passa a guardar o "endereço" (ponteiro) desse objeto `Car`.
+
+#### 2. `Vehicle vehicle = car;`
+
+* **A cópia do ponteiro:** Você está copiando o valor que está dentro de `car` para dentro de `vehicle`. Como o valor dentro de `car` é apenas um endereço, `vehicle` agora aponta para o mesmíssimo objeto na memória.
+* **O "filtro" do tipo:** A variável `vehicle` foi declarada como sendo do tipo `Vehicle`. Isso significa que, embora ela aponte para um objeto `Car`, o compilador só vai deixar você acessar os métodos e atributos que existem na classe `Vehicle`.
+
 
 ### Upcasting e Downcasting
 
