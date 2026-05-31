@@ -199,7 +199,33 @@ public class NewOuter {
 Para evitar uma exceção *java.io.NotSerializableException* ao tentar serializar uma classe aninhada, devemos:
 
 * Declarar a classe aninhada como *static*
-* Fazer com que tanto a classe aninhada quanto a classe envolvente implementem *Serializable*
+* Fazer com que tanto a classe aninhada quanto a classe envolvente implementem Serialiação *(Serializable*).
+
+### O Cenário na Prática
+
+Imagine que você tem uma classe Pedido (Envolvente) e, dentro dela, uma classe Item (Aninhada):
+
+```java
+import java.io.Serializable;
+
+// 1. A classe envolvente implementa Serializable
+public class Pedido implements Serializable {
+    private static final long serialVersionUID = 1L;
+    
+    private String codigo;
+    private Item item; // O Pedido tem uma referência para a classe aninhada
+
+    // 2. A classe aninhada TAMBÉM precisa implementar Serializable
+    public static class Item implements Serializable {
+        private static final long serialVersionUID = 1L;
+        
+        private String nomeProduto;
+        private double preco;
+    }
+}
+```
+
+⚠️ Regra: Um objeto só é 100% serializável se todos os seus atributos (que não sejam transient ou static) também forem serializáveis.
 
 ## **6. Conclusão**
 
