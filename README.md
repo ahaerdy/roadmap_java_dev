@@ -93,8 +93,9 @@ flowchart TD
 - [x] [Pacotes (`packages`)](./orientacao_a_objetos/conceitos_base/pacotes/)
 
 **Aprofundando em OOP**
-- [ ] Ciclo de Vida de Objetos
-- [ ] Herança
+- [x] [Herança](./orientacao_a_objetos/aprofundando/heranca/)
+    - [x] [Herança em Java](./orientacao_a_objetos/aprofundando/heranca/heranca_em_java/)
+    - [x] [Herança em Java com Exemplos](./orientacao_a_objetos/aprofundando/heranca/heranca_em_java_com_exemplos/)
 - [ ] Abstração
 - [ ] Encapsulamento
 - [ ] Interfaces
