@@ -87,7 +87,9 @@ flowchart TD
 - [x] [Palavra-chave `final`](./orientacao_a_objetos/conceitos_base/palavrachave_final/) (apresentação)
     - [x] [Palavra-chave `final`](./orientacao_a_objetos/conceitos_base/palavrachave_final/palavrachave_final/) (detalhamento)
     - [x] [Como funciona a palavra-chave final em Java?](./orientacao_a_objetos/conceitos_base/palavrachave_final/como_funciona_a_palavrachave_final_em_java/)
-- [ ] Classes Aninhadas
+- [x] [Classes Aninhadas](./orientacao_a_objetos/conceitos_base/classes_aninhadas/)
+    - [x] [Classes Aninhadas em Java](./orientacao_a_objetos/conceitos_base/classes_aninhadas/classes_aninhadas_em_java/)
+    - [x] [Guia para Classes Aninhadas](./orientacao_a_objetos/conceitos_base/classes_aninhadas/guia_para_classes_aninhadas/)
 - [ ] Pacotes (`packages`)
 
 **Aprofundando em OOP**
