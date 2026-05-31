@@ -14,7 +14,7 @@ Aqui está um diagrama ilustrando uma classe chamada `Vehicle`, que possui duas 
 
 <p align="center">
   <img src="000-Midia_e_Anexos/2026-05-31-14-21-45.png" alt="" width="480">
-  <p align="center">As classes `Car` e `Truck` herdam da classe `Vehicle`</p>
+  <p align="center">As classes <i>Car</i> e <i>Truck</i> herdam da classe <i>Vehicle</i></p>
 </p>
 
 A classe `Vehicle` é a superclasse de `Car` e `Truck`. `Car` e `Truck` são subclasses de `Vehicle`. A classe `Vehicle` pode conter os campos e métodos que todos os `Vehicle`s precisam (por exemplo, uma placa de licença, proprietário, etc.), enquanto `Car` e `Truck` podem conter os campos e métodos que são específicos para `Car`s e `Truck`s.
