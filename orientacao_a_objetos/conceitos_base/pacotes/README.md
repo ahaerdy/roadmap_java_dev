@@ -37,8 +37,6 @@ Veja Também:
 
 ### Resumo dos Métodos
 
-Todos os Métodos | Métodos Estáticos | Métodos de Instância | Métodos Concretos
-
 | Modificador e Tipo | Método | Descrição |
 | --- | --- | --- |
 | `<A extends Annotation> A` | `getAnnotation(Class<A> annotationClass)` | Retorna a anotação deste elemento para o tipo especificado se tal anotação estiver *presente*, caso contrário, null. |
