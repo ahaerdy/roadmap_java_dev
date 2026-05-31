@@ -43,7 +43,7 @@ O mecanismo de herança do Java permite apenas que uma classe herde de uma únic
 
 ## Declarando Herança em Java
 
-Em Java, a herança é declarada usando a palavra-chave `extends`. Você declara que uma classe estende outra classe usando a palavra-chave `extends` na definição da classe. Aqui está um exemplo de herança em Java usando a palavra-chave `extends`:
+Em Java, a herança é declarada usando a palavra-chave `extends`. Aqui está um exemplo:
 
 ```java
 public class Vehicle {
