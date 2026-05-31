@@ -4,5 +4,5 @@ Classes aninhadas são classes definidas dentro de outra classe. A classe que co
 
 Ver também:
 
-- [Classes Aninhadas em Java](./orientacao_a_objetos/conceitos_base/classes_aninhadas/classes_aninhadas_em_java/)
-- [Guia para Classes Aninhadas](./orientacao_a_objetos/conceitos_base/classes_aninhadas/guia_para_classes_aninhadas/)
+- [Classes Aninhadas em Java](./classes_aninhadas_em_java/)
+- [Guia para Classes Aninhadas](./guia_para_classes_aninhadas/)
