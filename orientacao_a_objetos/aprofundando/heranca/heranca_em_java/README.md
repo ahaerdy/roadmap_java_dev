@@ -159,7 +159,20 @@ Car     car     =  (Car) vehicle;
 
 ```
 
-O objeto `Truck` pode ser convertido via *upcast* para um objeto `Vehicle`, mas não pode ser convertido via *downcast* para um objeto `Car` mais tarde. Isso resultará em uma `ClassCastException`.
+O objeto `Truck` pode ser convertido via *upcast* para um objeto `Vehicle`, mas não pode ser convertido via *downcast* para um objeto `Car` em seguida. Isso resultará em uma `ClassCastException`.
+
+#### Análise do Fluxo de Execução na Memória (Segundo Exemplo)
+
+##### 1. `Truck truck = new Truck();`
+Uma instância da classe `Truck` é alocada na memória *Heap*. A variável de referência `truck`, do tipo estático `Truck`, passa a armazenar o endereço de memória desse novo objeto.
+
+##### 2. `Vehicle vehicle = truck;` (**Upcasting**)
+A variável de referência `vehicle`, do tipo estático `Vehicle`, recebe a referência contida em `truck`. Como a classe `Truck` herda diretamente de `Vehicle`, a operação de *upcasting* é implícita e garantida como segura em tempo de compilação, pois um `Truck` atende ao contrato de `Vehicle`. Agora, ambas as variáveis apontam para o mesmo objeto na memória.
+
+##### 3. `Car car = (Car) vehicle;` (**Downcasting Inválid**o)
+Nesta etapa, realiza-se um *downcasting* explícito através do operador de coerção de tipo (*cast*). Instruiu-se o compilador a tratar a referência contida em `vehicle` como se apontasse para uma instância de `Car`. 
+
+O compilador aceita a instrução porque `Car` e `Vehicle` estão na mesma hierarquia de herança. No entanto, em tempo de execução, a Máquina Virtual Java (JVM) realiza a verificação de tipo dinâmica (*Runtime Type Information - RTTI*). Ao constatar que o objeto real na memória é do tipo `Truck` — e sabendo que `Truck` e `Car` são classes irmãs sem relação de herança direta entre si —, a JVM impede a operação, pois a estrutura e o comportamento de um objeto `Truck` são incompatíveis com o tipo `Car`. Como resultado, a execução é interrompida com o lançamento de uma `ClassCastException`.
 
 ## Sobrescrita de Métodos (Overriding Methods)
 
