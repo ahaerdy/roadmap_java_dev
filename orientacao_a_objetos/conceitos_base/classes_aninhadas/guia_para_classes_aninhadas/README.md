@@ -227,8 +227,4 @@ public class Pedido implements Serializable {
 
 ⚠️ Regra: Um objeto só é 100% serializável se todos os seus atributos (que não sejam transient ou static) também forem serializáveis.
 
-## **6. Conclusão**
-
-Neste artigo, vimos o que são classes aninhadas e seus diferentes tipos. Também analisamos como a visibilidade de campos e modificadores de acesso diferem entre esses diferentes tipos.
-
-O código que suporta este artigo está disponível no GitHub. Assim que você estiver **logado como um [Membro Baeldung Pro](/members/)**, comece a aprender e a codificar no projeto.
+---
