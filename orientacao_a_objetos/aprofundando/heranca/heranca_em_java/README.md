@@ -458,10 +458,3 @@ public final class MyClass {
 
 Uma classe `final` não pode ser estendida. Em outras palavras, você não pode herdar de uma classe `final` em Java.
 
-## Classes Abstratas e Herança
-
-Em Java, uma classe pode ser declarada como `abstract`. Euifiquei as classes abstratas em mais detalhes no meu tutorial de classes abstratas em Java.
-
-Uma classe abstrata é uma classe que não contém a implementação completa do que quer que a classe abstrata devesse fazer. Sendo assim, ela não pode ser instanciada. Em outras palavras, você não pode criar objetos de uma classe abstrata.
-
-Em Java, las classes abstratas têm o propósito de ser estendidas para criar uma implementação completa. Portanto, é totalmente possível estender uma classe abstrata. As regras de herança do Java são as mesmas tanto para classes abstratas quanto para classes não abstratas.
