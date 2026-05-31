@@ -90,7 +90,7 @@ flowchart TD
 - [x] [Classes Aninhadas - Conceito](./orientacao_a_objetos/conceitos_base/classes_aninhadas/)
     - [x] [Classes Aninhadas](./orientacao_a_objetos/conceitos_base/classes_aninhadas/classes_aninhadas_em_java/)
     - [x] [Guia para Classes Aninhadas](./orientacao_a_objetos/conceitos_base/classes_aninhadas/guia_para_classes_aninhadas/)
-- [ ] Pacotes (`packages`)
+- [x] [Pacotes (`packages`)](./orientacao_a_objetos/conceitos_base/pacotes/)
 
 **Aprofundando em OOP**
 - [ ] Ciclo de Vida de Objetos
