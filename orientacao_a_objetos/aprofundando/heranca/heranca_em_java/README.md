@@ -1,6 +1,6 @@
 # Herança em Java
 
-A *herança em Java* refere-se à capacidade em Java de uma classe herdar de outra classe. Em Java, isso também é chamado de estender (*extending*) uma classe. Uma classe pode *estender* outra classe e, com isso, *herdar* dessa classe.
+A *herança em Java* refere-se à capacidade em Java de uma classe herdar de outra classe. Isso também é chamado de estender (*extending*) uma classe. Uma classe pode *estender* outra classe e, com isso, *herdar* dessa classe.
 
 Quando uma classe herda de outra classe em Java, as duas classes assumem certos papéis. A classe que estende (herda de outra classe) é a *subclasse* e a classe que está sendo estendida (a classe da qual se está herdando) é a *superclasse*. Em outras palavras, a subclasse estende a superclasse. Ou, a subclasse herda da superclasse.
 
@@ -12,8 +12,10 @@ A herança pode ser um método eficaz para compartilhar código entre classes qu
 
 Aqui está um diagrama ilustrando uma classe chamada `Vehicle`, que possui duas subclasses chamadas `Car` e `Truck`.
 
-| ![As classes Car e Truck herdam da classe Vehicle.](/images/java/inheritance-1.png) |
-| **As classes Car e Truck herdam da classe Vehicle.** |
+<p align="center">
+  <img src="000-Midia_e_Anexos/2026-05-31-14-21-45.png" alt="" width="480">
+  <p align="center">As classes `Car` e `Truck` herdam da classe `Vehicle`</p>
+</p>
 
 A classe `Vehicle` é a superclasse de `Car` e `Truck`. `Car` e `Truck` são subclasses de `Vehicle`. A classe `Vehicle` pode conter os campos e métodos que todos os `Vehicle`s precisam (por exemplo, uma placa de licença, proprietário, etc.), enquanto `Car` e `Truck` podem conter os campos e métodos que são específicos para `Car`s e `Truck`s.
 
