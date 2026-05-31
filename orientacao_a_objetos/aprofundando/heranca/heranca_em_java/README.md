@@ -17,7 +17,7 @@ Aqui está um diagrama ilustrando uma classe chamada `Vehicle`, que possui duas 
   <p align="center">As classes <i>Car</i> e <i>Truck</i> herdam da classe <i>Vehicle</i></p>
 </p>
 
-A classe `Vehicle` é a superclasse de `Car` e `Truck`. `Car` e `Truck` são subclasses de `Vehicle`. A classe `Vehicle` pode conter os campos e métodos que todos os `Vehicle` precisam (por exemplo, uma placa de licença, proprietário, etc.), enquanto `Car` e `Truck` podem conter os campos e métodos que são específicos para `Car`s e `Truck`s.
+A classe `Vehicle` é a superclasse de `Car` e `Truck`. `Car` e `Truck` são subclasses de `Vehicle`. A classe `Vehicle` pode conter os campos e métodos que todos os `Vehicle` precisam (por exemplo, uma placa de licença, proprietário, etc.), enquanto `Car` e `Truck` podem conter os campos e métodos que são específicos para `Car` e `Truck`.
 
 Nota: Algumas pessoas vão afirmar que a herança é uma forma de categorizar suas classes com base no que elas são. Um `Car` é um `Vehicle`. Um `Truck` é um `Vehicle`. Na prática, no entanto, não é assim que você determina quais superclasses e subclasses sua aplicação precisa ter. Isso geralmente é determinado por como você precisa trabalhar com elas na aplicação.
 
