@@ -249,9 +249,9 @@ instance.doIt();
 
 As mesmas regras de sombreamento se aplicam às classes anônimas e às classes internas.
 
-## Benefícios
+## Benefício
 
-Os benefícios das classes aninhadas são que você pode agrupar classes que pertencem uma à outra. Você já poderia fazer isso colocando-as no mesmo pacote, mas colocar uma classe dentro de outra cria um agrupamento ainda mais forte.
+O benefício é poder agrupar classes que pertencem uma à outra. Você já poderia fazer isso colocando-as no mesmo pacote, mas colocar uma classe dentro de outra cria um agrupamento ainda mais forte.
 
 Uma classe aninhada é tipicamente usada apenas *por* ou *com* sua classe envolvente. Às vezes, uma classe aninhada é visível apenas para a classe envolvente, é usada apenas internamente e, portanto, nunca é visível fora da classe envolvente. Outras vezes, a classe aninhada é visível fora de sua classe envolvente, mas só pode ser usada em conjunto com ela.
 
