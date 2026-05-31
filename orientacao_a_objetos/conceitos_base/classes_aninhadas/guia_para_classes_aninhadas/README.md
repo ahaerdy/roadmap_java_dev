@@ -199,7 +199,7 @@ public class NewOuter {
 Para evitar uma exceção *java.io.NotSerializableException* ao tentar serializar uma classe aninhada, devemos:
 
 * Declarar a classe aninhada como *static*
-* Fazer com que tanto a classe aninhada quanto a classe envolvente implementem Serialiação *(Serializable*).
+* Fazer com que tanto a classe aninhada quanto a classe envolvente implementem *Serializable*.
 
 ### O Cenário na Prática
 
