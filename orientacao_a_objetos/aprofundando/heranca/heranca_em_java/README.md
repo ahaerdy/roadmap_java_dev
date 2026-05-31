@@ -39,7 +39,7 @@ Os construtores não são herdados pelas subclasses, mas um construtor de subcla
 
 ### Java Suporta Apenas Herança Simples
 
-O mecanismo de herança do Java permite apenas que uma classe Java herde de uma única superclasse (herança simples / *singular inheritance*). Em algumas linguagens de programação, como C++, é possível que uma subclasse herde de múltiplas superclasses (herança múltipla). Como herança múltipla pode criar alguns problemas (caso, por exemplo, superclasses contenham métodos com os mesmos nomes e parâmetros), a herança múltipla foi deixada de fora no Java.
+O mecanismo de herança do Java permite apenas que uma classe herde de uma única superclasse (herança simples / *singular inheritance*). Em algumas linguagens de programação, como C++, é possível que uma subclasse herde de múltiplas superclasses (herança múltipla). Como herança múltipla pode criar alguns problemas (caso, por exemplo, superclasses contenham métodos com os mesmos nomes e parâmetros), a herança múltipla foi deixada de fora no Java.
 
 ## Declarando Herança em Java
 
